@@ -1,0 +1,28 @@
+{
+  "name": "prv",
+  "version": "1.0.0",
+  "description": "PRV team website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/designhorf/prv.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "single",
+    "page",
+    "app",
+    "node.js"
+  ],
+  "author": "designhorf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/designhorf/prv/issues"
+  },
+  "homepage": "https://github.com/designhorf/prv#readme"
+}
