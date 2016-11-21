@@ -44,9 +44,7 @@ var server = http.createServer(function(request, response) {
 	var filePath = false;
 	if (request.url == '/') {
 		filePath = 'index.html';
-	} else if (request.url == '/test') {
-		filePath = 'test.html';
-	}	else {
+	} else {
 		filePath = request.url;
 	}
 
