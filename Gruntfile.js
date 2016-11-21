@@ -3,6 +3,30 @@
 module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
+    clean: ['./assets'],
+		copy: {
+			main: {
+				src: [
+					'images/**/*.jpg',
+					'images/**/*.png',
+					'images/**/*.svg',
+					'images/**/*.ico',
+					'fonts/**/*'
+				],
+				dest: 'assets/',
+			},
+		},
+		cssmin: {
+			target: {
+				files: [{
+					expand: true,
+					cwd: './assets/stylesheets',
+					src: ['*.css', '!*.min.css'],
+					dest: './assets/stylesheets',
+					ext: '.min.css',
+				}],
+			}
+		},
 		postcss: {
 			options: {
 				map: false,
@@ -34,7 +58,7 @@ module.exports = function(grunt) {
 		watch: {
 			css: {
 				files: ['stylesheets/**/*.scss'],
-				tasks: ['scsslint', 'sass', 'postcss'],
+				tasks: ['scsslint', 'sass', 'postcss', 'cssmin'],
 			},
 			images: {
 				files: [
@@ -50,8 +74,11 @@ module.exports = function(grunt) {
 	require('load-grunt-tasks')(grunt);
 
 	grunt.registerTask('default', [
-		'scsslint',
+    'scsslint',
+		'clean',
 		'sass',
-		'postcss'
+		'postcss',
+		'cssmin',
+		'copy',
 	]);
 };

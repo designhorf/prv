@@ -50,9 +50,27 @@ html {
       list-style-type: none; }
 
 .main {
+  -ms-flex-align: initial;
+      align-items: initial;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: center;
+      justify-content: center;
   background-color: #f9c21b;
   height: 100%;
+  padding-top: 70px;
   width: 100%; }
+  .main-text {
+    text-transform: uppercase; }
+  .main-devices {
+    margin: 0 auto;
+    width: 80%; }
+    .main-devices-img {
+      width: 100%; }
 
 .ajanlatunk {
   background-color: #000;
