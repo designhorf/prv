@@ -7,6 +7,9 @@ h2 {
 .bold {
   font-weight: 700; }
 
+.light {
+  font-weight: 300; }
+
 .italic {
   font-style: italic; }
 
@@ -182,6 +185,9 @@ h2 {
     -ms-flex-pack: start;
         justify-content: flex-start; }
 
+.koncepcionk-title {
+  margin-left: 10%; }
+
 .koncepcionk .conception {
   -ms-flex-align: initial;
       align-items: initial;
@@ -196,15 +202,14 @@ h2 {
   background-color: #f9c21b;
   height: 430px; }
   .koncepcionk .conception-content, .koncepcionk .conception-picture {
-    height: inherit;
     width: 50%; }
   .koncepcionk .conception-content {
-    -ms-flex-align: initial;
-        align-items: initial;
+    -ms-flex-align: baseline;
+        align-items: baseline;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
+    -ms-flex-direction: row;
+        flex-direction: row;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -ms-flex-pack: center;
@@ -212,10 +217,33 @@ h2 {
     box-sizing: border-box;
     padding-left: 10%;
     padding-right: 5%; }
+    .koncepcionk .conception-content-text {
+      font-weight: 300; }
   .koncepcionk .conception-picture {
     background: url("../images/hands.jpg");
     background-position: center;
     background-size: cover; }
+
+.koncepcionk .conception-details {
+  margin: 0 auto;
+  width: 80%; }
+
+.koncepcionk .conception-text {
+  -ms-flex-align: baseline;
+      align-items: baseline;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .koncepcionk .conception-text .half-size {
+    margin: 0 auto;
+    width: 35%; }
+  .koncepcionk .conception-text ul {
+    padding-left: 20px; }
 
 body,
 html,
@@ -240,3 +268,6 @@ body {
 
 .bottom-space {
   margin-bottom: 25px; }
+
+.center {
+  text-align: center; }
