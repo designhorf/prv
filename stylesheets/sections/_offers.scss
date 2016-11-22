@@ -2,7 +2,7 @@
   background: url('../images/gplaypattern.png');
   background-repeat: repeat;
 
-  .offer,
+  .offer-content,
   .package {
     @include content-properties;
   }
@@ -13,6 +13,16 @@
     background-size: cover;
     color: $white;
     height: 430px;
+
+    &-content {
+      @include flexbox(column, initial, center, nowrap);
+      height: inherit;
+    }
+
+    &-text {
+      font-weight: 300;
+      width: 65%;
+    }
   }
 
   .package {

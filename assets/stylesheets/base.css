@@ -88,7 +88,7 @@ h2 {
 .ajanlatunk {
   background: url("../images/gplaypattern.png");
   background-repeat: repeat; }
-  .ajanlatunk .offer,
+  .ajanlatunk .offer-content,
   .ajanlatunk .package {
     margin: 0 auto 25px;
     width: 80%; }
@@ -98,6 +98,21 @@ h2 {
     background-size: cover;
     color: #fff;
     height: 430px; }
+    .ajanlatunk .offer-content {
+      -ms-flex-align: initial;
+          align-items: initial;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-pack: center;
+          justify-content: center;
+      height: inherit; }
+    .ajanlatunk .offer-text {
+      font-weight: 300;
+      width: 65%; }
   .ajanlatunk .package-quote {
     -ms-flex-align: baseline;
         align-items: baseline;
