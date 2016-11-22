@@ -24,6 +24,14 @@ h2 {
 
 $header-height: 70px;
 
+.off {
+  display: none;
+}
+
+.active {
+  background-color: $yellow;
+}
+
 .bottom-space {
   margin-bottom: 25px;
 }
@@ -149,6 +157,28 @@ $header-height: 70px;
         cursor: pointer;
         padding: 60px 0 30px;
       }
+
+      &-icon {
+        margin-bottom: 10px;
+      }
+
+       .click-to-details {
+         font-size: .8em;
+       }
+    }
+  }
+
+  .package-details {
+    border: 10px solid $yellow;
+    margin-top: -10px;
+    padding: 15px 20px;
+
+    &-title {
+      min-width: 200px;
+    }
+
+    &-wrap {
+      @include flexbox(row, baseline, flex-start, nowrap);
     }
   }
 }

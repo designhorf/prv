@@ -15,6 +15,12 @@ h1 {
 h2 {
   font-size: 1.7em; }
 
+.off {
+  display: none; }
+
+.active {
+  background-color: #f9c21b; }
+
 .bottom-space {
   margin-bottom: 25px; }
 
@@ -156,3 +162,24 @@ h2 {
         border: 10px solid #f9c21b;
         cursor: pointer;
         padding: 60px 0 30px; }
+      .ajanlatunk .package-items .package-item-icon {
+        margin-bottom: 10px; }
+      .ajanlatunk .package-items .package-item .click-to-details {
+        font-size: .8em; }
+  .ajanlatunk .package-details {
+    border: 10px solid #f9c21b;
+    margin-top: -10px;
+    padding: 15px 20px; }
+    .ajanlatunk .package-details-title {
+      min-width: 200px; }
+    .ajanlatunk .package-details-wrap {
+      -ms-flex-align: baseline;
+          align-items: baseline;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
