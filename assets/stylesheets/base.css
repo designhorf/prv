@@ -1,28 +1,8 @@
-body,
-html,
-.wrap {
-  color: #3e4042;
-  height: 100%;
-  margin: 0;
-  padding: 0; }
-
-html {
-  font-family: 'Open Sans', sans-serif; }
-
 h1 {
   font-size: 2em; }
 
 h2 {
   font-size: 1.7em; }
-
-.off {
-  display: none; }
-
-.active {
-  background-color: #f9c21b; }
-
-.bottom-space {
-  margin-bottom: 25px; }
 
 .bold {
   font-weight: 700; }
@@ -183,3 +163,23 @@ h2 {
           flex-wrap: nowrap;
       -ms-flex-pack: start;
           justify-content: flex-start; }
+
+body,
+html,
+.wrap {
+  color: #3e4042;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-family: 'Open Sans', sans-serif; }
+
+.off {
+  display: none; }
+
+.active {
+  background-color: #f9c21b; }
+
+.bottom-space {
+  margin-bottom: 25px; }

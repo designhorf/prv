@@ -1,5 +1,9 @@
 @import "modules/colours";
+@import "modules/text";
 @import "modules/mixins";
+@import "sections/header";
+@import "sections/main-page";
+@import "sections/offers";
 
 body,
 html,
@@ -14,16 +18,6 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
-  font-size: 2em;
-}
-
-h2 {
-  font-size: 1.7em;
-}
-
-$header-height: 70px;
-
 .off {
   display: none;
 }
@@ -34,151 +28,4 @@ $header-height: 70px;
 
 .bottom-space {
   margin-bottom: 25px;
-}
-
-.bold {
-  font-weight: 700;
-}
-
-.italic {
-  font-style: italic;
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
-
-.header {
-  background-color: $white;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .33);
-  font-weight: 700;
-  height: $header-height;
-  margin: 0;
-  position: fixed;
-  width: 100%;
-
-  &-wrap {
-    @include flexbox(row, center, space-between, nowrap);
-    height: inherit;
-    margin: 0 auto;
-    max-width: 1100px;
-    padding: 0;
-  }
-
-  .menu-items {
-    @include flexbox(row, center, space-between, nowrap);
-    text-transform: uppercase;
-
-    li {
-      margin: 16px;
-    }
-
-    li:first-child {
-      list-style-type: none;
-    }
-  }
-
-}
-
-.main {
-  @include flexbox(column, initial, center, nowrap);
-  background-color: $yellow;
-  height: calc(100% - 70px);
-  padding-top: $header-height;
-  width: 100%;
-
-  &-text {
-    $test: calc((100% - 1100px) / 2 + 0px);
-    background-color: $white;
-    display: table;
-    max-width: 450px;
-    padding-left: $test;
-    padding-right: 25px;
-    text-transform: uppercase;
-
-    h2 {
-      font-weight: 300;
-    }
-  }
-
-  &-devices {
-    @include content-properties;
-
-    &-img {
-      width: 100%;
-    }
-  }
-
-  &-scroll {
-    text-align: center;
-  }
-}
-
-.ajanlatunk {
-  background: url('../images/gplaypattern.png');
-  background-repeat: repeat;
-
-  .offer,
-  .package {
-    @include content-properties;
-  }
-
-  .offer {
-    background: url('../images/shake-hands.jpg');
-    background-position: center;
-    background-size: cover;
-    color: $white;
-    height: 430px;
-  }
-
-  .package {
-    &-quote {
-      @include flexbox(row, baseline, flex-start, nowrap);
-      padding-left: 90px;
-    }
-
-    .quote-img {
-      margin-right: 15px;
-    }
-  }
-
-  .package-items {
-    @include flexbox(row, initial, space-between, nowrap);
-
-    .package-item {
-      @include flexbox(column, center, center, nowrap);
-      border: 10px solid transparent;
-      box-sizing: border-box;
-      padding: 60px 0 30px;
-      width: 30%;
-
-      &:hover {
-        border: 10px solid $yellow;
-        cursor: pointer;
-        padding: 60px 0 30px;
-      }
-
-      &-icon {
-        margin-bottom: 10px;
-      }
-
-       .click-to-details {
-         font-size: .8em;
-       }
-    }
-  }
-
-  .package-details {
-    border: 10px solid $yellow;
-    margin-top: -10px;
-    padding: 15px 20px;
-
-    &-title {
-      min-width: 200px;
-    }
-
-    &-wrap {
-      @include flexbox(row, baseline, flex-start, nowrap);
-    }
-  }
 }

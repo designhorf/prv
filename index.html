@@ -139,7 +139,7 @@
         });
       };
 
-      var selectActiveStatus = function (item, selector) {
+      var selectActiveElement = function (item, selector) {
         item.classList.add('active');
         [].forEach.call(document.querySelectorAll(selector), function (element) {
           element.classList.add('off');
@@ -151,7 +151,7 @@
       [].forEach.call(document.querySelectorAll('.package-item'), function (item) {
         item.addEventListener('click', function () {
           removeActiveStatus('.package-item');
-          selectActiveStatus(item, '.package-details');
+          selectActiveElement(item, '.package-details');
         });
       });
 

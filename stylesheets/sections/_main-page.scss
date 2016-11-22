@@ -1,0 +1,33 @@
+.main {
+  @include flexbox(column, initial, center, nowrap);
+  background-color: $yellow;
+  height: calc(100% - 70px);
+  padding-top: $header-height;
+  width: 100%;
+
+  &-text {
+    $test: calc((100% - 1100px) / 2 + 0px);
+    background-color: $white;
+    display: table;
+    max-width: 450px;
+    padding-left: $test;
+    padding-right: 25px;
+    text-transform: uppercase;
+
+    h2 {
+      font-weight: 300;
+    }
+  }
+
+  &-devices {
+    @include content-properties;
+
+    &-img {
+      width: 100%;
+    }
+  }
+
+  &-scroll {
+    text-align: center;
+  }
+}
