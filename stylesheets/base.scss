@@ -28,6 +28,18 @@ $header-height: 70px;
   margin-bottom: 25px;
 }
 
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
 .header {
   background-color: $white;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .33);
@@ -63,7 +75,7 @@ $header-height: 70px;
 .main {
   @include flexbox(column, initial, center, nowrap);
   background-color: $yellow;
-  height: 100%;
+  height: calc(100% - 70px);
   padding-top: $header-height;
   width: 100%;
 
@@ -82,8 +94,7 @@ $header-height: 70px;
   }
 
   &-devices {
-    margin: 0 auto 25px;
-    width: 80%;
+    @include content-properties;
 
     &-img {
       width: 100%;
@@ -96,6 +107,48 @@ $header-height: 70px;
 }
 
 .ajanlatunk {
-  height: 100%;
-  width: 100%;
+  background: url('../images/gplaypattern.png');
+  background-repeat: repeat;
+
+  .offer,
+  .package {
+    @include content-properties;
+  }
+
+  .offer {
+    background: url('../images/shake-hands.jpg');
+    background-position: center;
+    background-size: cover;
+    color: $white;
+    height: 430px;
+  }
+
+  .package {
+    &-quote {
+      @include flexbox(row, baseline, flex-start, nowrap);
+      padding-left: 90px;
+    }
+
+    .quote-img {
+      margin-right: 15px;
+    }
+  }
+
+  .package-items {
+    @include flexbox(row, initial, space-between, nowrap);
+
+    .package-item {
+      @include flexbox(column, center, center, nowrap);
+      border: 10px solid transparent;
+      box-sizing: border-box;
+      padding: 60px 0 30px;
+      width: 30%;
+
+      &:hover {
+        border: 10px solid $yellow;
+        cursor: pointer;
+        padding: 60px 0 30px;
+      }
+    }
+  }
 }

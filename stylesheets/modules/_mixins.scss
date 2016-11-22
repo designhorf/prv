@@ -5,3 +5,8 @@
   flex-wrap: $wrap;
   justify-content: $jcontent;
 }
+
+@mixin content-properties {
+  margin: 0 auto 25px;
+  width: 80%;
+}

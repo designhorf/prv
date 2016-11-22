@@ -18,6 +18,15 @@ h2 {
 .bottom-space {
   margin-bottom: 25px; }
 
+.bold {
+  font-weight: 700; }
+
+.italic {
+  font-style: italic; }
+
+.uppercase {
+  text-transform: uppercase; }
+
 .header {
   background-color: #fff;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.33);
@@ -70,7 +79,7 @@ h2 {
   -ms-flex-pack: center;
       justify-content: center;
   background-color: #f9c21b;
-  height: 100%;
+  height: calc(100% - 70px);
   padding-top: 70px;
   width: 100%; }
   .main-text {
@@ -91,5 +100,59 @@ h2 {
     text-align: center; }
 
 .ajanlatunk {
-  height: 100%;
-  width: 100%; }
+  background: url("../images/gplaypattern.png");
+  background-repeat: repeat; }
+  .ajanlatunk .offer,
+  .ajanlatunk .package {
+    margin: 0 auto 25px;
+    width: 80%; }
+  .ajanlatunk .offer {
+    background: url("../images/shake-hands.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    height: 430px; }
+  .ajanlatunk .package-quote {
+    -ms-flex-align: baseline;
+        align-items: baseline;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    padding-left: 90px; }
+  .ajanlatunk .package .quote-img {
+    margin-right: 15px; }
+  .ajanlatunk .package-items {
+    -ms-flex-align: initial;
+        align-items: initial;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    .ajanlatunk .package-items .package-item {
+      -ms-flex-align: center;
+          align-items: center;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-pack: center;
+          justify-content: center;
+      border: 10px solid transparent;
+      box-sizing: border-box;
+      padding: 60px 0 30px;
+      width: 30%; }
+      .ajanlatunk .package-items .package-item:hover {
+        border: 10px solid #f9c21b;
+        cursor: pointer;
+        padding: 60px 0 30px; }
