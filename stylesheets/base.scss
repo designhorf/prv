@@ -4,6 +4,7 @@
 @import "sections/header";
 @import "sections/main-page";
 @import "sections/offers";
+@import "sections/conception";
 
 body,
 html,
@@ -16,6 +17,11 @@ html,
 
 html {
   font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background: url('../images/gplaypattern.png');
+  background-repeat: repeat;
 }
 
 .off {

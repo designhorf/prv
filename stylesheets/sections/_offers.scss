@@ -1,6 +1,5 @@
 .ajanlatunk {
-  background: url('../images/gplaypattern.png');
-  background-repeat: repeat;
+  
 
   .offer-content,
   .package {
@@ -26,6 +25,8 @@
   }
 
   .package {
+    padding-bottom: 50px;
+
     &-quote {
       @include flexbox(row, baseline, flex-start, nowrap);
       padding-left: 90px;

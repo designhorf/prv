@@ -1,0 +1,26 @@
+.koncepcionk {
+  .conception {
+    @include flexbox(row, initial, center, nowrap);
+    background-color: $yellow;
+    height: 430px;
+
+    &-content,
+    &-picture {
+      height: inherit;
+      width: 50%;
+    }
+
+    &-content {
+      @include flexbox(column, initial, center, nowrap);
+      box-sizing: border-box;
+      padding-left: 10%;
+      padding-right: 5%;
+    }
+
+    &-picture {
+      background: url('../images/hands.jpg');
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
