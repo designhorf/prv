@@ -1,0 +1,78 @@
+.ajanlatunk {
+  background: url('../images/gplaypattern.png');
+  background-repeat: repeat;
+
+  .offer-content,
+  .package {
+    @include content-properties;
+  }
+
+  .offer {
+    background: url('../images/shake-hands.jpg');
+    background-position: center;
+    background-size: cover;
+    color: $white;
+    height: 430px;
+
+    &-content {
+      @include flexbox(column, initial, center, nowrap);
+      height: inherit;
+    }
+
+    &-text {
+      font-weight: 300;
+      width: 65%;
+    }
+  }
+
+  .package {
+    &-quote {
+      @include flexbox(row, baseline, flex-start, nowrap);
+      padding-left: 90px;
+    }
+
+    .quote-img {
+      margin-right: 15px;
+    }
+  }
+
+  .package-items {
+    @include flexbox(row, initial, space-between, nowrap);
+
+    .package-item {
+      @include flexbox(column, center, center, nowrap);
+      border: 10px solid transparent;
+      box-sizing: border-box;
+      padding: 60px 0 30px;
+      width: 30%;
+
+      &:hover {
+        border: 10px solid $yellow;
+        cursor: pointer;
+        padding: 60px 0 30px;
+      }
+
+      &-icon {
+        margin-bottom: 10px;
+      }
+
+       .click-to-details {
+         font-size: .8em;
+       }
+    }
+  }
+
+  .package-details {
+    border: 10px solid $yellow;
+    margin-top: -10px;
+    padding: 15px 20px;
+
+    &-title {
+      min-width: 200px;
+    }
+
+    &-wrap {
+      @include flexbox(row, baseline, flex-start, nowrap);
+    }
+  }
+}

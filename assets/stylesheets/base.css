@@ -1,22 +1,17 @@
-body,
-html,
-.wrap {
-  color: #3e4042;
-  height: 100%;
-  margin: 0;
-  padding: 0; }
-
-html {
-  font-family: 'Open Sans', sans-serif; }
-
 h1 {
   font-size: 2em; }
 
 h2 {
   font-size: 1.7em; }
 
-.bottom-space {
-  margin-bottom: 25px; }
+.bold {
+  font-weight: 700; }
+
+.italic {
+  font-style: italic; }
+
+.uppercase {
+  text-transform: uppercase; }
 
 .header {
   background-color: #fff;
@@ -70,7 +65,7 @@ h2 {
   -ms-flex-pack: center;
       justify-content: center;
   background-color: #f9c21b;
-  height: 100%;
+  height: calc(100% - 70px);
   padding-top: 70px;
   width: 100%; }
   .main-text {
@@ -91,5 +86,115 @@ h2 {
     text-align: center; }
 
 .ajanlatunk {
+  background: url("../images/gplaypattern.png");
+  background-repeat: repeat; }
+  .ajanlatunk .offer-content,
+  .ajanlatunk .package {
+    margin: 0 auto 25px;
+    width: 80%; }
+  .ajanlatunk .offer {
+    background: url("../images/shake-hands.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    height: 430px; }
+    .ajanlatunk .offer-content {
+      -ms-flex-align: initial;
+          align-items: initial;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-pack: center;
+          justify-content: center;
+      height: inherit; }
+    .ajanlatunk .offer-text {
+      font-weight: 300;
+      width: 65%; }
+  .ajanlatunk .package-quote {
+    -ms-flex-align: baseline;
+        align-items: baseline;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    padding-left: 90px; }
+  .ajanlatunk .package .quote-img {
+    margin-right: 15px; }
+  .ajanlatunk .package-items {
+    -ms-flex-align: initial;
+        align-items: initial;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    .ajanlatunk .package-items .package-item {
+      -ms-flex-align: center;
+          align-items: center;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-pack: center;
+          justify-content: center;
+      border: 10px solid transparent;
+      box-sizing: border-box;
+      padding: 60px 0 30px;
+      width: 30%; }
+      .ajanlatunk .package-items .package-item:hover {
+        border: 10px solid #f9c21b;
+        cursor: pointer;
+        padding: 60px 0 30px; }
+      .ajanlatunk .package-items .package-item-icon {
+        margin-bottom: 10px; }
+      .ajanlatunk .package-items .package-item .click-to-details {
+        font-size: .8em; }
+  .ajanlatunk .package-details {
+    border: 10px solid #f9c21b;
+    margin-top: -10px;
+    padding: 15px 20px; }
+    .ajanlatunk .package-details-title {
+      min-width: 200px; }
+    .ajanlatunk .package-details-wrap {
+      -ms-flex-align: baseline;
+          align-items: baseline;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+body,
+html,
+.wrap {
+  color: #3e4042;
   height: 100%;
-  width: 100%; }
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-family: 'Open Sans', sans-serif; }
+
+.off {
+  display: none; }
+
+.active {
+  background-color: #f9c21b; }
+
+.bottom-space {
+  margin-bottom: 25px; }

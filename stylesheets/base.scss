@@ -1,5 +1,9 @@
 @import "modules/colours";
+@import "modules/text";
 @import "modules/mixins";
+@import "sections/header";
+@import "sections/main-page";
+@import "sections/offers";
 
 body,
 html,
@@ -14,88 +18,14 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
-  font-size: 2em;
+.off {
+  display: none;
 }
 
-h2 {
-  font-size: 1.7em;
+.active {
+  background-color: $yellow;
 }
-
-$header-height: 70px;
 
 .bottom-space {
   margin-bottom: 25px;
-}
-
-.header {
-  background-color: $white;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .33);
-  font-weight: 700;
-  height: $header-height;
-  margin: 0;
-  position: fixed;
-  width: 100%;
-
-  &-wrap {
-    @include flexbox(row, center, space-between, nowrap);
-    height: inherit;
-    margin: 0 auto;
-    max-width: 1100px;
-    padding: 0;
-  }
-
-  .menu-items {
-    @include flexbox(row, center, space-between, nowrap);
-    text-transform: uppercase;
-
-    li {
-      margin: 16px;
-    }
-
-    li:first-child {
-      list-style-type: none;
-    }
-  }
-
-}
-
-.main {
-  @include flexbox(column, initial, center, nowrap);
-  background-color: $yellow;
-  height: 100%;
-  padding-top: $header-height;
-  width: 100%;
-
-  &-text {
-    $test: calc((100% - 1100px) / 2 + 0px);
-    background-color: $white;
-    display: table;
-    max-width: 450px;
-    padding-left: $test;
-    padding-right: 25px;
-    text-transform: uppercase;
-
-    h2 {
-      font-weight: 300;
-    }
-  }
-
-  &-devices {
-    margin: 0 auto 25px;
-    width: 80%;
-
-    &-img {
-      width: 100%;
-    }
-  }
-
-  &-scroll {
-    text-align: center;
-  }
-}
-
-.ajanlatunk {
-  height: 100%;
-  width: 100%;
 }
