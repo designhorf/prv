@@ -1,9 +1,11 @@
 @import "modules/colours";
 @import "modules/text";
 @import "modules/mixins";
+@import "widgets/quote";
 @import "sections/header";
 @import "sections/main-page";
 @import "sections/offers";
+@import "sections/conception";
 
 body,
 html,
@@ -18,6 +20,11 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
+body {
+  background: url('../images/gplaypattern.png');
+  background-repeat: repeat;
+}
+
 .off {
   display: none;
 }
@@ -28,4 +35,17 @@ html {
 
 .bottom-space {
   margin-bottom: 25px;
+}
+
+.center {
+  text-align: center;
+}
+
+.max-content-width {
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.section-title {
+  width: 80%;
 }

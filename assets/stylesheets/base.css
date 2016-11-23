@@ -7,11 +7,88 @@ h2 {
 .bold {
   font-weight: 700; }
 
+.light {
+  font-weight: 300; }
+
 .italic {
   font-style: italic; }
 
 .uppercase {
   text-transform: uppercase; }
+
+.quote-text {
+  font-size: 1.5em; }
+
+.author {
+  text-align: right; }
+
+.quote-widget {
+  -ms-flex-align: initial;
+      align-items: initial;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background-color: #f9c21b;
+  height: 430px; }
+  .quote-widget-content, .quote-widget-picture {
+    width: 50%; }
+  .quote-widget-content {
+    -ms-flex-align: end;
+        align-items: flex-end;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    box-sizing: border-box;
+    padding-left: 10%;
+    padding-right: 5%; }
+  .quote-widget-picture {
+    background: url("../images/hands.jpg");
+    background-position: center;
+    background-size: cover; }
+  .quote-widget-quote {
+    -ms-flex-align: baseline;
+        align-items: baseline;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: start;
+        justify-content: flex-start; }
+  .quote-widget .quote-img {
+    margin-left: -33px;
+    margin-top: 22px;
+    position: absolute; }
+  .quote-widget-details {
+    margin: 0 auto;
+    width: 80%; }
+    .quote-widget-details-text {
+      -ms-flex-align: baseline;
+          align-items: baseline;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+      .quote-widget-details-text .half-size {
+        margin: 0 auto;
+        width: 35%; }
+      .quote-widget-details-text ul {
+        padding-left: 20px; }
 
 .header {
   background-color: #fff;
@@ -34,7 +111,6 @@ h2 {
         justify-content: space-between;
     height: inherit;
     margin: 0 auto;
-    max-width: 1100px;
     padding: 0; }
   .header .menu-items {
     -ms-flex-align: center;
@@ -78,41 +154,42 @@ h2 {
     .main-text h2 {
       font-weight: 300; }
   .main-devices {
-    margin: 0 auto 25px;
+    margin: 0 auto;
     width: 80%; }
     .main-devices-img {
       width: 100%; }
   .main-scroll {
     text-align: center; }
 
-.ajanlatunk {
-  background: url("../images/gplaypattern.png");
-  background-repeat: repeat; }
-  .ajanlatunk .offer-content,
-  .ajanlatunk .package {
-    margin: 0 auto 25px;
-    width: 80%; }
-  .ajanlatunk .offer {
-    background: url("../images/shake-hands.jpg");
-    background-position: center;
-    background-size: cover;
-    color: #fff;
-    height: 430px; }
-    .ajanlatunk .offer-content {
-      -ms-flex-align: initial;
-          align-items: initial;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: column;
-          flex-direction: column;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
-      -ms-flex-pack: center;
-          justify-content: center;
-      height: inherit; }
-    .ajanlatunk .offer-text {
-      font-weight: 300;
-      width: 65%; }
+.ajanlatunk .offer-content,
+.ajanlatunk .package {
+  margin: 0 auto;
+  width: 80%; }
+
+.ajanlatunk .offer {
+  background: url("../images/shake-hands.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  height: 430px; }
+  .ajanlatunk .offer-content {
+    -ms-flex-align: initial;
+        align-items: initial;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    height: inherit; }
+  .ajanlatunk .offer-text {
+    font-weight: 300;
+    width: 65%; }
+
+.ajanlatunk .package {
+  padding-bottom: 50px; }
   .ajanlatunk .package-quote {
     -ms-flex-align: baseline;
         align-items: baseline;
@@ -127,57 +204,81 @@ h2 {
     padding-left: 90px; }
   .ajanlatunk .package .quote-img {
     margin-right: 15px; }
-  .ajanlatunk .package-items {
-    -ms-flex-align: initial;
-        align-items: initial;
+
+.ajanlatunk .package-items {
+  -ms-flex-align: initial;
+      align-items: initial;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .ajanlatunk .package-items .package-item {
+    -ms-flex-align: center;
+        align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    border: 10px solid transparent;
+    box-sizing: border-box;
+    padding: 60px 0 30px;
+    width: 30%; }
+    .ajanlatunk .package-items .package-item:hover {
+      border: 10px solid #f9c21b;
+      cursor: pointer;
+      padding: 60px 0 30px; }
+    .ajanlatunk .package-items .package-item-icon {
+      margin-bottom: 10px; }
+    .ajanlatunk .package-items .package-item .click-to-details {
+      font-size: .8em; }
+
+.ajanlatunk .package-details {
+  border: 10px solid #f9c21b;
+  margin-top: -10px;
+  padding: 15px 20px; }
+  .ajanlatunk .package-details-title {
+    min-width: 200px; }
+  .ajanlatunk .package-details-wrap {
+    -ms-flex-align: baseline;
+        align-items: baseline;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
         flex-direction: row;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    -ms-flex-pack: justify;
-        justify-content: space-between; }
-    .ajanlatunk .package-items .package-item {
-      -ms-flex-align: center;
-          align-items: center;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: column;
-          flex-direction: column;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
-      -ms-flex-pack: center;
-          justify-content: center;
-      border: 10px solid transparent;
-      box-sizing: border-box;
-      padding: 60px 0 30px;
-      width: 30%; }
-      .ajanlatunk .package-items .package-item:hover {
-        border: 10px solid #f9c21b;
-        cursor: pointer;
-        padding: 60px 0 30px; }
-      .ajanlatunk .package-items .package-item-icon {
-        margin-bottom: 10px; }
-      .ajanlatunk .package-items .package-item .click-to-details {
-        font-size: .8em; }
-  .ajanlatunk .package-details {
-    border: 10px solid #f9c21b;
-    margin-top: -10px;
-    padding: 15px 20px; }
-    .ajanlatunk .package-details-title {
-      min-width: 200px; }
-    .ajanlatunk .package-details-wrap {
-      -ms-flex-align: baseline;
-          align-items: baseline;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: row;
-          flex-direction: row;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
-      -ms-flex-pack: start;
-          justify-content: flex-start; }
+    -ms-flex-pack: start;
+        justify-content: flex-start; }
+
+.koncepcionk-title {
+  margin-left: 10%; }
+
+.btn-quote-widget {
+  background-color: #3e4042;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 20px; }
+  .btn-quote-widget:hover {
+    background-color: #636669; }
+  .btn-quote-widget-text {
+    font-size: 1.2em;
+    font-weight: 700; }
+
+.risk {
+  border: 10px solid #f9c21b;
+  margin: 60px -30px 0;
+  padding: 30px 21px;
+  box-sizing: border-box; }
 
 body,
 html,
@@ -190,6 +291,10 @@ html,
 html {
   font-family: 'Open Sans', sans-serif; }
 
+body {
+  background: url("../images/gplaypattern.png");
+  background-repeat: repeat; }
+
 .off {
   display: none; }
 
@@ -198,3 +303,13 @@ html {
 
 .bottom-space {
   margin-bottom: 25px; }
+
+.center {
+  text-align: center; }
+
+.max-content-width {
+  margin: 0 auto;
+  max-width: 1100px; }
+
+.section-title {
+  width: 80%; }
