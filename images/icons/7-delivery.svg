@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="77px" height="59px" viewBox="0 0 77 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>delivery-car</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="9.08788282" y="12.4" width="45.6391478" height="38.4" rx="3.3000003"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="45.6391478" height="38.4" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M52.5299601,21.6 L65.6125237,21.6 C67.4319863,21.6 69.4911792,22.9573233 70.2140638,24.636787 L75,35.7558594 L75,47.4984995 C75,49.3218679 73.5256779,50.8 71.708599,50.8 L52.5299601,50.8 L52.5299601,21.6 Z" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="22.4700399" height="29.2" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <path d="M57.8229028,28.71203 C57.8229028,27.9874159 58.415243,27.4 59.1399628,27.4 L63.5963888,27.4 C64.3237809,27.4 65.1033351,27.9602132 65.3365874,28.6483671 L68.117115,36.8516329 C68.350808,37.541087 67.9487763,38.1 67.226096,38.1 L59.1370604,38.1 C58.4112712,38.1 57.8229028,37.5094803 57.8229028,36.78797 L57.8229028,28.71203 Z" id="path-5"></path>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="10.3605806" height="10.7" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4---Folyamatabra" transform="translate(-1851.000000, -2690.000000)">
+            <g id="Step-by-step">
+                <g>
+                    <g id="7---csomag" transform="translate(1802.000000, 2639.000000)">
+                        <g id="left-side" transform="translate(0.000000, 1.000000)">
+                            <g id="delivery-car" transform="translate(51.000000, 52.000000)">
+                                <use id="Rectangle" stroke="#3E4042" mask="url(#mask-2)" stroke-width="4.40000039" xlink:href="#path-1"></use>
+                                <ellipse id="Oval-2" stroke="#3E4042" stroke-width="2.2000002" fill="#FFFFFF" cx="23.1191744" cy="50.05" rx="4.94340879" ry="4.95"></ellipse>
+                                <use id="Rectangle-2" stroke="#3E4042" mask="url(#mask-4)" stroke-width="4.40000039" xlink:href="#path-3"></use>
+                                <use id="Rectangle-2-Copy" stroke="#3E4042" mask="url(#mask-6)" stroke-width="4.40000039" xlink:href="#path-5"></use>
+                                <ellipse id="Oval-3" stroke="#3E4042" stroke-width="2.2000002" fill="#FFFFFF" cx="16.5778961" cy="16.6" rx="16.5778961" ry="16.6"></ellipse>
+                                <ellipse id="Oval-2-Copy" stroke="#3E4042" stroke-width="2.2000002" fill="#FFFFFF" cx="63.8648469" cy="50.05" rx="4.94340879" ry="4.95"></ellipse>
+                                <path d="M45.7729893,27.81124 L37.9244541,27.81124 C37.2831092,27.81124 36.7479228,28.34714 36.7479228,28.98944 C36.7479228,29.63164 37.2831092,30.16754 37.9244541,30.16754 L45.7729893,30.16754 C46.4144341,30.16754 46.9495206,29.63164 46.9495206,28.98944 C46.9495206,28.34714 46.4144341,27.81124 45.7729893,27.81124" id="Fill-14-Copy" fill="#000000"></path>
+                                <path d="M45.7729893,35.57586 L34.6544141,35.57586 L23.1265846,35.57586 L23.1162983,35.57586 C22.4748535,35.57586 21.939767,36.11176 21.939767,36.75406 C21.939767,37.39626 22.4748535,37.93216 23.1162983,37.93216 L34.2348735,37.93216 L45.7627031,37.93216 L45.7729893,37.93216 C46.4144341,37.93216 46.9495206,37.39626 46.9495206,36.75406 C46.9495206,36.11176 46.4144341,35.57586 45.7729893,35.57586" id="Fill-16-Copy" fill="#000000"></path>
+                                <polyline id="Path-2" stroke="#3E4042" stroke-width="2.2000002" stroke-linecap="round" stroke-linejoin="round" points="16.6067639 7.96171875 16.6067639 15.7900353 24.0803928 24.128125"></polyline>
+                                <circle id="Oval-4" fill="#000000" cx="23" cy="50" r="1"></circle>
+                                <circle id="Oval-4-Copy" fill="#000000" cx="64" cy="50" r="1"></circle>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
