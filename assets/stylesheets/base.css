@@ -16,6 +16,80 @@ h2 {
 .uppercase {
   text-transform: uppercase; }
 
+.quote-text {
+  font-size: 1.5em; }
+
+.author {
+  text-align: right; }
+
+.quote-widget {
+  -ms-flex-align: initial;
+      align-items: initial;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background-color: #f9c21b;
+  height: 430px; }
+  .quote-widget-content, .quote-widget-picture {
+    width: 50%; }
+  .quote-widget-content {
+    -ms-flex-align: end;
+        align-items: flex-end;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    box-sizing: border-box;
+    padding-left: 10%;
+    padding-right: 5%; }
+  .quote-widget-picture {
+    background: url("../images/hands.jpg");
+    background-position: center;
+    background-size: cover; }
+  .quote-widget-quote {
+    -ms-flex-align: baseline;
+        align-items: baseline;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: start;
+        justify-content: flex-start; }
+  .quote-widget .quote-img {
+    margin-left: -33px;
+    margin-top: 22px;
+    position: absolute; }
+  .quote-widget-details {
+    margin: 0 auto;
+    width: 80%; }
+    .quote-widget-details-text {
+      -ms-flex-align: baseline;
+          align-items: baseline;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+      .quote-widget-details-text .half-size {
+        margin: 0 auto;
+        width: 35%; }
+      .quote-widget-details-text ul {
+        padding-left: 20px; }
+
 .header {
   background-color: #fff;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.33);
@@ -37,7 +111,6 @@ h2 {
         justify-content: space-between;
     height: inherit;
     margin: 0 auto;
-    max-width: 1100px;
     padding: 0; }
   .header .menu-items {
     -ms-flex-align: center;
@@ -188,67 +261,24 @@ h2 {
 .koncepcionk-title {
   margin-left: 10%; }
 
-.koncepcionk .conception {
-  -ms-flex-align: initial;
-      align-items: initial;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -ms-flex-pack: center;
-      justify-content: center;
-  background-color: #f9c21b;
-  height: 430px; }
-  .koncepcionk .conception-content, .koncepcionk .conception-picture {
-    width: 50%; }
-  .koncepcionk .conception-content {
-    -ms-flex-align: baseline;
-        align-items: baseline;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -ms-flex-pack: center;
-        justify-content: center;
-    box-sizing: border-box;
-    padding-left: 10%;
-    padding-right: 5%; }
-    .koncepcionk .conception-content-text {
-      font-weight: 300; }
-  .koncepcionk .conception-picture {
-    background: url("../images/hands.jpg");
-    background-position: center;
-    background-size: cover; }
+.btn-quote-widget {
+  background-color: #3e4042;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 20px; }
+  .btn-quote-widget:hover {
+    background-color: #636669; }
+  .btn-quote-widget-text {
+    font-size: 1.2em;
+    font-weight: 700; }
 
-.koncepcionk .conception-details {
-  margin: 0 auto;
-  width: 80%; }
-  .koncepcionk .conception-details .risk {
-    border: 10px solid #f9c21b;
-    margin: 60px -30px 0;
-    padding: 30px 21px;
-    box-sizing: border-box; }
-
-.koncepcionk .conception-text {
-  -ms-flex-align: baseline;
-      align-items: baseline;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
-  .koncepcionk .conception-text .half-size {
-    margin: 0 auto;
-    width: 35%; }
-  .koncepcionk .conception-text ul {
-    padding-left: 20px; }
+.risk {
+  border: 10px solid #f9c21b;
+  margin: 60px -30px 0;
+  padding: 30px 21px;
+  box-sizing: border-box; }
 
 body,
 html,
@@ -276,3 +306,10 @@ body {
 
 .center {
   text-align: center; }
+
+.max-content-width {
+  margin: 0 auto;
+  max-width: 1100px; }
+
+.section-title {
+  width: 80%; }

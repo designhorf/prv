@@ -1,0 +1,50 @@
+.quote-widget {
+  @include flexbox(row, initial, center, nowrap);
+  background-color: $yellow;
+  height: 430px;
+
+  &-content,
+  &-picture {
+    width: 50%;
+  }
+
+  &-content {
+    @include flexbox(column, flex-end, center, nowrap);
+    box-sizing: border-box;
+    padding-left: 10%;
+    padding-right: 5%;
+  }
+
+  &-picture {
+    background: url('../images/hands.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+
+  &-quote {
+    @include flexbox(row, baseline, flex-start, nowrap);
+  }
+
+  .quote-img {
+    margin-left: -33px;
+    margin-top: 22px;
+    position: absolute;
+  }
+
+  &-details {
+    @include content-properties;
+
+    &-text {
+      @include flexbox(row, baseline, space-between, nowrap);
+
+      .half-size {
+        margin: 0 auto;
+        width: 35%;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+    }
+  }
+}
