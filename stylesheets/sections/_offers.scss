@@ -23,7 +23,7 @@
   }
 
   .package {
-    padding-bottom: 50px;
+    // padding-bottom: 50px;
 
     &-quote {
       @include flexbox(row, baseline, flex-start, nowrap);

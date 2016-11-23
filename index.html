@@ -14,6 +14,7 @@
 <body>
 	<div class="wrap">
 
+    <!-- HEADER -->
 		<div class="header">
       <div class="header-wrap max-content-width">
         <div class="logo">
@@ -50,13 +51,13 @@
     <!-- OFFER  -->
     <section class="ajanlatunk" id="offer">
       <div class="offer">
-        <div class="offer-content max-content-width">
+        <div class="offer-content offer-conten max-content-width">
           <h1 class="offer-head">Mit ajánl Önnek a PRV Team?</h1>
           <h3 class="offer-text">Célcsoport-orientált kommunikációs csomagot, melyet egy 25 éves gyakorlattal rendelkező, regionálisan meghatározó kiadó új divízióján belül állítunk elō – költségmentesen.</h3>
         </div>
       </div>
 
-      <div class="package max-content-width xtra-space">
+      <div class="package max-content-width">
         <h1 class="package-head">A csomag tartalma</h1>
         <div class="package-quote bottom-space">
           <img class="quote-img" src="assets/images/icons/quote.svg" alt="quote">
@@ -129,12 +130,12 @@
     </section>
 
     <!-- CONCEPTION  -->
-    <section class="koncepcionk bottom-space" id="conception">
+    <section class="koncepcionk" id="conception">
       <div class="max-content-width section-title">
         <h1>Koncepciónk</h1>
       </div>
       <div class="quote-widget">
-        <div class="quote-widget-content">
+        <div class="quote-widget-content quote-widget-content-conception">
           <div class="quote-widget-quote">
             <img class="quote-img" src="assets/images/icons/quote-dark.svg" alt="quote">
             <h3 class="quote-text light italic">Ha összejövünk, az a kezdet, <br>
@@ -146,16 +147,16 @@
           <h3 class="quote-text author bold italic"> - Henry Ford</h3>
 
           <div>
-            <button class="btn-quote-widget">
+            <button class="btn-quote-widget" id="btn-conception">
               <span class="btn-quote-widget-text">Részletek</span>
             </button>
           </div>
         </div>
 
-        <div class=" quote-widget-picture"></div>
+        <div class="quote-widget-picture quote-widget-picture-conception"></div>
       </div>
 
-      <div class="quote-widget-details max-content-width off">
+      <div class="quote-widget-details max-content-width off" id="hidden-conception">
         <h2 class="center">A csomag, ami megfinanszírozza önmagát - A “win-win” szituáció.</h2>
         <h3 class="light center bottom-space">A PRV csomag költségeit az Önök partnerei (beszállítók, szolgáltatók) fedezik megjelenésükkel.​</h3>
         <div class="quote-widget-details-text">
@@ -197,35 +198,162 @@
     </section>
 
     <!-- FLOW CHART  -->
-    <!-- <section class="folyamatabra bottom-space" id="flow-chart">
-      <div class="max-content-width">
+    <section class="folyamatabra" id="flow-chart">
+      <div class="max-content-width section-title">
         <h1>Folyamatábra</h1>
       </div>
-      <div class="chart quote-widget">
-        <div class="chart-picture"></div>
+      <div class="quote-widget">
+        <div class="quote-widget-picture quote-widget-picture-chart"></div>
 
-        <div class="chart-content quote-widget-content">
-          <div class="chart-quote">
+        <div class="quote-widget-content quote-widget-content-chart">
+          <div class="quote-widget-quote">
             <img class="quote-img" src="assets/images/icons/quote-dark.svg" alt="quote">
-            <h3 class="quote-text light italic">Ha összejövünk, az a kezdet, <br>
-              Ha összetartunk, az a haladás,<br>
-              Ha összefogunk, az a siker.
+            <h3 class="quote-text light italic">A cél terv nélkül nem több puszta kívánságnál.
             </h3>
           </div>
 
-          <h3 class="quote-text author bold italic"> - Henry Ford</h3>
+          <h3 class="quote-text author bold italic"> - Antoine de <br>Saint-Exupéry</h3>
 
           <div>
-            <button class="btn-chart">
-              <span class="btn-text">Részletek</span>
+            <button class="btn-quote-widget" id="btn-chart">
+              <span class="btn-quote-widget-text">Részletek</span>
             </button>
           </div>
         </div>
       </div>
-    </section> -->
+
+      <div class="quote-widget-details max-content-width off" id="hidden-chart">
+        <h2 class="chart-details-title light center">A PRV csapata gondoskodik a projekt teljes lebonyolításáról. Az Ön feladata csupán, hogy lektorálja az eredményt némi iránymutatással.</h2>
+
+        <div class="chart-details">
+          <div class="chart-element">
+            <div class="chart-element-icon">
+              <img src="images/icons/1-list.svg" alt="list icon">
+              <p>Partnerlista</p>
+            </div>
+            <div class="chart-element-number">
+              <div class="circle gray-bg white-text">
+                1
+              </div>
+            </div>
+            <div class="chart-element-text">
+              Beérkezik hozzánk a meghívott partnerek listája - ez minden projektünk alapja.
+            </div>
+          </div>
+
+          <div class="chart-element">
+            <div class="chart-element-icon">
+              <img src="images/icons/2-phone.svg" alt="phone icon">
+              <p>Hírdetések elöjegyzése</p>
+            </div>
+            <div class="chart-element-number">
+              <div class="circle yellow-bg">
+                2
+              </div>
+            </div>
+            <div class="chart-element-text">
+              Partnerek megkeresése, hírdetések elöjegyzése - ebben a fázisban biztosítjuk a költséghátteret.
+            </div>
+          </div>
+
+          <div class="chart-element">
+            <div class="chart-element-icon">
+              <img src="images/icons/3-bulb.svg" alt="bulb icon">
+              <p>Brainstorming</p>
+            </div>
+            <div class="chart-element-number">
+              <div class="circle yellow-bg">
+                3
+              </div>
+            </div>
+            <div class="chart-element-text">
+              Brainstorming - a projektfelelösök telefonkonferencián egyeztetnek a tartalomról.
+            </div>
+          </div>
+
+          <div class="chart-element">
+            <div class="chart-element-icon">
+              <img src="images/icons/4-pencil.svg" alt="pencil icon">
+              <p>Szövegírás</p>
+            </div>
+            <div class="chart-element-number">
+              <div class="circle yellow-bg">
+                4
+              </div>
+            </div>
+            <div class="chart-element-text">
+              Szövegírás - a copywriter gondoskodik a szövegröl
+            </div>
+          </div>
+
+          <div class="chart-element">
+            <div class="chart-element-icon">
+              <img src="images/icons/video.svg" alt="camera icon">
+              <p>Fotózás, videózás</p>
+            </div>
+            <div class="chart-element-number">
+              <div class="circle yellow-bg">
+                5
+              </div>
+            </div>
+            <div class="chart-element-text">
+              Fotózás, videózás - munkatársaink a helyszínre érkeznek egy elöre egyeztetett idöpontban
+            </div>
+          </div>
+
+          <div class="chart-element">
+            <div class="chart-element-icon">
+              <img src="images/icons/6-imac.svg" alt="imac icon">
+              <p>Utómunkálatok</p>
+            </div>
+            <div class="chart-element-number">
+              <div class="circle yellow-bg">
+                6
+              </div>
+            </div>
+            <div class="chart-element-text">
+              Utómunkálatok - 100%-ban megvalósítjuk az Önök elképzelését
+            </div>
+          </div>
+
+          <div class="chart-element">
+            <div class="chart-element-icon">
+              <img src="images/icons/7-delivery.svg" alt="delivery icon">
+              <p>A PRV csomag házhoz jön</p>
+            </div>
+            <div class="chart-element-number">
+              <div class="circle yellow-bg">
+                7
+              </div>
+            </div>
+            <div class="chart-element-text">
+              A PRV csomag házhoz jön - jóváhagyasuk után költségmentesen leszállítjuk az elkészült csomagot
+            </div>
+          </div>
+
+          <div class="chart-element">
+            <div class="chart-element-icon">
+              <img src="images/icons/8-forward.svg" alt="forward icon">
+              <p>Késöbbiekben</p>
+            </div>
+            <div class="chart-element-number">
+              <div class="circle empty-circle">
+                +
+              </div>
+            </div>
+            <div class="chart-element-text">
+              Késöbbiekben állunk rendelkezésükre egy újabb téma feldolgozására!
+            </div>
+          </div>
 
 
 
+
+
+        </div>
+      </div>
+
+    </section>
 
 	</div>
 
@@ -258,10 +386,15 @@
 
 
 
-      var button = document.querySelector('.btn-quote-widget');
-      button.addEventListener('click', function () {
-        document.querySelector('.quote-widget-details').classList.toggle('off');
-      });
+      var showHiddenElement = function (buttonId, hiddenElement) {
+        var button = document.getElementById(buttonId);
+        button.addEventListener('click', function () {
+          document.getElementById(hiddenElement).classList.toggle('off');
+        });
+      };
+
+      showHiddenElement('btn-conception', 'hidden-conception');
+      showHiddenElement('btn-chart', 'hidden-chart');
 
   </script>
 </body>

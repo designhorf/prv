@@ -6,6 +6,7 @@
 @import "sections/main-page";
 @import "sections/offers";
 @import "sections/conception";
+@import "sections/chart";
 
 body,
 html,
@@ -48,4 +49,8 @@ body {
 
 .section-title {
   width: 80%;
+}
+
+section:not(.main) {
+  margin-bottom: 100px;;
 }

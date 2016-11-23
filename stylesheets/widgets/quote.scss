@@ -9,16 +9,33 @@
   }
 
   &-content {
-    @include flexbox(column, flex-end, center, nowrap);
     box-sizing: border-box;
+  }
+
+  &-content-conception {
+    @include flexbox(column, flex-end, center, nowrap);
     padding-left: 10%;
     padding-right: 5%;
   }
 
+  &-content-chart {
+    @include flexbox(column, flex-start, center, nowrap);
+    padding-left: 5%;
+    padding-right: 10%;
+  }
+
   &-picture {
-    background: url('../images/hands.jpg');
-    background-position: center;
-    background-size: cover;
+    &-conception {
+      background: url('../images/hands.jpg');
+      background-position: center;
+      background-size: cover;
+    }
+
+    &-chart {
+      background: url('../images/landscape.jpg');
+      background-position: center;
+      background-size: cover;
+    }
   }
 
   &-quote {
