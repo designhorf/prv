@@ -1,0 +1,55 @@
+.chart-details {
+  @include flexbox(column, baseline, space-between, nowrap);
+
+  &-title {
+    margin: 50px auto;
+    width: 85%;
+  }
+}
+
+.chart-element {
+  @include flexbox(row, center, flex-start, nowrap);
+  margin: 0 auto 50px;
+  width: 800px;
+
+  &-icon {
+    font-size: .75em;
+    min-width: 200px;
+    text-align: center;
+
+    img {
+      margin-top: 30px;
+      max-height: 55px;
+    }
+  }
+
+  &-number {
+    margin: 0 100px 0 30px;
+  }
+}
+
+.circle {
+  @include flexbox(row, center, center, nowrap);
+  border-radius: 50%;
+  font-weight: 700;
+  height: 50px;
+  width: 50px;
+}
+
+.empty-circle,
+.yellow-bg {
+  border: 3px solid $gray;
+  box-sizing: border-box;
+}
+
+.gray-bg {
+  background-color: $gray;
+}
+
+.yellow-bg {
+  background-color: $yellow;
+}
+
+.white-text {
+  color: $white;
+}

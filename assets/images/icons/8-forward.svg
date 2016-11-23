@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="57px" height="50px" viewBox="0 0 57 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>forward</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4---Folyamatabra" transform="translate(-1870.000000, -2894.000000)" fill="#3E4042">
+            <g id="Step-by-step">
+                <g>
+                    <g id="8---tovabbiakban" transform="translate(1805.000000, 2820.000000)">
+                        <g id="left-side" transform="translate(0.000000, 16.000000)">
+                            <g id="forward" transform="translate(65.000000, 58.000000)">
+                                <path d="M56.707,24.931 C56.707,24.382 56.443,23.868 56,23.55 L24.828,1.151 C24.31,0.778 23.627,0.726 23.06,1.019 C22.494,1.31 22.136,1.894 22.136,2.531 L22.136,14.583 L3.443,1.151 C2.923,0.777 2.24,0.727 1.675,1.019 C1.107,1.31 0.749,1.894 0.749,2.531 L0.749,47.331 C0.749,47.97 1.106,48.554 1.675,48.845 C1.919,48.97 2.185,49.033 2.45,49.033 C2.8,49.033 3.147,48.924 3.442,48.713 L22.137,35.28 L22.137,47.331 C22.137,47.97 22.494,48.554 23.061,48.845 C23.305,48.97 23.571,49.033 23.836,49.033 C24.186,49.033 24.533,48.924 24.828,48.713 L56,26.31 C56.443,25.991 56.707,25.478 56.707,24.931 L56.707,24.931 Z M4.15,44.017 L4.15,5.847 L22.136,18.769 L22.136,31.093 L4.15,44.017 L4.15,44.017 Z M25.537,44.017 L25.537,31.966 L25.537,17.897 L25.537,5.846 L52.094,24.93 L25.537,44.017 L25.537,44.017 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
