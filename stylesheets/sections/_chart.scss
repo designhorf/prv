@@ -25,6 +25,12 @@
 
   &-number {
     margin: 0 100px 0 30px;
+
+    .line {
+      margin-left: 24px;
+      margin-top: -2px;
+      position: absolute;
+    }
   }
 }
 
