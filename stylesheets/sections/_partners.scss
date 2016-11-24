@@ -1,0 +1,10 @@
+.partners-widget {
+  @include flexbox(row, initial, center, nowrap);
+  background-color: $lightgray;
+  height: 200px;
+
+  &-content {
+    @include content-properties;
+    @include flexbox(row, center, space-between, nowrap);
+  }
+}

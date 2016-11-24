@@ -375,6 +375,33 @@ h2 {
 .white-text {
   color: #fff; }
 
+.partners-widget {
+  -ms-flex-align: initial;
+      align-items: initial;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background-color: #ededed;
+  height: 200px; }
+  .partners-widget-content {
+    margin: 0 auto;
+    width: 80%;
+    -ms-flex-align: center;
+        align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+
 body,
 html,
 .wrap {
