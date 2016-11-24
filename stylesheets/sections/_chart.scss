@@ -43,7 +43,8 @@
 }
 
 .empty-circle,
-.yellow-bg {
+.yellow-bg,
+.yellow-gray-bg {
   border: 3px solid $gray;
   box-sizing: border-box;
 }
@@ -54,6 +55,11 @@
 
 .yellow-bg {
   background-color: $yellow;
+}
+
+.yellow-gray-bg {
+  background: rgba(249,194,27,1);
+  background: linear-gradient(135deg, rgba(249,194,27,1) 0%, rgba(249,194,27,1) 63%, rgba(74,77,79,1) 63%, rgba(62,64,66,1) 100%);
 }
 
 .white-text {
