@@ -7,8 +7,21 @@
     @include content-properties;
     @include flexbox(row, center, space-between, nowrap);
 
-    img {
+    img:not(.arrow) {
       filter: grayscale(100%);
     }
   }
+}
+
+.arrow {
+  cursor: pointer;
+  padding: 20px;
+}
+
+.left-arrow {
+  margin-left: -50px;
+}
+
+.right-arrow {
+  margin-right: -50px;
 }
