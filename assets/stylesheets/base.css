@@ -542,9 +542,25 @@ body {
 .section-title {
   width: 80%; }
 
-section:not(.main) {
+section:not(.main):not(.footer) {
   margin-bottom: 100px; }
 
 input,
 textarea {
   outline: none; }
+
+.footer {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background-color: #f9c21b;
+  color: #fff;
+  font-size: .8em;
+  height: 60px; }

@@ -57,11 +57,21 @@ body {
   width: 80%;
 }
 
-section:not(.main) {
+section:not(.main):not(.footer) {
   margin-bottom: 100px;;
 }
 
 input,
 textarea {
   outline: none;
+}
+
+
+
+.footer {
+  @include flexbox(row, center, center, nowrap);
+  background-color: $yellow;
+  color: $white;
+  font-size: .8em;
+  height: 60px;
 }
