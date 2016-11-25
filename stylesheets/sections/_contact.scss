@@ -1,0 +1,97 @@
+.contact-widget {
+  @include content-properties;
+  @include flexbox(row, center, space-around, nowrap);
+
+  .half-size-widget {
+    width: 45%;
+  }
+
+  .contact-form {
+    @include flexbox(column, initial, flex-start, nowrap);
+    padding-right: 20px;
+
+    input {
+      height: 35px;
+    }
+
+    .label-container {
+      height: 22px;
+    }
+
+    label {
+      transition: all .3s;
+    }
+
+    .input-style,
+    .message {
+      background-color: transparent;
+      color: $darkyellow;
+      font-size: 1em;
+      font-weight: 300;
+    }
+
+    .input-style {
+      border: 0;
+      border-bottom: 2px solid $gray;
+      margin-bottom: 25px;
+      width: 100%;
+
+      &::placeholder {
+        color: lightnet($gray, 10%);
+      }
+
+      &:invalid {
+        box-shadow: none;
+      }
+    }
+
+    .message {
+      border: 2px solid $gray;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    .btn-submit {
+      background-color: $green;
+      border-radius: 5px;
+      border: 0;
+      color: white;
+      cursor: pointer;
+      font-size: 1.35em;
+      margin-left: auto;
+      margin-right: 0;
+      padding: 5px 40px;
+      position: relative;
+
+      &:hover {
+        background-color: darken($green, 7%);
+      }
+    }
+  }
+
+  .contact-person {
+    text-align: center;
+
+    &-element {
+      margin-bottom: 50px;
+    }
+
+    .person-title {
+      margin-top: -20px;
+    }
+
+    .hirsztar {
+      font-size: .7em;
+    }
+  }
+}
+
+.label-text {
+  font-size: .2em;
+  position: relative;
+  top: 10px;
+}
+
+.xtra-small-text {
+  padding-left: 3%;
+}

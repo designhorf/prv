@@ -22,6 +22,9 @@ h2 {
 .author {
   text-align: right; }
 
+.xtra-small-text {
+  font-size: .5em; }
+
 .quote-widget {
   -ms-flex-align: initial;
       align-items: initial;
@@ -375,6 +378,133 @@ h2 {
 .white-text {
   color: #fff; }
 
+.partners-widget {
+  -ms-flex-align: initial;
+      align-items: initial;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background-color: #ededed;
+  height: 200px; }
+  .partners-widget-content {
+    margin: 0 auto;
+    width: 80%;
+    -ms-flex-align: center;
+        align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    .partners-widget-content img:not(.arrow) {
+      filter: grayscale(100%); }
+
+.arrow {
+  cursor: pointer;
+  padding: 20px; }
+
+.left-arrow {
+  margin-left: -50px; }
+
+.right-arrow {
+  margin-right: -50px; }
+
+.contact-widget {
+  margin: 0 auto;
+  width: 80%;
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .contact-widget .half-size-widget {
+    width: 45%; }
+  .contact-widget .contact-form {
+    -ms-flex-align: initial;
+        align-items: initial;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    padding-right: 20px; }
+    .contact-widget .contact-form input {
+      height: 35px; }
+    .contact-widget .contact-form .label-container {
+      height: 22px; }
+    .contact-widget .contact-form label {
+      transition: all .3s; }
+    .contact-widget .contact-form .input-style,
+    .contact-widget .contact-form .message {
+      background-color: transparent;
+      color: #c1950f;
+      font-size: 1em;
+      font-weight: 300; }
+    .contact-widget .contact-form .input-style {
+      border: 0;
+      border-bottom: 2px solid #3e4042;
+      margin-bottom: 25px;
+      width: 100%; }
+      .contact-widget .contact-form .input-style::-webkit-input-placeholder {
+        color: lightnet(#3e4042, 10%); }
+      .contact-widget .contact-form .input-style::-moz-placeholder {
+        color: lightnet(#3e4042, 10%); }
+      .contact-widget .contact-form .input-style:-ms-input-placeholder {
+        color: lightnet(#3e4042, 10%); }
+      .contact-widget .contact-form .input-style::placeholder {
+        color: lightnet(#3e4042, 10%); }
+      .contact-widget .contact-form .input-style:invalid {
+        box-shadow: none; }
+    .contact-widget .contact-form .message {
+      border: 2px solid #3e4042;
+      border-radius: 5px;
+      padding: 10px; }
+    .contact-widget .contact-form .btn-submit {
+      background-color: #49c970;
+      border-radius: 5px;
+      border: 0;
+      color: white;
+      cursor: pointer;
+      font-size: 1.35em;
+      margin-left: auto;
+      margin-right: 0;
+      padding: 5px 40px;
+      position: relative; }
+      .contact-widget .contact-form .btn-submit:hover {
+        background-color: #37b85e; }
+  .contact-widget .contact-person {
+    text-align: center; }
+    .contact-widget .contact-person-element {
+      margin-bottom: 50px; }
+    .contact-widget .contact-person .person-title {
+      margin-top: -20px; }
+    .contact-widget .contact-person .hirsztar {
+      font-size: .7em; }
+
+.label-text {
+  font-size: .2em;
+  position: relative;
+  top: 10px; }
+
+.xtra-small-text {
+  padding-left: 3%; }
+
 body,
 html,
 .wrap {
@@ -392,6 +522,9 @@ body {
 
 .off {
   display: none; }
+
+.hidden {
+  visibility: hidden; }
 
 .active {
   background-color: #f9c21b; }
@@ -411,3 +544,7 @@ body {
 
 section:not(.main) {
   margin-bottom: 100px; }
+
+input,
+textarea {
+  outline: none; }

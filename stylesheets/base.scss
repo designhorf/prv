@@ -7,6 +7,8 @@
 @import "sections/offers";
 @import "sections/conception";
 @import "sections/chart";
+@import "sections/partners";
+@import "sections/contact";
 
 body,
 html,
@@ -28,6 +30,10 @@ body {
 
 .off {
   display: none;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 .active {
@@ -53,4 +59,9 @@ body {
 
 section:not(.main) {
   margin-bottom: 100px;;
+}
+
+input,
+textarea {
+  outline: none;
 }
