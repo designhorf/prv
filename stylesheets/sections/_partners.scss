@@ -6,5 +6,9 @@
   &-content {
     @include content-properties;
     @include flexbox(row, center, space-between, nowrap);
+
+    img {
+      filter: grayscale(100%);
+    }
   }
 }

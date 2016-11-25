@@ -401,6 +401,8 @@ h2 {
         flex-wrap: nowrap;
     -ms-flex-pack: justify;
         justify-content: space-between; }
+    .partners-widget-content img {
+      filter: grayscale(100%); }
 
 body,
 html,
