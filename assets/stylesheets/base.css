@@ -22,6 +22,9 @@ h2 {
 .author {
   text-align: right; }
 
+.xtra-small-text {
+  font-size: .5em; }
+
 .quote-widget {
   -ms-flex-align: initial;
       align-items: initial;
@@ -454,6 +457,9 @@ h2 {
       margin-top: -20px; }
     .contact-widget .contact-person .hirsztar {
       font-size: .7em; }
+
+.xtra-small-text {
+  padding-left: 3%; }
 
 body,
 html,
