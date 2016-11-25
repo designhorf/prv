@@ -414,6 +414,47 @@ h2 {
 .right-arrow {
   margin-right: -50px; }
 
+.contact-widget {
+  margin: 0 auto;
+  width: 80%;
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .contact-widget .half-size-widget {
+    width: 45%; }
+  .contact-widget .contact-form {
+    -ms-flex-align: initial;
+        align-items: initial;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    padding-right: 20px; }
+    .contact-widget .contact-form input {
+      height: 35px; }
+    .contact-widget .contact-form input,
+    .contact-widget .contact-form textarea {
+      margin-bottom: 25px; }
+  .contact-widget .contact-person {
+    text-align: center; }
+    .contact-widget .contact-person-element {
+      margin-bottom: 50px; }
+    .contact-widget .contact-person .person-title {
+      margin-top: -20px; }
+    .contact-widget .contact-person .hirsztar {
+      font-size: .7em; }
+
 body,
 html,
 .wrap {

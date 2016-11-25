@@ -1,0 +1,40 @@
+.contact-widget {
+  @include content-properties;
+  @include flexbox(row, center, space-around, nowrap);
+
+  .half-size-widget {
+    width: 45%;
+  }
+
+  .contact-form {
+    @include flexbox(column, initial, flex-start, nowrap);
+    padding-right: 20px;
+
+    input {
+      height: 35px;
+    }
+
+    input,
+    textarea {
+      margin-bottom: 25px;
+    }
+
+  }
+
+  .contact-person {
+    text-align: center;
+
+    &-element {
+      margin-bottom: 50px;
+    }
+
+    .person-title {
+      margin-top: -20px;
+    }
+
+    .hirsztar {
+      font-size: .7em;
+    }
+  }
+
+}
