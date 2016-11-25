@@ -446,9 +446,36 @@ h2 {
     padding-right: 20px; }
     .contact-widget .contact-form input {
       height: 35px; }
-    .contact-widget .contact-form input,
-    .contact-widget .contact-form textarea {
-      margin-bottom: 25px; }
+    .contact-widget .contact-form .label-container {
+      height: 22px; }
+    .contact-widget .contact-form label {
+      transition: all .3s; }
+    .contact-widget .contact-form .input-style,
+    .contact-widget .contact-form .message {
+      background-color: transparent;
+      color: #c1950f;
+      font-size: 1em;
+      font-weight: 300;
+      outline: none; }
+    .contact-widget .contact-form .input-style {
+      border: 0;
+      border-bottom: 2px solid #3e4042;
+      margin-bottom: 25px;
+      width: 100%; }
+      .contact-widget .contact-form .input-style::-webkit-input-placeholder {
+        color: lightnet(#3e4042, 10%); }
+      .contact-widget .contact-form .input-style::-moz-placeholder {
+        color: lightnet(#3e4042, 10%); }
+      .contact-widget .contact-form .input-style:-ms-input-placeholder {
+        color: lightnet(#3e4042, 10%); }
+      .contact-widget .contact-form .input-style::placeholder {
+        color: lightnet(#3e4042, 10%); }
+      .contact-widget .contact-form .input-style:invalid {
+        box-shadow: none; }
+    .contact-widget .contact-form .message {
+      border: 2px solid #3e4042;
+      border-radius: 5px;
+      padding: 10px; }
   .contact-widget .contact-person {
     text-align: center; }
     .contact-widget .contact-person-element {
@@ -457,6 +484,11 @@ h2 {
       margin-top: -20px; }
     .contact-widget .contact-person .hirsztar {
       font-size: .7em; }
+
+.label-text {
+  font-size: .2em;
+  position: relative;
+  top: 10px; }
 
 .xtra-small-text {
   padding-left: 3%; }
@@ -478,6 +510,9 @@ body {
 
 .off {
   display: none; }
+
+.hidden {
+  visibility: hidden; }
 
 .active {
   background-color: #f9c21b; }

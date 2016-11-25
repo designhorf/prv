@@ -402,23 +402,35 @@
           </p>
 
           <form class="contact-form bottom-space" action="index.html" method="post">
-            <label for="name">Név</label>
-            <input type="text" name="name" placeholder="Név">
+            <div class="label-container">
+              <label class="label-text hidden" for="name">Név</label>
+            </div>
+            <input class="input-style input-field" type="text" name="name" placeholder="Név" required>
 
-            <label for="companyName">Cégnév</label>
-            <input type="text" name="companyName" placeholder="Cégnév">
+            <div class="label-container">
+              <label class="label-text hidden" for="companyName">Cégnév</label>
+            </div>
+            <input class="input-style input-field" type="text" name="companyName" placeholder="Cégnév" required>
 
-            <label for="email">E-mail</label>
-            <input type="email" name="email" placeholder="E-mail">
+            <div class="label-container">
+              <label class="label-text hidden" for="email">E-mail</label>
+            </div>
+            <input class="input-style input-field" type="email" name="email" placeholder="E-mail" required>
 
-            <label for="phone">Telefonszám</label>
-            <input type="number" name="phone" placeholder="Telefonszám">
+            <div class="label-container">
+              <label class="label-text hidden" for="phone">Telefonszám</label>
+            </div>
+            <input class="input-style input-field" type="number" name="phone" placeholder="Telefonszám" required>
 
-            <label for="subject">Téma</label>
-            <input type="text" name="subject" placeholder="Téma">
+            <div class="label-container">
+              <label class="label-text hidden" for="subject">Téma</label>
+            </div>
+            <input class="input-style input-field" type="text" name="subject" placeholder="Téma">
 
-            <label for="message">Üzenet</label>
-            <textarea name="message" rows="8" placeholder="Üzenet"></textarea>
+            <div class="label-container" style="margin-bottom:10px;">
+              <label class="label-text hidden" for="message">Üzenet</label>
+            </div>
+            <textarea class="message input-field bottom-space" name="message" rows="8" placeholder="Üzenet"></textarea>
 
             <input class="btn-submit" type="submit" value="Submit">
           </form>
@@ -455,7 +467,23 @@
 	</div>
 
 
+  <script>
+    var changeLabelStyle = function (label) {
+      label.classList.remove('hidden');
+      label.style.fontSize = '1em';
+      label.style.top = '0px';
+    };
 
+    var formName = document.querySelector('.contact-form');
+    [].forEach.call(formName.querySelectorAll('.input-field'), function (inputField) {
+      inputField.addEventListener('focus', function () {
+        inputField.setAttribute('placeholder', '');
+        var targetLabel = 'label[for='+ inputField.getAttribute('name') +']'
+        var label = formName.querySelector(targetLabel);
+        changeLabelStyle(label);
+      });
+    });
+  </script>
 
   <script>
       var removeActiveStatus = function (selector) {

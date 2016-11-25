@@ -32,6 +32,10 @@ body {
   display: none;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 .active {
   background-color: $yellow;
 }

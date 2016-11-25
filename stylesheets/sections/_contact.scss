@@ -14,11 +14,43 @@
       height: 35px;
     }
 
-    input,
-    textarea {
-      margin-bottom: 25px;
+    .label-container {
+      height: 22px;
     }
 
+    label {
+      transition: all .3s;
+    }
+
+    .input-style,
+    .message {
+      background-color: transparent;
+      color: $darkyellow;
+      font-size: 1em;
+      font-weight: 300;
+      outline: none;
+    }
+
+    .input-style {
+      border: 0;
+      border-bottom: 2px solid $gray;
+      margin-bottom: 25px;
+      width: 100%;
+
+      &::placeholder {
+        color: lightnet($gray, 10%);
+      }
+
+      &:invalid {
+        box-shadow: none;
+      }
+    }
+
+    .message {
+      border: 2px solid $gray;
+      border-radius: 5px;
+      padding: 10px;
+    }
   }
 
   .contact-person {
@@ -36,6 +68,12 @@
       font-size: .7em;
     }
   }
+}
+
+.label-text {
+  font-size: .2em;
+  position: relative;
+  top: 10px;
 }
 
 .xtra-small-text {
