@@ -17,16 +17,43 @@
     <!-- HEADER -->
 		<div class="header">
       <div class="header-wrap max-content-width">
-        <div class="logo">
-          <img src="" alt="prv logo">
-        </div>
+        <a href="#home">
+          <div class="logo">
+            <img src="assets/images/prv-logo.svg" alt="prv logo">
+            <p class="xtra-small-text">communication</p>
+          </div>
+        </a>
         <div class="menu">
           <ul class="menu-items">
-            <li>ajánlatunk</li>
-            <li>koncepciónk</li>
-            <li>folyamatábra</li>
-            <li>online prezentáció</li>
-            <li>kapcsolat</li>
+            <a class="menu-element" href="#offer">
+              <li class="list-element">
+                <p>ajánlatunk</p>
+              </li>
+            </a>
+
+            <a class="menu-element" href="#conception">
+              <li class="list-element">
+                <p>koncepciónk</p>
+              </li>
+            </a>
+
+            <a class="menu-element" href="#flow-chart">
+              <li class="list-element">
+                <p>folyamatábra</p>
+              </li>
+            </a>
+
+            <a class="menu-element" href="#partners">
+              <li class="list-element">
+                <p>online prezentáció</p>
+              </li>
+            </a>
+
+            <a class="menu-element" href="#contact">
+              <li class="list-element">
+                <p>kapcsolat</p>
+              </li>
+            </a>
           </ul>
         </div>
       </div>
@@ -521,6 +548,27 @@
 
       showHiddenElement('btn-conception', 'hidden-conception');
       showHiddenElement('btn-chart', 'hidden-chart');
+
+
+
+
+      var removeActiveMenu = function () {
+        [].forEach.call(document.querySelectorAll('.list-element'), function (element) {
+          element.classList.remove('active-menu');
+        });
+      };
+
+      [].forEach.call(document.querySelectorAll('.menu-element'), function (menuItem) {
+        menuItem.addEventListener('click', function () {
+          removeActiveMenu();
+          menuItem.querySelector('.list-element').classList.add('active-menu');
+        });
+      });
+
+
+
+
+
 
   </script>
 </body>
