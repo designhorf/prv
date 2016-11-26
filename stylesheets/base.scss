@@ -66,8 +66,6 @@ textarea {
   outline: none;
 }
 
-
-
 .footer {
   @include flexbox(row, center, center, nowrap);
   background-color: $yellow;
