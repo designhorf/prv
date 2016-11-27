@@ -32,7 +32,8 @@ h2 {
   height: 100%;
   left: 0;
   position: fixed;
-  top: 0;
+  top: 100%;
+  transition: top .35s ease-in-out;
   width: 100%;
   z-index: 99; }
   .mobile-menu .menu-items {

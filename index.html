@@ -620,20 +620,27 @@
         });
       };
 
+      var hamburger = document.querySelector('.hamburger-menu'),
+          mobileMenu = document.querySelector('.mobile-menu');
+
       x.addEventListener('click', function() {
         if (x.classList.contains('rotated')) {
           rotate('.x-1', '0deg');
-          x.querySelector('.sanyi').style.marginBottom = '7px'
           rotate('.x-2', '0deg');
+          x.querySelector('.sanyi').style.marginBottom = '7px';
+          mobileMenu.style.top = '100%';
         } else {
           rotate('.x-1', '45deg');
-          x.querySelector('.sanyi').style.marginBottom = '13px'
           rotate('.x-2', '-45deg');
+          x.querySelector('.sanyi').style.marginBottom = '13px';
+          mobileMenu.style.top = '0';
         }
 
         hideMiddleLine('.x-m');
         x.classList.toggle('rotated');
       });
+
+
 
 
   </script>
