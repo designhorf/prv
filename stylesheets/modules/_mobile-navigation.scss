@@ -1,5 +1,5 @@
 .mobile-menu {
-  background-color: $gray;
+  background-color: $yellow;
   height: 100%;
   left: 0;
   position: fixed;
@@ -9,7 +9,6 @@
 
   .menu-items {
     @include flexbox(column, flex-start, space-between, nowrap);
-    color: $white;
     margin-top: 100px;
 
     li {

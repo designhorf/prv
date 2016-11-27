@@ -28,7 +28,7 @@ h2 {
   padding: 0; }
 
 .mobile-menu {
-  background-color: #3e4042;
+  background-color: #f9c21b;
   height: 100%;
   left: 0;
   position: fixed;
@@ -46,7 +46,6 @@ h2 {
         flex-wrap: nowrap;
     -ms-flex-pack: justify;
         justify-content: space-between;
-    color: #fff;
     margin-top: 100px; }
     .mobile-menu .menu-items li {
       list-style-type: none;
