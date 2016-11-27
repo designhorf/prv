@@ -66,35 +66,3 @@ ul {
     list-style-type: none;
   }
 }
-
-.mobile-menu {
-  background-color: $gray;
-  height: 100%;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 99;
-
-  .menu-items {
-    @include flexbox(column, flex-start, space-between, nowrap);
-    color: $white;
-    margin-top: 100px;
-
-    li {
-      list-style-type: none;
-      margin: 16px 0;
-      padding-left: 5%;
-    }
-  }
-
-  .menu-element {
-    padding: 5px 0 5px 5%;
-    width: 100%;
-  }
-
-  .active-menu {
-    background-color: $black;
-    padding: 5px 0 5px 5%;
-  }
-}

@@ -27,6 +27,60 @@ h2 {
   margin: 0;
   padding: 0; }
 
+.mobile-menu {
+  background-color: #3e4042;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99; }
+  .mobile-menu .menu-items {
+    -ms-flex-align: start;
+        align-items: flex-start;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    color: #fff;
+    margin-top: 100px; }
+    .mobile-menu .menu-items li {
+      list-style-type: none;
+      margin: 16px 0;
+      padding-left: 5%; }
+  .mobile-menu .menu-element {
+    padding: 5px 0 5px 5%;
+    width: 100%; }
+  .mobile-menu .active-menu {
+    background-color: #000;
+    padding: 5px 0 5px 5%; }
+
+.hamburger-menu {
+  height: 26px;
+  width: 50px; }
+  .hamburger-menu:hover {
+    cursor: pointer; }
+
+.x-1,
+.x-2,
+.x-m {
+  background-color: black;
+  height: 4px;
+  width: 40px;
+  transition: all .2s;
+  transform-origin: 20% 60%; }
+
+.x-1,
+.x-m {
+  margin-bottom: 7px; }
+
+.off {
+  opacity: 0; }
+
 .quote-widget {
   -ms-flex-align: initial;
       align-items: initial;
@@ -172,38 +226,6 @@ ul {
     border-bottom: 3px solid #f9c21b; }
   .menu-items li:first-child {
     list-style-type: none; }
-
-.mobile-menu {
-  background-color: #3e4042;
-  height: 100%;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 99; }
-  .mobile-menu .menu-items {
-    -ms-flex-align: start;
-        align-items: flex-start;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    color: #fff;
-    margin-top: 100px; }
-    .mobile-menu .menu-items li {
-      list-style-type: none;
-      margin: 16px 0;
-      padding-left: 5%; }
-  .mobile-menu .menu-element {
-    padding: 5px 0 5px 5%;
-    width: 100%; }
-  .mobile-menu .active-menu {
-    background-color: #000;
-    padding: 5px 0 5px 5%; }
 
 .main {
   -ms-flex-align: initial;

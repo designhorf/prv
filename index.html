@@ -56,7 +56,12 @@
             </a>
           </ul>
         </div>
-        <img class="hamburger-icon" src="assets/images/icons/hamburger.svg" alt="hamburger icon">
+        <!-- <img class="hamburger-icon" src="assets/images/icons/hamburger.svg" alt="hamburger icon"> -->
+        <div class="hamburger-menu" id="menu">
+            <div class="x-1 sanyi"></div>
+            <div class="x-m"></div>
+            <div class="x-2"></div>
+        </div>
       </div>
 		</div>
 
@@ -602,7 +607,33 @@
 
 
 
+      var x = document.getElementById('menu');
+      var rotate = function(line, degree) {
+        [].forEach.call(document.querySelectorAll(line), function(item) {
+          item.style.transform = 'rotate(' + degree + ')';
+        });
+      };
 
+      var hideMiddleLine = function(line) {
+        [].forEach.call(document.querySelectorAll(line), function(middle) {
+            middle.classList.toggle('off');
+        });
+      };
+
+      x.addEventListener('click', function() {
+        if (x.classList.contains('rotated')) {
+          rotate('.x-1', '0deg');
+          x.querySelector('.sanyi').style.marginBottom = '7px'
+          rotate('.x-2', '0deg');
+        } else {
+          rotate('.x-1', '45deg');
+          x.querySelector('.sanyi').style.marginBottom = '13px'
+          rotate('.x-2', '-45deg');
+        }
+
+        hideMiddleLine('.x-m');
+        x.classList.toggle('rotated');
+      });
 
 
   </script>
