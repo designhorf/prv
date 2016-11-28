@@ -360,6 +360,10 @@ ul {
       .ajanlatunk .offer-text {
         width: initial; } }
 
+.ajanlatunk .package-quote .quote-img {
+  height: 21px;
+  width: 23px; }
+
 .ajanlatunk .package-items {
   -ms-flex-align: initial;
       align-items: initial;
