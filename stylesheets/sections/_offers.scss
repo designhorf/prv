@@ -26,6 +26,13 @@
     }
   }
 
+  .package-quote {
+    .quote-img {
+      height: 21px;
+      width: 26px;
+    }
+  }
+
   .package-items {
     @include flexbox(row, initial, space-between, nowrap);
 

@@ -360,6 +360,10 @@ ul {
       .ajanlatunk .offer-text {
         width: initial; } }
 
+.ajanlatunk .package-quote .quote-img {
+  height: 21px;
+  width: 26px; }
+
 .ajanlatunk .package-items {
   -ms-flex-align: initial;
       align-items: initial;
@@ -710,7 +714,7 @@ ul {
     .contact-widget .contact-person .person-title {
       margin-top: -20px; }
     .contact-widget .contact-person .hirsztar {
-      font-size: .7em; }
+      font-size: .9em; }
 
 .label-text {
   font-size: .2em;
