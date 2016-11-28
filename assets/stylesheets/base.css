@@ -612,6 +612,14 @@ ul {
 .kapcsolat {
   margin-bottom: 100px; }
 
+.icon-cycle {
+  margin-bottom: -50px;
+  position: relative;
+  text-align: center; }
+  @media (max-width: 800px) {
+    .icon-cycle {
+      display: none; } }
+
 .contact-widget {
   margin: 0 auto;
   width: 80%;
