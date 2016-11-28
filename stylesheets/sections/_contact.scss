@@ -1,9 +1,21 @@
+.kapcsolat {
+  margin-bottom: 100px;
+}
+
 .contact-widget {
   @include content-properties;
   @include flexbox(row, center, space-around, nowrap);
 
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+
   .half-size-widget {
     width: 45%;
+
+    @media (max-width: 600px) {
+      width: 100%;
+    }
   }
 
   .contact-form {

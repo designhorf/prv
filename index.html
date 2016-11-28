@@ -17,7 +17,7 @@
     <!-- HEADER -->
 		<div class="header">
       <div class="header-wrap max-content-width">
-        <a href="#home">
+        <a href="/">
           <div class="logo">
             <img src="assets/images/prv-logo.svg" alt="prv logo">
             <p class="xtra-small-text">communication</p>
@@ -56,11 +56,51 @@
             </a>
           </ul>
         </div>
+        <!-- <img class="hamburger-icon" src="assets/images/icons/hamburger.svg" alt="hamburger icon"> -->
+        <div class="hamburger-menu" id="menu">
+            <div class="x-1 sanyi"></div>
+            <div class="x-m"></div>
+            <div class="x-2"></div>
+        </div>
       </div>
 		</div>
 
+    <div class="mobile-menu">
+      <ul class="menu-items">
+        <a class="menu-element mobile-element" href="#offer">
+          <li class="list-element">
+            <p>ajánlatunk</p>
+          </li>
+        </a>
+
+        <a class="menu-element mobile-element" href="#conception">
+          <li class="list-element">
+            <p>koncepciónk</p>
+          </li>
+        </a>
+
+        <a class="menu-element mobile-element" href="#flow-chart">
+          <li class="list-element">
+            <p>folyamatábra</p>
+          </li>
+        </a>
+
+        <a class="menu-element mobile-element" href="#partners">
+          <li class="list-element">
+            <p>online prezentáció</p>
+          </li>
+        </a>
+
+        <a class="menu-element mobile-element" href="#contact">
+          <li class="list-element">
+            <p>kapcsolat</p>
+          </li>
+        </a>
+      </ul>
+    </div>
+
     <!-- HOME  -->
-    <section class="main" id="home">
+    <section class="main no-top" id="home">
       <div class="main-text bottom-space">
         <h1>Együtt az Ön sikeréért!</h1>
         <h2>Kommunikációs csomag költségmentesen</h2>
@@ -76,7 +116,7 @@
     </section>
 
     <!-- OFFER  -->
-    <section class="ajanlatunk" id="offer">
+    <section class="ajanlatunk no-top" id="offer">
       <div class="offer">
         <div class="offer-content offer-conten max-content-width">
           <h1 class="offer-head">Mit ajánl Önnek a PRV Team?</h1>
@@ -487,7 +527,7 @@
     </section>
 
     <!-- FOOTER -->
-    <section class="footer">
+    <section class="footer no-top">
       <div class="max-content-width">
         <p>Minden jog fenntartva © PRV Communication 2016</p>
       </div>
@@ -566,6 +606,40 @@
       });
 
 
+
+      var x = document.getElementById('menu');
+      var rotate = function(line, degree) {
+        [].forEach.call(document.querySelectorAll(line), function(item) {
+          item.style.transform = 'rotate(' + degree + ')';
+        });
+      };
+
+      var hideMiddleLine = function(line) {
+        [].forEach.call(document.querySelectorAll(line), function(middle) {
+            middle.classList.toggle('off');
+        });
+      };
+
+      var hamburger = document.querySelector('.hamburger-menu'),
+          mobileMenu = document.querySelector('.mobile-menu'),
+          mobileElement = document.querySelector('.mobile-element');
+
+      x.addEventListener('click', function() {
+        if (x.classList.contains('rotated')) {
+          rotate('.x-1', '0deg');
+          rotate('.x-2', '0deg');
+          x.querySelector('.sanyi').style.marginBottom = '7px';
+          mobileMenu.style.top = '100%';
+        } else {
+          rotate('.x-1', '45deg');
+          rotate('.x-2', '-45deg');
+          x.querySelector('.sanyi').style.marginBottom = '13px';
+          mobileMenu.style.top = '0';
+        }
+
+        hideMiddleLine('.x-m');
+        x.classList.toggle('rotated');
+      });
 
 
 
