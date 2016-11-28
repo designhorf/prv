@@ -321,7 +321,8 @@ ul {
       font-weight: 300; }
   .main-devices {
     margin: 0 auto;
-    width: 80%; }
+    width: 80%;
+    max-width: 900px; }
     @media (max-width: 800px) {
       .main-devices {
         width: 90%; } }

@@ -23,6 +23,7 @@
 
   &-devices {
     @include content-properties;
+    max-width: 900px;
 
     &-img {
       width: 100%;
