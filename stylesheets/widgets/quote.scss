@@ -69,9 +69,11 @@
   }
 
   .quote-img {
+    height: 21px;
     margin-left: -33px;
     margin-top: 22px;
     position: absolute;
+    width: 23px;
 
     @media (max-width: 800px) {
       height: 15px;

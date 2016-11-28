@@ -173,9 +173,11 @@ h2 {
       .quote-widget-quote {
         margin-left: 33px; } }
   .quote-widget .quote-img {
+    height: 21px;
     margin-left: -33px;
     margin-top: 22px;
-    position: absolute; }
+    position: absolute;
+    width: 23px; }
     @media (max-width: 800px) {
       .quote-widget .quote-img {
         height: 15px; } }
