@@ -1,5 +1,5 @@
 .partners-widget {
-  @include flexbox(row, initial, center, nowrap);
+  @include flexbox(row, center, center, nowrap);
   background-color: $lightgray;
   height: 200px;
 
@@ -7,9 +7,27 @@
     overflow: hidden;
   }
 
+  .reference-image {
+    left: 0;
+    min-width: 20%;
+    position: relative;
+    text-align: center;
+    transition: left .3s;
+    width: 20%;
+
+    img {
+      max-width: 90%;
+    }
+  }
+
   &-content {
-    @include content-properties;
-    @include flexbox(row, center, space-between, nowrap);
+    @include flexbox(row, center, flex-start, nowrap);
+    // left: 0;
+    margin: 0;
+    max-width: 1100px;
+    overflow: hidden;
+    // position: relative;
+    width: 80%;
 
     img:not(.arrow) {
       filter: grayscale(100%);
@@ -22,15 +40,22 @@
   }
 }
 
+
 .arrow {
   cursor: pointer;
   padding: 20px;
 }
 
 .left-arrow {
-  margin-left: -50px;
+  // margin-left: -50px;
+  // left: calc((20% / 2) - 50px);
+  // margin-top: 68px;
+  // position: absolute;
 }
 
 .right-arrow {
-  margin-right: -50px;
+  // margin-right: -50px;
+  // right: calc((20% / 2) - 50px);
+  // margin-top: 68px;
+  // position: absolute;
 }

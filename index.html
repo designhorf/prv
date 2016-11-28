@@ -226,9 +226,12 @@
       <div class="quote-widget-details max-content-width off" id="hidden-conception">
         <h2 class="center">A csomag, ami megfinanszírozza önmagát - A “win-win” szituáció.</h2>
         <h3 class="light center bottom-space">A PRV csomag költségeit az Önök partnerei (beszállítók, szolgáltatók) fedezik megjelenésükkel.​</h3>
+        <div class="icon-cycle">
+          <img src="assets/images/icons/cycle.svg" alt="cycle icon">
+        </div>
         <div class="quote-widget-details-text">
           <div class="half-size">
-            <h3 class="center bottom-space">Miert jó ez Önnek?</h3>
+            <h3 class="center bottom-space">Miért jó ez Önnek?</h3>
             <p>Azt, hogy mely beszállítók, illetve szolgáltatók hirdethetnek, Önök döntik el. Ezáltal olyan partnerek jelennek meg a kiadványban, akik az évek során hozzájárultak vállalatuk sikeréhez, illetve meghatározó szerepet töltenek be a piaci környezetben.</p>
             <p class="bold bottom-space">Ezek a reklámok teszik az Önök számára költségmentessé a projektet.</p>
 
@@ -240,7 +243,7 @@
           </div>
 
           <div class="half-size">
-            <h3 class="center bottom-space">Miert jó ez partnereinek?</h3>
+            <h3 class="center bottom-space">Miért jó ez partnereinek?</h3>
             <p class="bold">Marketing</p>
             <ul class="bottom-space">
               <li>A partnerek számára ez folyamatos megjelenést biztosít a szakmai és piaci környezetükön belül.</li>
@@ -430,24 +433,51 @@
         <h1>Ügyfeleink</h1>
       </div>
       <div class="partners-widget">
-        <div class="partners-widget-content max-content-width">
-          <img class="arrow left-arrow" src="assets/images/left-arrow.svg" alt="left arrow">
-          <p>
+        <div>
+          <img class="arrow left-arrow" src="assets/images/left-arrow.svg" alt="left arrow" id="left">
+        </div>
+
+        <div class="partners-widget-content" data-position="0">
+          <p class="reference-image">
             <img src="assets/images/logos/allianz.svg" alt="Allianz logo">
           </p>
-          <p>
+          <p class="reference-image">
             <img src="assets/images/logos/otthon.svg" alt="Otthon centrum logo">
           </p>
-          <p>
+          <p class="reference-image">
             <img src="assets/images/logos/kwikfit.svg" alt="Kwikfit logo">
           </p>
-          <p>
+          <p class="reference-image">
             <img src="assets/images/logos/kh.svg" alt="K&H logo">
           </p>
-          <p>
+          <p class="reference-image">
             <img src="assets/images/logos/foton.svg" alt="Foton logo">
           </p>
-          <img class="arrow right-arrow" src="assets/images/right-arrow.svg" alt="right arrow">
+          <p class="reference-image">
+            <img src="assets/images/logos/walter.svg" alt="Walter logo">
+          </p>
+          <p class="reference-image">
+            <img src="assets/images/logos/a1.svg" alt="A1 Szerelvényház Kft logo">
+          </p>
+          <p class="reference-image">
+            <img src="assets/images/logos/aquafilt.svg" alt="Aqua-filt logo">
+          </p>
+          <p class="reference-image">
+            <img src="assets/images/logos/huncargo.svg" alt="Huncargo logo">
+          </p>
+          <p class="reference-image">
+            <img src="assets/images/logos/hirschler.svg" alt="Hirschler logo">
+          </p>
+          <p class="reference-image">
+            <img src="assets/images/logos/alphapark.svg" alt="Alpha park logo">
+          </p>
+          <p class="reference-image">
+            <img src="assets/images/logos/dunahouse.svg" alt="Duna House logo">
+          </p>
+        </div>
+
+        <div>
+          <img class="arrow right-arrow" src="assets/images/right-arrow.svg" alt="right arrow" id="right">
         </div>
       </div>
     </section>
@@ -536,6 +566,43 @@
 
 
   <script>
+    // SLIDER
+    var left = document.getElementById('left'),
+        right = document.getElementById('right'),
+        container = document.querySelector('.partners-widget-content'),
+        logos = document.querySelectorAll('.reference-image');
+
+    left.addEventListener('click', function () {
+      var position = container.getAttribute('data-position'),
+          rPos = container.offsetWidth;
+      position = Number(position) - (rPos / 5);
+      [].forEach.call(logos, function (logo) {
+        var akarmi = (Number(logos.length) * (rPos / 5)) - rPos + Number(position);
+        if (akarmi >= 0) {
+          var newValue = position + 'px';
+          logo.style.left = newValue;
+          container.setAttribute('data-position', position);
+        }
+      });
+    });
+
+    right.addEventListener('click', function () {
+      var position = container.getAttribute('data-position'),
+          rPos = container.offsetWidth;
+      position = Number(position) + (rPos / 5);
+      [].forEach.call(logos, function (logo) {
+        if (position <= 0) {
+          var newValue = position + 'px';
+          logo.style.left = newValue;
+          container.setAttribute('data-position', position);
+        }
+      });
+    });
+
+
+
+
+
     var changeLabelStyle = function (label) {
       label.classList.remove('hidden');
       label.style.fontSize = '1em';
