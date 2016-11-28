@@ -3,9 +3,22 @@
   background-color: $yellow;
   height: 430px;
 
+  @media (max-width: 600px) {
+    flex-direction: column;
+    height: 250px;
+  }
+
+  @media (min-width: 601px) and (max-width: 800px) {
+    height: 300px;
+  }
+
   &-content,
   &-picture {
     width: 50%;
+    @media (max-width: 600px) {
+      margin: 0 auto;
+      width: 90%;
+    }
   }
 
   &-content {
@@ -16,6 +29,11 @@
     @include flexbox(column, flex-end, center, nowrap);
     padding-left: 10%;
     padding-right: 5%;
+
+    @media (max-width: 600px) {
+      align-items: flex-start;
+      padding: 0;
+    }
   }
 
   &-content-chart {
@@ -25,6 +43,10 @@
   }
 
   &-picture {
+    @media (max-width: 600px) {
+      display: none;
+    }
+
     &-conception {
       background: url('../images/hands.jpg');
       background-position: center;
@@ -40,12 +62,20 @@
 
   &-quote {
     @include flexbox(row, baseline, flex-start, nowrap);
+
+    @media (max-width: 600px) {
+      margin-left: 33px;
+    }
   }
 
   .quote-img {
     margin-left: -33px;
     margin-top: 22px;
     position: absolute;
+
+    @media (max-width: 800px) {
+      height: 15px;
+    }
   }
 
   &-details {
@@ -53,14 +83,42 @@
 
     &-text {
       @include flexbox(row, baseline, space-between, nowrap);
+      @media (max-width: 800px) {
+        flex-direction: column;
+      }
 
       .half-size {
         margin: 0 auto;
         width: 35%;
+
+        @media (max-width: 800px) {
+          width: 100%;
+        }
       }
 
       ul {
         padding-left: 20px;
+      }
+    }
+  }
+}
+
+.ajanlatunk {
+  .package {
+    &-quote {
+      @include flexbox(row, baseline, flex-start, nowrap);
+      padding-left: 90px;
+
+      @media (max-width: 800px) {
+        padding-left: 0;
+      }
+    }
+
+    .quote-img {
+      margin-right: 15px;
+
+      @media (max-width: 800px) {
+        height: 15px;
       }
     }
   }

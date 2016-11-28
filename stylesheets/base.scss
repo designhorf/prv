@@ -58,13 +58,17 @@ a {
   margin: 0 auto;
   max-width: 1100px;
 
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     max-width: 90%;
   }
 }
 
 .section-title {
   width: 80%;
+
+  @media (max-width: 800px) {
+    width: 90%;
+  }
 }
 
 section:not(.main):not(.footer) {

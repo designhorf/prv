@@ -37,6 +37,10 @@
   height: 26px;
   width: 50px;
 
+  @media (min-width: 801px) {
+    display: none;
+  }
+
   &:hover {
     cursor: pointer;
   }

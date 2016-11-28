@@ -27,13 +27,13 @@ ul {
   }
 
   .hamburger-icon {
-    @media (min-width: 601px) {
+    @media (min-width: 801px) {
       display: none;
     }
   }
 
   .menu {
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
       display: none;
     }
   }

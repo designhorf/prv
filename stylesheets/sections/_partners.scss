@@ -3,12 +3,21 @@
   background-color: $lightgray;
   height: 200px;
 
+  @media (max-width: 800px) {
+    overflow: hidden;
+  }
+
   &-content {
     @include content-properties;
     @include flexbox(row, center, space-between, nowrap);
 
     img:not(.arrow) {
       filter: grayscale(100%);
+
+      @media (max-width: 800px) {
+        max-height: 50px;
+        max-width: 100px;
+      }
     }
   }
 }

@@ -67,31 +67,31 @@
 
     <div class="mobile-menu">
       <ul class="menu-items">
-        <a class="menu-element" href="#offer">
+        <a class="menu-element mobile-element" href="#offer">
           <li class="list-element">
             <p>ajánlatunk</p>
           </li>
         </a>
 
-        <a class="menu-element" href="#conception">
+        <a class="menu-element mobile-element" href="#conception">
           <li class="list-element">
             <p>koncepciónk</p>
           </li>
         </a>
 
-        <a class="menu-element" href="#flow-chart">
+        <a class="menu-element mobile-element" href="#flow-chart">
           <li class="list-element">
             <p>folyamatábra</p>
           </li>
         </a>
 
-        <a class="menu-element" href="#partners">
+        <a class="menu-element mobile-element" href="#partners">
           <li class="list-element">
             <p>online prezentáció</p>
           </li>
         </a>
 
-        <a class="menu-element" href="#contact">
+        <a class="menu-element mobile-element" href="#contact">
           <li class="list-element">
             <p>kapcsolat</p>
           </li>
@@ -621,7 +621,8 @@
       };
 
       var hamburger = document.querySelector('.hamburger-menu'),
-          mobileMenu = document.querySelector('.mobile-menu');
+          mobileMenu = document.querySelector('.mobile-menu'),
+          mobileElement = document.querySelector('.mobile-element');
 
       x.addEventListener('click', function() {
         if (x.classList.contains('rotated')) {

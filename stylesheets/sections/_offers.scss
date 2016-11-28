@@ -19,19 +19,10 @@
     &-text {
       font-weight: 300;
       width: 65%;
-    }
-  }
 
-  .package {
-    // padding-bottom: 50px;
-
-    &-quote {
-      @include flexbox(row, baseline, flex-start, nowrap);
-      padding-left: 90px;
-    }
-
-    .quote-img {
-      margin-right: 15px;
+      @media (max-width: 800px) {
+        width: initial;
+      }
     }
   }
 
@@ -53,10 +44,18 @@
 
       &-icon {
         margin-bottom: 10px;
+
+        @media (max-width: 800px) {
+          max-height: 35px;
+        }
       }
 
        .click-to-details {
          font-size: .8em;
+
+         @media (max-width: 800px) {
+           text-align: center;
+         }
        }
     }
   }
@@ -72,6 +71,10 @@
 
     &-wrap {
       @include flexbox(row, baseline, flex-start, nowrap);
+
+      @media (max-width: 800px) {
+        flex-direction: column;
+      }
     }
   }
 }
