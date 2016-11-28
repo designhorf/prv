@@ -609,6 +609,9 @@ ul {
 .right-arrow {
   margin-right: -50px; }
 
+.kapcsolat {
+  margin-bottom: 100px; }
+
 .contact-widget {
   margin: 0 auto;
   width: 80%;
@@ -754,8 +757,8 @@ a {
     .section-title {
       width: 90%; } }
 
-section:not(.main):not(.footer) {
-  margin-bottom: 100px; }
+section:not(.no-top) {
+  padding-top: 100px; }
 
 input,
 textarea {

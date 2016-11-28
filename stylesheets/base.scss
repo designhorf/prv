@@ -71,8 +71,8 @@ a {
   }
 }
 
-section:not(.main):not(.footer) {
-  margin-bottom: 100px;;
+section:not(.no-top) {
+  padding-top: 100px;;
 }
 
 input,

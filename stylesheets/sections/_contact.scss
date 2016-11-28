@@ -1,3 +1,7 @@
+.kapcsolat {
+  margin-bottom: 100px;
+}
+
 .contact-widget {
   @include content-properties;
   @include flexbox(row, center, space-around, nowrap);
