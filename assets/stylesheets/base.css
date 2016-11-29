@@ -309,9 +309,7 @@ ul {
   padding-top: 70px;
   width: 100%; }
   .main-text {
-    background: url("../images/gplaypattern.png");
     background-color: #fff;
-    background-repeat: repeat;
     display: table;
     max-width: 450px;
     padding-left: calc((100% - 1100px) / 2 + 0px);

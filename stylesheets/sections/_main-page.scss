@@ -7,9 +7,7 @@
 
   &-text {
     $test: calc((100% - 1100px) / 2 + 0px);
-    background: url('../images/gplaypattern.png');
     background-color: $white;
-    background-repeat: repeat;
     display: table;
     max-width: 450px;
     padding-left: $test;

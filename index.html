@@ -31,13 +31,13 @@
               </li>
             </a>
 
-            <a class="menu-element" href="#conception">
+            <a class="menu-element conception-menu-item" href="#conception">
               <li class="list-element">
                 <p>koncepciónk</p>
               </li>
             </a>
 
-            <a class="menu-element" href="#flow-chart">
+            <a class="menu-element chart-menu-item" href="#flow-chart">
               <li class="list-element">
                 <p>folyamatábra</p>
               </li>
@@ -73,13 +73,13 @@
           </li>
         </a>
 
-        <a class="menu-element mobile-element" href="#conception">
+        <a class="menu-element mobile-element conception-menu-item" href="#conception">
           <li class="list-element">
             <p>koncepciónk</p>
           </li>
         </a>
 
-        <a class="menu-element mobile-element" href="#flow-chart">
+        <a class="menu-element mobile-element chart-menu-item" href="#flow-chart">
           <li class="list-element">
             <p>folyamatábra</p>
           </li>
@@ -504,7 +504,7 @@
             Készséggel állunk rendelkezésére!
           </p>
 
-          <form class="contact-form bottom-space" action="index.html" method="post">
+          <form class="contact-form bottom-space" action="mailto:designhorf@gmail.com" method="post">
             <div class="label-container">
               <label class="label-text hidden" for="name">Név</label>
             </div>
@@ -666,6 +666,16 @@
 
       showHiddenElement('btn-conception', 'hidden-conception');
       showHiddenElement('btn-chart', 'hidden-chart');
+
+      var conceptionMenuItem = document.querySelector('.conception-menu-item');
+      var chartMenuItem = document.querySelector('.chart-menu-item');
+
+      conceptionMenuItem.addEventListener('click', function () {
+        document.getElementById('hidden-conception').classList.remove('off');
+      });
+      chartMenuItem.addEventListener('click', function () {
+        document.getElementById('hidden-chart').classList.remove('off');
+      });
 
 
 
