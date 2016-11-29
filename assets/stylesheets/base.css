@@ -26,7 +26,7 @@ h2 {
   text-align: right; }
 
 .xtra-small-text {
-  font-size: .5em;
+  font-size: .7em;
   margin: 0;
   padding: 0; }
 
@@ -173,9 +173,11 @@ h2 {
       .quote-widget-quote {
         margin-left: 33px; } }
   .quote-widget .quote-img {
+    height: 21px;
     margin-left: -33px;
     margin-top: 22px;
-    position: absolute; }
+    position: absolute;
+    width: 23px; }
     @media (max-width: 800px) {
       .quote-widget .quote-img {
         height: 15px; } }
@@ -317,7 +319,8 @@ ul {
       font-weight: 300; }
   .main-devices {
     margin: 0 auto;
-    width: 80%; }
+    width: 80%;
+    max-width: 830px; }
     @media (max-width: 800px) {
       .main-devices {
         width: 90%; } }
@@ -529,6 +532,49 @@ ul {
     .chart-element-text {
       font-size: .9em; } }
 
+.legend {
+  -ms-flex-align: start;
+      align-items: flex-start;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-left: -30px;
+  margin-top: 23px;
+  position: absolute; }
+  .legend-element {
+    -ms-flex-align: center;
+        align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin-bottom: 10px; }
+  .legend .circle {
+    -ms-flex-align: center;
+        align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    border-radius: 50%;
+    font-weight: 700;
+    height: 35px;
+    margin-right: 10px;
+    width: 35px; }
+
 .circle {
   -ms-flex-align: center;
       align-items: center;
@@ -554,7 +600,8 @@ ul {
 .gray-bg {
   background-color: #3e4042; }
 
-.yellow-bg {
+.yellow-bg,
+.yellow-noborder-bg {
   background-color: #f9c21b; }
 
 .yellow-gray-bg {

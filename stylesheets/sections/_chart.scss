@@ -77,6 +77,28 @@
   }
 }
 
+.legend {
+  @include flexbox(column, flex-start, center, nowrap);
+  margin-left: -30px;
+  margin-top: 23px;
+  position: absolute;
+
+   &-element {
+     @include flexbox(row, center, center, nowrap);
+     margin-bottom: 10px;
+   }
+
+   .circle {
+     @include flexbox(row, center, center, nowrap);
+     border-radius: 50%;
+     font-weight: 700;
+     height: 35px;
+     margin-right: 10px;
+     width: 35px;
+   }
+
+}
+
 .circle {
   @include flexbox(row, center, center, nowrap);
   border-radius: 50%;
@@ -96,7 +118,8 @@
   background-color: $gray;
 }
 
-.yellow-bg {
+.yellow-bg,
+.yellow-noborder-bg {
   background-color: $yellow;
 }
 
