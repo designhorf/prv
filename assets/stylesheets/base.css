@@ -320,7 +320,7 @@ ul {
   .main-devices {
     margin: 0 auto;
     width: 80%;
-    max-width: 900px; }
+    max-width: 830px; }
     @media (max-width: 800px) {
       .main-devices {
         width: 90%; } }
