@@ -504,7 +504,7 @@
             Készséggel állunk rendelkezésére!
           </p>
 
-          <form class="contact-form bottom-space" action="mailto:designhorf@gmail.com" method="post">
+          <form class="contact-form bottom-space" action="https://formspree.io/mail@prvteam.hu" method="post">
             <div class="label-container">
               <label class="label-text hidden" for="name">Név</label>
             </div>
@@ -534,6 +534,10 @@
               <label class="label-text hidden" for="message">Üzenet</label>
             </div>
             <textarea class="message input-field bottom-space" name="message" rows="8" placeholder="Üzenet"></textarea>
+
+            <input type="hidden" name="_next" value="/" />
+            <input type="hidden" name="_cc" value="another@email.com" />
+            <input type="text" name="_gotcha" style="display:none" />
 
             <input class="btn-submit" type="submit" value="Küld">
           </form>
