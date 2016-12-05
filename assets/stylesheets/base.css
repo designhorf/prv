@@ -65,7 +65,7 @@ h2 {
 .hamburger-menu {
   height: 26px;
   width: 50px; }
-  @media (min-width: 801px) {
+  @media (min-width: 1025px) {
     .hamburger-menu {
       display: none; } }
   .hamburger-menu:hover {
@@ -260,12 +260,15 @@ ul {
     height: inherit;
     margin: 0 auto;
     padding: 0; }
+    @media (max-width: 1024px) {
+      .header-wrap {
+        width: 80%; } }
     .header-wrap .logo {
       text-align: center; }
-  @media (min-width: 801px) {
+  @media (min-width: 1025px) {
     .header .hamburger-icon {
       display: none; } }
-  @media (max-width: 800px) {
+  @media (max-width: 1024px) {
     .header .menu {
       display: none; } }
 
@@ -306,6 +309,7 @@ ul {
       justify-content: center;
   background-color: #f9c21b;
   height: calc(100% - 70px);
+  min-height: 100%;
   padding-top: 70px;
   width: 100%; }
   .main-text {
@@ -315,6 +319,9 @@ ul {
     padding-left: calc((100% - 1100px) / 2 + 0px);
     padding-right: 25px;
     text-transform: uppercase; }
+    @media (max-width: 1024px) {
+      .main-text {
+        padding-left: 10%; } }
     .main-text h2 {
       font-weight: 300; }
   .main-devices {
@@ -328,6 +335,9 @@ ul {
       width: 100%; }
   .main-scroll {
     text-align: center; }
+    @media (max-width: 1024px) {
+      .main-scroll {
+        margin-top: 20px; } }
 
 .ajanlatunk .offer-content,
 .ajanlatunk .package {
@@ -546,6 +556,9 @@ ul {
   margin-left: -30px;
   margin-top: 23px;
   position: absolute; }
+  @media (min-width: 800px) and (max-width: 1024px) {
+    .legend {
+      margin-left: -70px; } }
   .legend-element {
     -ms-flex-align: center;
         align-items: center;
