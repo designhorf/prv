@@ -57,7 +57,7 @@
           </ul>
         </div>
         <!-- <img class="hamburger-icon" src="assets/images/icons/hamburger.svg" alt="hamburger icon"> -->
-        <div class="hamburger-menu" id="menu">
+        <div class="hamburger-menu" id="menuKebab">
             <div class="x-1 sanyi"></div>
             <div class="x-m"></div>
             <div class="x-2"></div>
@@ -544,8 +544,6 @@
         </div>
 
         <div class="half-size-widget contact-person">
-          
-
           <p class="hirsztar">
             Hírsztár kft<br>
             II. Rákóczi Ferenc utca 23. 9400 Sopron<br>
@@ -689,7 +687,7 @@
 
 
 
-      var x = document.getElementById('menu');
+      var menu = document.getElementById('menuKebab');
       var rotate = function(line, degree) {
         [].forEach.call(document.querySelectorAll(line), function(item) {
           item.style.transform = 'rotate(' + degree + ')';
@@ -704,28 +702,37 @@
 
       var hamburger = document.querySelector('.hamburger-menu'),
           mobileMenu = document.querySelector('.mobile-menu'),
-          mobileElement = document.querySelector('.mobile-element');
+          mobileElements = document.querySelectorAll('.mobile-element');
 
-      x.addEventListener('click', function() {
-        if (x.classList.contains('rotated')) {
+      menu.addEventListener('click', function() {
+        if (menu.classList.contains('rotated')) {
           rotate('.x-1', '0deg');
           rotate('.x-2', '0deg');
-          x.querySelector('.sanyi').style.marginBottom = '7px';
+          menu.querySelector('.sanyi').style.marginBottom = '7px';
           mobileMenu.style.top = '100%';
         } else {
           rotate('.x-1', '45deg');
           rotate('.x-2', '-45deg');
-          x.querySelector('.sanyi').style.marginBottom = '13px';
+          menu.querySelector('.sanyi').style.marginBottom = '13px';
           mobileMenu.style.top = '0';
         }
 
         hideMiddleLine('.x-m');
-        x.classList.toggle('rotated');
+        menu.classList.toggle('rotated');
       });
 
+      // Hide mobile menu after click
+      [].forEach.call(mobileElements, function (mobileElement) {
+        mobileElement.addEventListener('click', function () {
+          rotate('.x-1', '0deg');
+          rotate('.x-2', '0deg');
+          menu.querySelector('.sanyi').style.marginBottom = '7px';
+          mobileMenu.style.top = '100%';
 
-
-
+          hideMiddleLine('.x-m');
+          menu.classList.toggle('rotated');
+        })
+      });
   </script>
 </body>
 </html>
