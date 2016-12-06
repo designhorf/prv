@@ -735,6 +735,10 @@ ul {
     .contact-widget {
       -ms-flex-direction: column;
           flex-direction: column; } }
+  @media (min-width: 1024px) {
+    .contact-widget {
+      -ms-flex-align: end;
+          align-items: flex-end; } }
   .contact-widget .half-size-widget {
     width: 45%; }
     @media (max-width: 600px) {
@@ -804,6 +808,9 @@ ul {
       margin-top: -20px; }
     .contact-widget .contact-person .hirsztar {
       font-size: .9em; }
+      @media (min-width: 1024px) {
+        .contact-widget .contact-person .hirsztar {
+          margin-bottom: 83px; } }
 
 .label-text {
   font-size: .2em;

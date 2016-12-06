@@ -24,6 +24,10 @@
     flex-direction: column;
   }
 
+  @media (min-width: 1024px) {
+    align-items: flex-end;
+  }
+
   .half-size-widget {
     width: 45%;
 
@@ -108,6 +112,10 @@
 
     .hirsztar {
       font-size: .9em;
+
+      @media (min-width: 1024px) {
+        margin-bottom: 83px;
+      }
     }
   }
 }
