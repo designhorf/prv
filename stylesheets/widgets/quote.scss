@@ -31,7 +31,7 @@
     padding-right: 5%;
 
     @media (max-width: 600px) {
-      align-items: flex-start;
+      align-items: center;
       padding: 0;
     }
   }
@@ -40,6 +40,10 @@
     @include flexbox(column, flex-start, center, nowrap);
     padding-left: 5%;
     padding-right: 10%;
+
+    @media (max-width: 600px) {
+      align-items: center;
+    }
   }
 
   &-picture {

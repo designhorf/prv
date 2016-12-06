@@ -1,5 +1,9 @@
 .kapcsolat {
   margin-bottom: 100px;
+
+  @media (max-width: 600px) {
+    margin-bottom: 30px;
+  }
 }
 
 .icon-cycle {

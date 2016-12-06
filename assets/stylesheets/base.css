@@ -141,8 +141,8 @@ h2 {
     padding-right: 5%; }
     @media (max-width: 600px) {
       .quote-widget-content-conception {
-        -ms-flex-align: start;
-            align-items: flex-start;
+        -ms-flex-align: center;
+            align-items: center;
         padding: 0; } }
   .quote-widget-content-chart {
     -ms-flex-align: start;
@@ -157,6 +157,10 @@ h2 {
         justify-content: center;
     padding-left: 5%;
     padding-right: 10%; }
+    @media (max-width: 600px) {
+      .quote-widget-content-chart {
+        -ms-flex-align: center;
+            align-items: center; } }
   @media (max-width: 600px) {
     .quote-widget-picture {
       display: none; } }
@@ -699,6 +703,9 @@ ul {
 
 .kapcsolat {
   margin-bottom: 100px; }
+  @media (max-width: 600px) {
+    .kapcsolat {
+      margin-bottom: 30px; } }
 
 .icon-cycle {
   margin-bottom: -50px;
