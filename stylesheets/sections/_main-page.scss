@@ -6,6 +6,11 @@
   padding-top: $header-height;
   width: 100%;
 
+  @media (max-width: 480px) {
+    min-height: initial;
+    justify-content: space-around;;
+  }
+
   &-text {
     $test: calc((100% - 1100px) / 2 + 0px);
     background-color: $white;

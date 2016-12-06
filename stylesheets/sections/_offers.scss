@@ -36,12 +36,20 @@
   .package-items {
     @include flexbox(row, initial, space-between, nowrap);
 
+    @media (max-width: 480px) {
+      flex-direction: column;
+    }
+
     .package-item {
       @include flexbox(column, center, center, nowrap);
       border: 10px solid transparent;
       box-sizing: border-box;
       padding: 60px 0 30px;
       width: 30%;
+
+      @media (max-width: 480px) {
+        width: 100%;
+      }
 
       &:hover {
         border: 10px solid $yellow;

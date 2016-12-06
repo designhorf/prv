@@ -21,7 +21,7 @@ ul {
     margin: 0 auto;
     padding: 0;
 
-    @media (max-width: 1024px) {
+    @media (min-width: 481px) and (max-width: 1024px) {
       width: 80%;
     }
 

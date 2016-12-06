@@ -1,8 +1,18 @@
 h1 {
   font-size: 2em; }
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5em; } }
 
 h2 {
   font-size: 1.7em; }
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 1.3em; } }
+
+@media (max-width: 480px) {
+  h3 {
+    font-size: 1.1em; } }
 
 .bold {
   font-weight: 700; }
@@ -260,7 +270,7 @@ ul {
     height: inherit;
     margin: 0 auto;
     padding: 0; }
-    @media (max-width: 1024px) {
+    @media (min-width: 481px) and (max-width: 1024px) {
       .header-wrap {
         width: 80%; } }
     .header-wrap .logo {
@@ -312,6 +322,11 @@ ul {
   min-height: 100%;
   padding-top: 70px;
   width: 100%; }
+  @media (max-width: 480px) {
+    .main {
+      min-height: initial;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; } }
   .main-text {
     background-color: #fff;
     display: table;
@@ -388,6 +403,10 @@ ul {
       flex-wrap: nowrap;
   -ms-flex-pack: justify;
       justify-content: space-between; }
+  @media (max-width: 480px) {
+    .ajanlatunk .package-items {
+      -ms-flex-direction: column;
+          flex-direction: column; } }
   .ajanlatunk .package-items .package-item {
     -ms-flex-align: center;
         align-items: center;
@@ -403,6 +422,9 @@ ul {
     box-sizing: border-box;
     padding: 60px 0 30px;
     width: 30%; }
+    @media (max-width: 480px) {
+      .ajanlatunk .package-items .package-item {
+        width: 100%; } }
     .ajanlatunk .package-items .package-item:hover {
       border: 10px solid #f9c21b;
       cursor: pointer;
