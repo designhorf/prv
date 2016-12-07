@@ -594,9 +594,20 @@ ul {
   margin-left: -30px;
   margin-top: 23px;
   position: absolute; }
-  @media (min-width: 800px) and (max-width: 1024px) {
+  @media (max-width: 1024px) {
     .legend {
-      margin-left: -70px; } }
+      -ms-flex-align: start;
+          align-items: flex-start;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      margin: 0 auto;
+      position: relative; } }
   .legend-element {
     -ms-flex-align: center;
         align-items: center;
@@ -609,6 +620,9 @@ ul {
     -ms-flex-pack: center;
         justify-content: center;
     margin-bottom: 10px; }
+    @media (max-width: 1024px) {
+      .legend-element {
+        margin: 10px 10px 40px; } }
   .legend .circle {
     -ms-flex-align: center;
         align-items: center;
