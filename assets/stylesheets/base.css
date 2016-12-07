@@ -1,8 +1,18 @@
 h1 {
   font-size: 2em; }
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5em; } }
 
 h2 {
   font-size: 1.7em; }
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 1.3em; } }
+
+@media (max-width: 480px) {
+  h3 {
+    font-size: 1.1em; } }
 
 .bold {
   font-weight: 700; }
@@ -59,13 +69,13 @@ h2 {
     padding: 5px 0 5px 5%;
     width: 100%; }
   .mobile-menu .active-menu {
-    background-color: #000;
+    background-color: #fff;
     padding: 5px 0 5px 5%; }
 
 .hamburger-menu {
   height: 26px;
   width: 50px; }
-  @media (min-width: 801px) {
+  @media (min-width: 1025px) {
     .hamburger-menu {
       display: none; } }
   .hamburger-menu:hover {
@@ -131,8 +141,8 @@ h2 {
     padding-right: 5%; }
     @media (max-width: 600px) {
       .quote-widget-content-conception {
-        -ms-flex-align: start;
-            align-items: flex-start;
+        -ms-flex-align: center;
+            align-items: center;
         padding: 0; } }
   .quote-widget-content-chart {
     -ms-flex-align: start;
@@ -147,6 +157,10 @@ h2 {
         justify-content: center;
     padding-left: 5%;
     padding-right: 10%; }
+    @media (max-width: 600px) {
+      .quote-widget-content-chart {
+        -ms-flex-align: center;
+            align-items: center; } }
   @media (max-width: 600px) {
     .quote-widget-picture {
       display: none; } }
@@ -260,12 +274,15 @@ ul {
     height: inherit;
     margin: 0 auto;
     padding: 0; }
+    @media (min-width: 481px) and (max-width: 1024px) {
+      .header-wrap {
+        width: 80%; } }
     .header-wrap .logo {
       text-align: center; }
-  @media (min-width: 801px) {
+  @media (min-width: 1025px) {
     .header .hamburger-icon {
       display: none; } }
-  @media (max-width: 800px) {
+  @media (max-width: 1024px) {
     .header .menu {
       display: none; } }
 
@@ -306,8 +323,14 @@ ul {
       justify-content: center;
   background-color: #f9c21b;
   height: calc(100% - 70px);
+  min-height: 100%;
   padding-top: 70px;
   width: 100%; }
+  @media (max-width: 480px) {
+    .main {
+      min-height: initial;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; } }
   .main-text {
     background-color: #fff;
     display: table;
@@ -315,6 +338,9 @@ ul {
     padding-left: calc((100% - 1100px) / 2 + 0px);
     padding-right: 25px;
     text-transform: uppercase; }
+    @media (max-width: 1024px) {
+      .main-text {
+        padding-left: 10%; } }
     .main-text h2 {
       font-weight: 300; }
   .main-devices {
@@ -328,6 +354,9 @@ ul {
       width: 100%; }
   .main-scroll {
     text-align: center; }
+    @media (max-width: 1024px) {
+      .main-scroll {
+        margin-top: 20px; } }
 
 .ajanlatunk .offer-content,
 .ajanlatunk .package {
@@ -378,6 +407,10 @@ ul {
       flex-wrap: nowrap;
   -ms-flex-pack: justify;
       justify-content: space-between; }
+  @media (max-width: 480px) {
+    .ajanlatunk .package-items {
+      -ms-flex-direction: column;
+          flex-direction: column; } }
   .ajanlatunk .package-items .package-item {
     -ms-flex-align: center;
         align-items: center;
@@ -393,6 +426,9 @@ ul {
     box-sizing: border-box;
     padding: 60px 0 30px;
     width: 30%; }
+    @media (max-width: 480px) {
+      .ajanlatunk .package-items .package-item {
+        width: 100%; } }
     .ajanlatunk .package-items .package-item:hover {
       border: 10px solid #f9c21b;
       cursor: pointer;
@@ -546,6 +582,9 @@ ul {
   margin-left: -30px;
   margin-top: 23px;
   position: absolute; }
+  @media (min-width: 800px) and (max-width: 1024px) {
+    .legend {
+      margin-left: -70px; } }
   .legend-element {
     -ms-flex-align: center;
         align-items: center;
@@ -664,6 +703,9 @@ ul {
 
 .kapcsolat {
   margin-bottom: 100px; }
+  @media (max-width: 600px) {
+    .kapcsolat {
+      margin-bottom: 30px; } }
 
 .icon-cycle {
   margin-bottom: -50px;
@@ -693,6 +735,10 @@ ul {
     .contact-widget {
       -ms-flex-direction: column;
           flex-direction: column; } }
+  @media (min-width: 1024px) {
+    .contact-widget {
+      -ms-flex-align: end;
+          align-items: flex-end; } }
   .contact-widget .half-size-widget {
     width: 45%; }
     @media (max-width: 600px) {
@@ -762,6 +808,9 @@ ul {
       margin-top: -20px; }
     .contact-widget .contact-person .hirsztar {
       font-size: .9em; }
+      @media (min-width: 1024px) {
+        .contact-widget .contact-person .hirsztar {
+          margin-bottom: 83px; } }
 
 .label-text {
   font-size: .2em;

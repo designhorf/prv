@@ -83,6 +83,10 @@
   margin-top: 23px;
   position: absolute;
 
+  @media (min-width: 800px) and (max-width: 1024px) {
+    margin-left: -70px;
+  }
+
    &-element {
      @include flexbox(row, center, center, nowrap);
      margin-bottom: 10px;

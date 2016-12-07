@@ -21,19 +21,23 @@ ul {
     margin: 0 auto;
     padding: 0;
 
+    @media (min-width: 481px) and (max-width: 1024px) {
+      width: 80%;
+    }
+
     .logo {
       text-align: center;
     }
   }
 
   .hamburger-icon {
-    @media (min-width: 801px) {
+    @media (min-width: 1025px) {
       display: none;
     }
   }
 
   .menu {
-    @media (max-width: 800px) {
+    @media (max-width: 1024px) {
       display: none;
     }
   }

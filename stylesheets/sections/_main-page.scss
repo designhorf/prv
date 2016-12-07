@@ -2,8 +2,14 @@
   @include flexbox(column, initial, center, nowrap);
   background-color: $yellow;
   height: calc(100% - 70px);
+  min-height: 100%;
   padding-top: $header-height;
   width: 100%;
+
+  @media (max-width: 480px) {
+    min-height: initial;
+    justify-content: space-around;;
+  }
 
   &-text {
     $test: calc((100% - 1100px) / 2 + 0px);
@@ -13,6 +19,10 @@
     padding-left: $test;
     padding-right: 25px;
     text-transform: uppercase;
+
+    @media (max-width: 1024px) {
+      padding-left: 10%;
+    }
 
     h2 {
       font-weight: 300;
@@ -30,5 +40,9 @@
 
   &-scroll {
     text-align: center;
+
+    @media (max-width: 1024px) {
+      margin-top: 20px;
+    }
   }
 }

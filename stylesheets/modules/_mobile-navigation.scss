@@ -25,7 +25,7 @@
   }
 
   .active-menu {
-    background-color: $black;
+    background-color: $white;
     padding: 5px 0 5px 5%;
   }
 }
@@ -37,7 +37,7 @@
   height: 26px;
   width: 50px;
 
-  @media (min-width: 801px) {
+  @media (min-width: 1025px) {
     display: none;
   }
 
