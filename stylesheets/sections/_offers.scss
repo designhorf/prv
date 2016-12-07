@@ -5,7 +5,7 @@
   }
 
   .offer {
-    background: url('../images/shake-hands.jpg');
+    background: url('../images/shake-hands-compressor.jpg');
     background-position: center;
     background-size: cover;
     color: $white;
@@ -23,6 +23,14 @@
       @media (max-width: 800px) {
         width: initial;
       }
+    }
+  }
+
+  @media (max-width: 800px) {
+    .offer {
+      background: url('../images/shake-hands-tablet.jpg');
+      background-position: center;
+      background-size: cover;
     }
   }
 
@@ -75,6 +83,7 @@
     }
   }
 
+  .mobile-package-details,
   .package-details {
     border: 10px solid $yellow;
     margin-top: -10px;
@@ -91,5 +100,19 @@
         flex-direction: column;
       }
     }
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  .desktop-package-view {
+    display: none;
+  }
+}
+
+@media (min-width: 601px) {
+  .mobile-package-view {
+    display: none;
   }
 }

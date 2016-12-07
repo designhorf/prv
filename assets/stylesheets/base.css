@@ -164,12 +164,21 @@ h2 {
   @media (max-width: 600px) {
     .quote-widget-picture {
       display: none; } }
+  @media (max-width: 1024px) {
+    .quote-widget-picture-conception {
+      background: url("../images/hands-tablet.jpg");
+      background-position: center;
+      background-size: cover; }
+    .quote-widget-picture-chart {
+      background: url("../images/landscape-tablet.jpg");
+      background-position: center;
+      background-size: cover; } }
   .quote-widget-picture-conception {
-    background: url("../images/hands.jpg");
+    background: url("../images/hands-compressor.jpg");
     background-position: center;
     background-size: cover; }
   .quote-widget-picture-chart {
-    background: url("../images/landscape.jpg");
+    background: url("../images/landscape-compressor.jpg");
     background-position: center;
     background-size: cover; }
   .quote-widget-quote {
@@ -368,7 +377,7 @@ ul {
       width: 90%; } }
 
 .ajanlatunk .offer {
-  background: url("../images/shake-hands.jpg");
+  background: url("../images/shake-hands-compressor.jpg");
   background-position: center;
   background-size: cover;
   color: #fff;
@@ -391,6 +400,12 @@ ul {
     @media (max-width: 800px) {
       .ajanlatunk .offer-text {
         width: initial; } }
+
+@media (max-width: 800px) {
+  .ajanlatunk .offer {
+    background: url("../images/shake-hands-tablet.jpg");
+    background-position: center;
+    background-size: cover; } }
 
 .ajanlatunk .package-quote .quote-img {
   height: 21px;
@@ -444,12 +459,15 @@ ul {
         .ajanlatunk .package-items .package-item .click-to-details {
           text-align: center; } }
 
+.ajanlatunk .mobile-package-details,
 .ajanlatunk .package-details {
   border: 10px solid #f9c21b;
   margin-top: -10px;
   padding: 15px 20px; }
+  .ajanlatunk .mobile-package-details-title,
   .ajanlatunk .package-details-title {
     min-width: 200px; }
+  .ajanlatunk .mobile-package-details-wrap,
   .ajanlatunk .package-details-wrap {
     -ms-flex-align: baseline;
         align-items: baseline;
@@ -462,9 +480,18 @@ ul {
     -ms-flex-pack: start;
         justify-content: flex-start; }
     @media (max-width: 800px) {
+      .ajanlatunk .mobile-package-details-wrap,
       .ajanlatunk .package-details-wrap {
         -ms-flex-direction: column;
             flex-direction: column; } }
+
+@media (max-width: 600px) {
+  .desktop-package-view {
+    display: none; } }
+
+@media (min-width: 601px) {
+  .mobile-package-view {
+    display: none; } }
 
 .koncepcionk-title {
   margin-left: 10%; }
@@ -582,9 +609,20 @@ ul {
   margin-left: -30px;
   margin-top: 23px;
   position: absolute; }
-  @media (min-width: 800px) and (max-width: 1024px) {
+  @media (max-width: 1024px) {
     .legend {
-      margin-left: -70px; } }
+      -ms-flex-align: start;
+          align-items: flex-start;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      margin: 0 auto;
+      position: relative; } }
   .legend-element {
     -ms-flex-align: center;
         align-items: center;
@@ -597,6 +635,9 @@ ul {
     -ms-flex-pack: center;
         justify-content: center;
     margin-bottom: 10px; }
+    @media (max-width: 1024px) {
+      .legend-element {
+        margin: 10px 10px 40px; } }
   .legend .circle {
     -ms-flex-align: center;
         align-items: center;

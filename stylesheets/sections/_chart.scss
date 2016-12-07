@@ -83,24 +83,29 @@
   margin-top: 23px;
   position: absolute;
 
-  @media (min-width: 800px) and (max-width: 1024px) {
-    margin-left: -70px;
+  @media (max-width: 1024px) {
+    @include flexbox(row, flex-start, space-around, nowrap);
+    margin: 0 auto;
+    position: relative;
   }
 
-   &-element {
-     @include flexbox(row, center, center, nowrap);
-     margin-bottom: 10px;
-   }
+  &-element {
+   @include flexbox(row, center, center, nowrap);
+   margin-bottom: 10px;
 
-   .circle {
-     @include flexbox(row, center, center, nowrap);
-     border-radius: 50%;
-     font-weight: 700;
-     height: 35px;
-     margin-right: 10px;
-     width: 35px;
+   @media (max-width: 1024px) {
+      margin: 10px 10px 40px;
    }
+  }
 
+  .circle {
+   @include flexbox(row, center, center, nowrap);
+   border-radius: 50%;
+   font-weight: 700;
+   height: 35px;
+   margin-right: 10px;
+   width: 35px;
+  }
 }
 
 .circle {
