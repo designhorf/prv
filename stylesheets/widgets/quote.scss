@@ -51,14 +51,28 @@
       display: none;
     }
 
+    @media (max-width: 1024px) {
+      &-conception {
+        background: url('../images/hands-tablet.jpg');
+        background-position: center;
+        background-size: cover;
+      }
+
+      &-chart {
+        background: url('../images/landscape-tablet.jpg');
+        background-position: center;
+        background-size: cover;
+      }
+    }
+
     &-conception {
-      background: url('../images/hands.jpg');
+      background: url('../images/hands-compressor.jpg');
       background-position: center;
       background-size: cover;
     }
 
     &-chart {
-      background: url('../images/landscape.jpg');
+      background: url('../images/landscape-compressor.jpg');
       background-position: center;
       background-size: cover;
     }

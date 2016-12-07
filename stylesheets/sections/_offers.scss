@@ -5,7 +5,7 @@
   }
 
   .offer {
-    background: url('../images/shake-hands.jpg');
+    background: url('../images/shake-hands-compressor.jpg');
     background-position: center;
     background-size: cover;
     color: $white;
@@ -23,6 +23,14 @@
       @media (max-width: 800px) {
         width: initial;
       }
+    }
+  }
+
+  @media (max-width: 800px) {
+    .offer {
+      background: url('../images/shake-hands-tablet.jpg');
+      background-position: center;
+      background-size: cover;
     }
   }
 

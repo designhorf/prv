@@ -164,12 +164,21 @@ h2 {
   @media (max-width: 600px) {
     .quote-widget-picture {
       display: none; } }
+  @media (max-width: 1024px) {
+    .quote-widget-picture-conception {
+      background: url("../images/hands-tablet.jpg");
+      background-position: center;
+      background-size: cover; }
+    .quote-widget-picture-chart {
+      background: url("../images/landscape-tablet.jpg");
+      background-position: center;
+      background-size: cover; } }
   .quote-widget-picture-conception {
-    background: url("../images/hands.jpg");
+    background: url("../images/hands-compressor.jpg");
     background-position: center;
     background-size: cover; }
   .quote-widget-picture-chart {
-    background: url("../images/landscape.jpg");
+    background: url("../images/landscape-compressor.jpg");
     background-position: center;
     background-size: cover; }
   .quote-widget-quote {
@@ -368,7 +377,7 @@ ul {
       width: 90%; } }
 
 .ajanlatunk .offer {
-  background: url("../images/shake-hands.jpg");
+  background: url("../images/shake-hands-compressor.jpg");
   background-position: center;
   background-size: cover;
   color: #fff;
@@ -391,6 +400,12 @@ ul {
     @media (max-width: 800px) {
       .ajanlatunk .offer-text {
         width: initial; } }
+
+@media (max-width: 800px) {
+  .ajanlatunk .offer {
+    background: url("../images/shake-hands-tablet.jpg");
+    background-position: center;
+    background-size: cover; } }
 
 .ajanlatunk .package-quote .quote-img {
   height: 21px;
