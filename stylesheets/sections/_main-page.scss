@@ -30,8 +30,9 @@
   }
 
   &-devices {
-    @include content-properties;
-    max-width: 830px;
+    margin: 0 auto 40px;
+    width: 80%;
+    max-width: 1000px;
 
     &-img {
       width: 100%;
