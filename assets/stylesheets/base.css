@@ -318,7 +318,7 @@ ul {
       border-bottom: 3px solid #f9c21b; }
   .menu-items .active-menu p {
     border-bottom: 3px solid #f9c21b; }
-  .menu-items li:first-child {
+  .menu-items .first-menu-element {
     list-style-type: none; }
 
 .main {
