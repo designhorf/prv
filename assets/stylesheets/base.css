@@ -882,10 +882,6 @@ html,
 html {
   font-family: 'Open Sans', sans-serif; }
 
-body {
-  background: url("../images/gplaypattern.png");
-  background-repeat: repeat; }
-
 a {
   color: inherit;
   text-decoration: none; }
