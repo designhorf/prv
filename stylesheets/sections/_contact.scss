@@ -18,20 +18,21 @@
 
 .contact-widget {
   @include content-properties;
-  @include flexbox(row, center, space-around, nowrap);
+  @include flexbox(column, center, space-around, nowrap);
 
   @media (max-width: 600px) {
     flex-direction: column;
   }
 
   @media (min-width: 1024px) {
-    align-items: flex-end;
+    // align-items: flex-end;
+    align-items: center;
   }
 
   .half-size-widget {
     width: 45%;
 
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       width: 100%;
     }
   }

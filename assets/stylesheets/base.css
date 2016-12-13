@@ -773,8 +773,8 @@ ul {
       align-items: center;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
+  -ms-flex-direction: column;
+      flex-direction: column;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   -ms-flex-pack: distribute;
@@ -788,11 +788,11 @@ ul {
           flex-direction: column; } }
   @media (min-width: 1024px) {
     .contact-widget {
-      -ms-flex-align: end;
-          align-items: flex-end; } }
+      -ms-flex-align: center;
+          align-items: center; } }
   .contact-widget .half-size-widget {
     width: 45%; }
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       .contact-widget .half-size-widget {
         width: 100%; } }
   .contact-widget .contact-form {
