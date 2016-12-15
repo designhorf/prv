@@ -5,10 +5,10 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-  <meta http-equiv="Content-Language" content="hu-hu" />
+  <meta charset="UTF-8">
+  <!-- <meta http-equiv="Content-Language" content="hu-hu" /> -->
   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<title>PRV Team</title>
@@ -208,11 +208,13 @@
 
 <div class="mobile-package-view">
         <div class="package-items">
-          <div class="package-item mobile-package-item issue active" data-name="mobile-package-issue-details" title="Kattintson a részletekért">
-            <img class="package-item-icon" src="assets/images/icons/issue.svg" alt="issue icon">
-            <h3 class="uppercase">kiadvány</h3>
-            <p class="click-to-details italic">Kattintson a részletekért</p>
-          </div>
+          <a href="#mobileIssue">
+            <div class="package-item mobile-package-item issue active" data-name="mobile-package-issue-details" title="Kattintson a részletekért" id="mobileIssue">
+              <img class="package-item-icon" src="assets/images/icons/issue.svg" alt="issue icon">
+              <h3 class="uppercase">kiadvány</h3>
+              <p class="click-to-details italic">Kattintson a részletekért</p>
+            </div>
+          </a>
 
           <div class="mobile-package-details" id="mobile-package-issue-details">
             <div class="package-details-wrap">
@@ -235,11 +237,13 @@
 
 
 
-          <div class="package-item mobile-package-item folder" data-name="mobile-package-folder-details" title="Kattintson a részletekért">
-            <img class="package-item-icon" src="assets/images/icons/folder.svg" alt="folder icon">
-            <h3 class="uppercase">mappa</h3>
-            <p class="click-to-details italic">Kattintson a részletekért</p>
-          </div>
+          <a href="#mobileFolder">
+            <div class="package-item mobile-package-item folder" data-name="mobile-package-folder-details" title="Kattintson a részletekért" id="mobileFolder">
+              <img class="package-item-icon" src="assets/images/icons/folder.svg" alt="folder icon">
+              <h3 class="uppercase">mappa</h3>
+              <p class="click-to-details italic">Kattintson a részletekért</p>
+            </div>
+          </a>
 
           <div class="mobile-package-details off" id="mobile-package-folder-details">
               <p>500 darab, vállalatához illő, egyedi mappa, amelyben ízlésesen rendszerezhetik a tárgyalások során szükséges dokumentumokat. <br><br>
@@ -248,11 +252,13 @@
 
 
 
-          <div class="package-item mobile-package-item video" data-name="mobile-package-video-details" title="Kattintson a részletekért">
-            <img class="package-item-icon" src="assets/images/icons/video.svg" alt="video icon">
-            <h3 class="uppercase">videó</h3>
-            <p class="click-to-details italic">Kattintson a részletekért</p>
-          </div>
+          <a href="#mobileVideo">
+            <div class="package-item mobile-package-item video" data-name="mobile-package-video-details" title="Kattintson a részletekért" id="mobileVideo">
+              <img class="package-item-icon" src="assets/images/icons/video.svg" alt="video icon">
+              <h3 class="uppercase">videó</h3>
+              <p class="click-to-details italic">Kattintson a részletekért</p>
+            </div>
+          </a>
         </div>
 
         <div class="mobile-package-details off" id="mobile-package-video-details">
@@ -656,179 +662,6 @@
     </section>
 	</div>
 
-
-  <script>
-    // SLIDER
-    var left = document.getElementById('left'),
-        right = document.getElementById('right'),
-        container = document.querySelector('.partners-widget-content'),
-        logos = document.querySelectorAll('.reference-image');
-
-    left.addEventListener('click', function () {
-      var position = container.getAttribute('data-position'),
-          rPos = container.offsetWidth;
-      position = Number(position) - (rPos / 5);
-      [].forEach.call(logos, function (logo) {
-        var akarmi = (Number(logos.length) * (rPos / 5)) - rPos + Number(position);
-        if (akarmi >= 0) {
-          var newValue = position + 'px';
-          logo.style.left = newValue;
-          container.setAttribute('data-position', position);
-        }
-      });
-    });
-
-    right.addEventListener('click', function () {
-      var position = container.getAttribute('data-position'),
-          rPos = container.offsetWidth;
-      position = Number(position) + (rPos / 5);
-      [].forEach.call(logos, function (logo) {
-        if (position <= 0) {
-          var newValue = position + 'px';
-          logo.style.left = newValue;
-          container.setAttribute('data-position', position);
-        }
-      });
-    });
-
-
-
-
-
-    var changeLabelStyle = function (label) {
-      label.classList.remove('hidden');
-      label.style.fontSize = '1em';
-      label.style.top = '0px';
-    };
-
-    var formName = document.querySelector('.contact-form');
-    [].forEach.call(formName.querySelectorAll('.input-field'), function (inputField) {
-      inputField.addEventListener('focus', function () {
-        inputField.setAttribute('placeholder', '');
-        var targetLabel = 'label[for='+ inputField.getAttribute('name') +']'
-        var label = formName.querySelector(targetLabel);
-        changeLabelStyle(label);
-      });
-    });
-  </script>
-
-  <script>
-      var removeActiveStatus = function (selector) {
-        [].forEach.call(document.querySelectorAll(selector), function (item2) {
-          item2.classList.remove('active');
-        });
-      };
-
-      var selectActiveElement = function (item, selector) {
-        item.classList.add('active');
-        [].forEach.call(document.querySelectorAll(selector), function (element) {
-          element.classList.add('off');
-        });
-        var idName = item.getAttribute('data-name');
-        document.getElementById(idName).classList.remove('off');
-      };
-
-      [].forEach.call(document.querySelectorAll('.desktop-package-item'), function (item) {
-        item.addEventListener('click', function () {
-          removeActiveStatus('.desktop-package-item');
-          selectActiveElement(item, '.package-details');
-        });
-      });
-
-      [].forEach.call(document.querySelectorAll('.mobile-package-item'), function (item) {
-        item.addEventListener('click', function () {
-          removeActiveStatus('.mobile-package-item');
-          selectActiveElement(item, '.mobile-package-details');
-        });
-      });
-
-
-
-
-      var showHiddenElement = function (buttonId, hiddenElement) {
-        var button = document.getElementById(buttonId);
-        button.addEventListener('click', function () {
-          document.getElementById(hiddenElement).classList.toggle('off');
-        });
-      };
-
-      showHiddenElement('btn-conception', 'hidden-conception');
-      showHiddenElement('btn-chart', 'hidden-chart');
-
-      var conceptionMenuItem = document.querySelector('.conception-menu-item');
-      var chartMenuItem = document.querySelector('.chart-menu-item');
-
-      conceptionMenuItem.addEventListener('click', function () {
-        document.getElementById('hidden-conception').classList.remove('off');
-      });
-      chartMenuItem.addEventListener('click', function () {
-        document.getElementById('hidden-chart').classList.remove('off');
-      });
-
-
-
-
-      var removeActiveMenu = function () {
-        [].forEach.call(document.querySelectorAll('.list-element'), function (element) {
-          element.classList.remove('active-menu');
-        });
-      };
-
-      [].forEach.call(document.querySelectorAll('.menu-element'), function (menuItem) {
-        menuItem.addEventListener('click', function () {
-          removeActiveMenu();
-          menuItem.querySelector('.list-element').classList.add('active-menu');
-        });
-      });
-
-
-
-      var menu = document.getElementById('menuKebab');
-      var rotate = function(line, degree) {
-        [].forEach.call(document.querySelectorAll(line), function(item) {
-          item.style.transform = 'rotate(' + degree + ')';
-        });
-      };
-
-      var hideMiddleLine = function(line) {
-        [].forEach.call(document.querySelectorAll(line), function(middle) {
-            middle.classList.toggle('off');
-        });
-      };
-
-      var hamburger = document.querySelector('.hamburger-menu'),
-          mobileMenu = document.querySelector('.mobile-menu'),
-          mobileElements = document.querySelectorAll('.mobile-element');
-
-      menu.addEventListener('click', function() {
-        if (menu.classList.contains('rotated')) {
-          rotate('.x-1', '0deg');
-          rotate('.x-2', '0deg');
-          menu.querySelector('.sanyi').style.marginBottom = '7px';
-          mobileMenu.style.top = '100%';
-        } else {
-          rotate('.x-1', '45deg');
-          rotate('.x-2', '-45deg');
-          menu.querySelector('.sanyi').style.marginBottom = '13px';
-          mobileMenu.style.top = '0';
-        }
-
-        hideMiddleLine('.x-m');
-        menu.classList.toggle('rotated');
-      });
-
-      // Hide mobile menu after click
-      [].forEach.call(mobileElements, function (mobileElement) {
-        mobileElement.addEventListener('click', function () {
-          rotate('.x-1', '0deg');
-          rotate('.x-2', '0deg');
-          menu.querySelector('.sanyi').style.marginBottom = '7px';
-          mobileMenu.style.top = '100%';
-
-          hideMiddleLine('.x-m');
-          menu.classList.toggle('rotated');
-        })
-      });
-  </script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
