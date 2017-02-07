@@ -5,10 +5,11 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
   <meta http-equiv="Content-Language" content="hu-hu" />
   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<title>PRV Team</title>
@@ -19,9 +20,9 @@
 	<div class="wrap">
 
     <!-- HEADER -->
-		<div class="header">
+		<div class="header" id="header">
       <div class="header-wrap max-content-width">
-        <a href="/">
+        <a href="#home">
           <div class="logo">
             <img src="assets/images/prv-logo.svg" alt="prv logo">
             <p class="xtra-small-text">communication</p>
@@ -30,7 +31,7 @@
         <div class="menu">
           <ul class="menu-items">
             <a class="menu-element" href="#offer">
-              <li class="list-element">
+              <li class="list-element first-menu-element">
                 <p>ajánlatunk</p>
               </li>
             </a>
@@ -115,7 +116,9 @@
       </div>
 
       <div class="main-scroll">
-        <img class="main-scroll-icon" src="assets/images/scroll-down.svg" alt="scroll down icon">
+        <a href="#offer">
+          <img class="main-scroll-icon" src="assets/images/scroll-down.svg" alt="scroll down icon">
+        </a>
       </div>
     </section>
 
@@ -206,11 +209,13 @@
 
 <div class="mobile-package-view">
         <div class="package-items">
-          <div class="package-item mobile-package-item issue active" data-name="mobile-package-issue-details" title="Kattintson a részletekért">
-            <img class="package-item-icon" src="assets/images/icons/issue.svg" alt="issue icon">
-            <h3 class="uppercase">kiadvány</h3>
-            <p class="click-to-details italic">Kattintson a részletekért</p>
-          </div>
+          <a href="#mobileIssue">
+            <div class="package-item mobile-package-item issue active" data-name="mobile-package-issue-details" title="Kattintson a részletekért" id="mobileIssue">
+              <img class="package-item-icon" src="assets/images/icons/issue.svg" alt="issue icon">
+              <h3 class="uppercase">kiadvány</h3>
+              <p class="click-to-details italic">Kattintson a részletekért</p>
+            </div>
+          </a>
 
           <div class="mobile-package-details" id="mobile-package-issue-details">
             <div class="package-details-wrap">
@@ -233,11 +238,13 @@
 
 
 
-          <div class="package-item mobile-package-item folder" data-name="mobile-package-folder-details" title="Kattintson a részletekért">
-            <img class="package-item-icon" src="assets/images/icons/folder.svg" alt="folder icon">
-            <h3 class="uppercase">mappa</h3>
-            <p class="click-to-details italic">Kattintson a részletekért</p>
-          </div>
+          <a href="#mobileFolder">
+            <div class="package-item mobile-package-item folder" data-name="mobile-package-folder-details" title="Kattintson a részletekért" id="mobileFolder">
+              <img class="package-item-icon" src="assets/images/icons/folder.svg" alt="folder icon">
+              <h3 class="uppercase">mappa</h3>
+              <p class="click-to-details italic">Kattintson a részletekért</p>
+            </div>
+          </a>
 
           <div class="mobile-package-details off" id="mobile-package-folder-details">
               <p>500 darab, vállalatához illő, egyedi mappa, amelyben ízlésesen rendszerezhetik a tárgyalások során szükséges dokumentumokat. <br><br>
@@ -246,11 +253,13 @@
 
 
 
-          <div class="package-item mobile-package-item video" data-name="mobile-package-video-details" title="Kattintson a részletekért">
-            <img class="package-item-icon" src="assets/images/icons/video.svg" alt="video icon">
-            <h3 class="uppercase">videó</h3>
-            <p class="click-to-details italic">Kattintson a részletekért</p>
-          </div>
+          <a href="#mobileVideo">
+            <div class="package-item mobile-package-item video" data-name="mobile-package-video-details" title="Kattintson a részletekért" id="mobileVideo">
+              <img class="package-item-icon" src="assets/images/icons/video.svg" alt="video icon">
+              <h3 class="uppercase">videó</h3>
+              <p class="click-to-details italic">Kattintson a részletekért</p>
+            </div>
+          </a>
         </div>
 
         <div class="mobile-package-details off" id="mobile-package-video-details">
@@ -299,17 +308,12 @@
 
           <h3 class="quote-text author bold italic"> - Henry Ford</h3>
 
-          <div>
-            <button class="btn-quote-widget" id="btn-conception">
-              <span class="btn-quote-widget-text">Részletek</span>
-            </button>
-          </div>
         </div>
 
         <div class="quote-widget-picture quote-widget-picture-conception"></div>
       </div>
 
-      <div class="quote-widget-details max-content-width off" id="hidden-conception">
+      <div class="quote-widget-details max-content-width">
         <h2 class="center">A csomag, ami megfinanszírozza önmagát - A “win-win” szituáció.</h2>
         <h3 class="light center bottom-space">A PRV csomag költségeit az Önök partnerei (beszállítók, szolgáltatók) fedezik megjelenésükkel.​</h3>
         <div class="icon-cycle">
@@ -319,7 +323,7 @@
           <div class="half-size">
             <h3 class="center bottom-space">Miért jó ez Önnek?</h3>
             <p>Azt, hogy mely beszállítók, illetve szolgáltatók hirdethetnek, Önök döntik el. Ezáltal olyan partnerek jelennek meg a kiadványban, akik az évek során hozzájárultak vállalatuk sikeréhez, illetve meghatározó szerepet töltenek be a piaci környezetben.</p>
-            <p class="bold bottom-space">Ezek a reklámok teszik az Önök számára költségmentessé a projektet.</p>
+            <p class="bold bottom-space">Ezek a partneri megjelenések teszik az Önök számára költségmentessé a projektet.</p>
 
             <div class="risk">
               <h3 class="center bottom-space">Kockázat nélkül -<br>
@@ -332,21 +336,21 @@
             <h3 class="center bottom-space">Miért jó ez partnereinek?</h3>
             <p class="bold">Marketing</p>
             <ul class="bottom-space">
-              <li>A partnerek számára ez folyamatos megjelenést biztosít a szakmai és piaci környezetükön belül.</li>
-              <li><u>Célzott közönség elérése:</u> megjelenésükkel valóban releváns közönség előtt mutatkozhatnak meg - ügyvezetök, döntéshozók elött.</li>
-              <li><u>A hirdetés, mint referencia:</u> hirdetőik számára hozzáadott értéket képvisel, hogy bekerültek az Önök kiemelt partnerlistájába → Megjelenésük jó ajánlólevélként szolgál.</li>
+              <li>A partnerek számára folyamatos megjelenést biztosít a szakmai és piaci környezetükön belül.</li>
+              <li><u>Célzott közönség elérése:</u> megjelenésükkel valóban releváns közönség előtt mutatkozhatnak meg - ügyvezetök, döntéshozók előtt.</li>
+              <li><u>A hirdetés, mint referencia:</u> hirdetőik számára hozzáadott értéket képvisel, hogy bekerültek az Önök kiemelt partnerlistájába → megjelenésük jó ajánlólevélként szolgál.</li>
             </ul>
 
             <p class="bold">Kapcsolatépítés</p>
             <ul class="bottom-space">
-              <li>Ez a lehetöség megtiszteltetés azok számára, akik megjelenhetnek az Önök kiemelt partnereiként.</li>
-              <li><u>Szinergia effektus:</u> ha az Önök célja megvalósul a PRV csomag segítségével, az mindenki számára előnyös → a sikeres jövö egyaránt közös érdek.</li>
-              <li><u>Co-Branding:</u> a pozitív imázs ereje növekszik, ha több, erös márkanév sorakozik fel egy sikertörténet mögött.</li>
+              <li>Ez a lehetőség megtiszteltetés azok számára, akik megjelenhetnek az Önök kiemelt partnereiként.</li>
+              <li><u>Szinergia effektus:</u> ha az Önök célja megvalósul a PRV csomag segítségével, az mindenki számára előnyös → a sikeres jövő egyaránt közös érdek.</li>
+              <li><u>Co-Branding:</u> a pozitív imázs ereje növekszik, ha több, erős márkanév sorakozik fel egy sikertörténet mögött.</li>
             </ul>
 
-            <p class="bold">A megjelenés amit kapnak</p>
+            <p class="bold">A megjelenés, amit kapnak</p>
             <ul>
-              <li>A PRV csapata többletköltség nélkül elkészíti hirdetöpartnerei QR-kóddal, és hiperlinkkel ellátott megjelenését →  a jóváhagyott reklámot a csatlakozott vállalatok korlátlanul felhasználhatják késöbbi marketingtevékenységeik során.</li>
+              <li>A PRV csapata többletköltség nélkül elkészíti hirdető partnerei QR-kóddal, és hiperlinkkel ellátott megjelenését →  a jóváhagyott reklámot a csatlakozott vállalatok korlátlanul felhasználhatják későbbi marketingtevékenységeik során.</li>
             </ul>
           </div>
         </div>
@@ -369,16 +373,10 @@
           </div>
 
           <h3 class="quote-text author bold italic"> - Antoine de <br>Saint-Exupéry</h3>
-
-          <div>
-            <button class="btn-quote-widget" id="btn-chart">
-              <span class="btn-quote-widget-text">Részletek</span>
-            </button>
-          </div>
         </div>
       </div>
 
-      <div class="quote-widget-details max-content-width off" id="hidden-chart">
+      <div class="quote-widget-details max-content-width">
         <h2 class="chart-details-title light center">
           A PRV csapata gondoskodik a projekt teljes lebonyolításról. Az Önök feladata csupán, hogy lektorálják az eredményt némi iránymutatással.</h2>
 
@@ -414,7 +412,7 @@
           <div class="chart-element">
             <div class="chart-element-icon">
               <img src="assets/images/icons/2-phone.svg" alt="phone icon">
-              <p>Hirdetések elöjegyzése</p>
+              <p>Hirdetések előjegyzése</p>
             </div>
             <div class="chart-element-number">
               <div class="circle yellow-bg">
@@ -423,7 +421,7 @@
               <img class="line" src="assets/images/line.svg" alt="line">
             </div>
             <div class="chart-element-text">
-              Partnerek megkeresése, hirdetések elöjegyzése - ebben a fázisban biztosítjuk a költséghátteret.
+              Partnerek megkeresése, hirdetések előjegyzése - ebben a fázisban biztosítjuk a költséghátteret.
             </div>
           </div>
 
@@ -439,7 +437,7 @@
               <img class="line" src="assets/images/line.svg" alt="line">
             </div>
             <div class="chart-element-text">
-              Brainstorming - a projektfelelösök telefonkonferencián egyeztetnek a tartalomról.
+              Brainstorming - a projektfelelősök telefonkonferencián egyeztetnek a tartalomról.
             </div>
           </div>
 
@@ -455,7 +453,7 @@
               <img class="line" src="assets/images/line.svg" alt="line">
             </div>
             <div class="chart-element-text">
-              Szövegírás - a copywriter gondoskodik a szövegröl
+              Szövegírás - a copywriter gondoskodik a szövegről
             </div>
           </div>
 
@@ -471,7 +469,7 @@
               <img class="line" src="assets/images/line.svg" alt="line">
             </div>
             <div class="chart-element-text">
-              Fotózás, videózás - munkatársaink a helyszínre érkeznek egy elöre egyeztetett idöpontban
+              Fotózás, videózás - munkatársaink a helyszínre érkeznek egy előre egyeztetett időpontban
             </div>
           </div>
 
@@ -510,7 +508,7 @@
           <div class="chart-element">
             <div class="chart-element-icon">
               <img src="assets/images/icons/8-forward.svg" alt="forward icon">
-              <p>Késöbbiekben</p>
+              <p>Későbbiekben</p>
             </div>
             <div class="chart-element-number">
               <div class="circle empty-circle">
@@ -518,7 +516,7 @@
               </div>
             </div>
             <div class="chart-element-text">
-              Késöbbiekben állunk rendelkezésükre egy újabb téma feldolgozására!
+              Későbbiekben állunk rendelkezésükre egy újabb téma feldolgozására!
             </div>
           </div>
         </div>
@@ -635,8 +633,9 @@
             Hírsztár kft<br>
             II. Rákóczi Ferenc utca 23. 9400 Sopron<br>
             Magyarország<br>
-            Cjsz.: 01 10 041043<br>
-            Köz. adósz.: 13775801-2-0<br>
+            Cjsz.: 08 09 014232<br>
+            Adószám: 13775801208<br>
+            Köz. adósz.: HU13775801<br>
           </p>
         </div>
       </div>
@@ -654,179 +653,6 @@
     </section>
 	</div>
 
-
-  <script>
-    // SLIDER
-    var left = document.getElementById('left'),
-        right = document.getElementById('right'),
-        container = document.querySelector('.partners-widget-content'),
-        logos = document.querySelectorAll('.reference-image');
-
-    left.addEventListener('click', function () {
-      var position = container.getAttribute('data-position'),
-          rPos = container.offsetWidth;
-      position = Number(position) - (rPos / 5);
-      [].forEach.call(logos, function (logo) {
-        var akarmi = (Number(logos.length) * (rPos / 5)) - rPos + Number(position);
-        if (akarmi >= 0) {
-          var newValue = position + 'px';
-          logo.style.left = newValue;
-          container.setAttribute('data-position', position);
-        }
-      });
-    });
-
-    right.addEventListener('click', function () {
-      var position = container.getAttribute('data-position'),
-          rPos = container.offsetWidth;
-      position = Number(position) + (rPos / 5);
-      [].forEach.call(logos, function (logo) {
-        if (position <= 0) {
-          var newValue = position + 'px';
-          logo.style.left = newValue;
-          container.setAttribute('data-position', position);
-        }
-      });
-    });
-
-
-
-
-
-    var changeLabelStyle = function (label) {
-      label.classList.remove('hidden');
-      label.style.fontSize = '1em';
-      label.style.top = '0px';
-    };
-
-    var formName = document.querySelector('.contact-form');
-    [].forEach.call(formName.querySelectorAll('.input-field'), function (inputField) {
-      inputField.addEventListener('focus', function () {
-        inputField.setAttribute('placeholder', '');
-        var targetLabel = 'label[for='+ inputField.getAttribute('name') +']'
-        var label = formName.querySelector(targetLabel);
-        changeLabelStyle(label);
-      });
-    });
-  </script>
-
-  <script>
-      var removeActiveStatus = function (selector) {
-        [].forEach.call(document.querySelectorAll(selector), function (item2) {
-          item2.classList.remove('active');
-        });
-      };
-
-      var selectActiveElement = function (item, selector) {
-        item.classList.add('active');
-        [].forEach.call(document.querySelectorAll(selector), function (element) {
-          element.classList.add('off');
-        });
-        var idName = item.getAttribute('data-name');
-        document.getElementById(idName).classList.remove('off');
-      };
-
-      [].forEach.call(document.querySelectorAll('.desktop-package-item'), function (item) {
-        item.addEventListener('click', function () {
-          removeActiveStatus('.desktop-package-item');
-          selectActiveElement(item, '.package-details');
-        });
-      });
-
-      [].forEach.call(document.querySelectorAll('.mobile-package-item'), function (item) {
-        item.addEventListener('click', function () {
-          removeActiveStatus('.mobile-package-item');
-          selectActiveElement(item, '.mobile-package-details');
-        });
-      });
-
-
-
-
-      var showHiddenElement = function (buttonId, hiddenElement) {
-        var button = document.getElementById(buttonId);
-        button.addEventListener('click', function () {
-          document.getElementById(hiddenElement).classList.toggle('off');
-        });
-      };
-
-      showHiddenElement('btn-conception', 'hidden-conception');
-      showHiddenElement('btn-chart', 'hidden-chart');
-
-      var conceptionMenuItem = document.querySelector('.conception-menu-item');
-      var chartMenuItem = document.querySelector('.chart-menu-item');
-
-      conceptionMenuItem.addEventListener('click', function () {
-        document.getElementById('hidden-conception').classList.remove('off');
-      });
-      chartMenuItem.addEventListener('click', function () {
-        document.getElementById('hidden-chart').classList.remove('off');
-      });
-
-
-
-
-      var removeActiveMenu = function () {
-        [].forEach.call(document.querySelectorAll('.list-element'), function (element) {
-          element.classList.remove('active-menu');
-        });
-      };
-
-      [].forEach.call(document.querySelectorAll('.menu-element'), function (menuItem) {
-        menuItem.addEventListener('click', function () {
-          removeActiveMenu();
-          menuItem.querySelector('.list-element').classList.add('active-menu');
-        });
-      });
-
-
-
-      var menu = document.getElementById('menuKebab');
-      var rotate = function(line, degree) {
-        [].forEach.call(document.querySelectorAll(line), function(item) {
-          item.style.transform = 'rotate(' + degree + ')';
-        });
-      };
-
-      var hideMiddleLine = function(line) {
-        [].forEach.call(document.querySelectorAll(line), function(middle) {
-            middle.classList.toggle('off');
-        });
-      };
-
-      var hamburger = document.querySelector('.hamburger-menu'),
-          mobileMenu = document.querySelector('.mobile-menu'),
-          mobileElements = document.querySelectorAll('.mobile-element');
-
-      menu.addEventListener('click', function() {
-        if (menu.classList.contains('rotated')) {
-          rotate('.x-1', '0deg');
-          rotate('.x-2', '0deg');
-          menu.querySelector('.sanyi').style.marginBottom = '7px';
-          mobileMenu.style.top = '100%';
-        } else {
-          rotate('.x-1', '45deg');
-          rotate('.x-2', '-45deg');
-          menu.querySelector('.sanyi').style.marginBottom = '13px';
-          mobileMenu.style.top = '0';
-        }
-
-        hideMiddleLine('.x-m');
-        menu.classList.toggle('rotated');
-      });
-
-      // Hide mobile menu after click
-      [].forEach.call(mobileElements, function (mobileElement) {
-        mobileElement.addEventListener('click', function () {
-          rotate('.x-1', '0deg');
-          rotate('.x-2', '0deg');
-          menu.querySelector('.sanyi').style.marginBottom = '7px';
-          mobileMenu.style.top = '100%';
-
-          hideMiddleLine('.x-m');
-          menu.classList.toggle('rotated');
-        })
-      });
-  </script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>

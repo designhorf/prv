@@ -55,6 +55,16 @@ module.exports = function(grunt) {
 				colorizeOutput: true,
 			},
 		},
+    uglify: {
+      my_target: {
+        files: [{
+            expand: true,
+            cwd: 'js',
+            src: ['**/*.js'],
+            dest: './assets/js'
+        }]
+      }
+    },
 		watch: {
 			css: {
 				files: ['stylesheets/**/*.scss'],
@@ -77,6 +87,7 @@ module.exports = function(grunt) {
     'scsslint',
 		'clean',
 		'sass',
+    'uglify',
 		'postcss',
 		'cssmin',
 		'copy',

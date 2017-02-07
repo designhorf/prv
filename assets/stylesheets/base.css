@@ -163,8 +163,9 @@ h2 {
             align-items: center; } }
   @media (max-width: 600px) {
     .quote-widget-picture {
+      background: none;
       display: none; } }
-  @media (max-width: 1024px) {
+  @media (min-width: 601px) and (max-width: 1024px) {
     .quote-widget-picture-conception {
       background: url("../images/hands-tablet.jpg");
       background-position: center;
@@ -173,14 +174,15 @@ h2 {
       background: url("../images/landscape-tablet.jpg");
       background-position: center;
       background-size: cover; } }
-  .quote-widget-picture-conception {
-    background: url("../images/hands-compressor.jpg");
-    background-position: center;
-    background-size: cover; }
-  .quote-widget-picture-chart {
-    background: url("../images/landscape-compressor.jpg");
-    background-position: center;
-    background-size: cover; }
+  @media (min-width: 1025px) {
+    .quote-widget-picture-conception {
+      background: url("../images/hands-compressor.jpg");
+      background-position: center;
+      background-size: cover; }
+    .quote-widget-picture-chart {
+      background: url("../images/landscape-compressor.jpg");
+      background-position: center;
+      background-size: cover; } }
   .quote-widget-quote {
     -ms-flex-align: baseline;
         align-items: baseline;
@@ -316,7 +318,7 @@ ul {
       border-bottom: 3px solid #f9c21b; }
   .menu-items .active-menu p {
     border-bottom: 3px solid #f9c21b; }
-  .menu-items li:first-child {
+  .menu-items .first-menu-element {
     list-style-type: none; }
 
 .main {
@@ -330,18 +332,21 @@ ul {
       flex-wrap: nowrap;
   -ms-flex-pack: center;
       justify-content: center;
-  background-color: #f9c21b;
+  background: linear-gradient(to bottom, #fff 29%, #f9c21b 100%);
   height: calc(100% - 70px);
   min-height: 100%;
-  padding-top: 70px;
+  padding-top: 90px;
   width: 100%; }
   @media (max-width: 480px) {
     .main {
       min-height: initial;
       -ms-flex-pack: distribute;
           justify-content: space-around; } }
+  @media (min-width: 1025px) and (max-width: 1440px) {
+    .main {
+      -ms-flex-pack: start;
+          justify-content: flex-start; } }
   .main-text {
-    background-color: #fff;
     display: table;
     max-width: 450px;
     padding-left: calc((100% - 1100px) / 2 + 0px);
@@ -350,15 +355,20 @@ ul {
     @media (max-width: 1024px) {
       .main-text {
         padding-left: 10%; } }
+    @media (min-width: 1025px) and (max-width: 1440px) {
+      .main-text h1 {
+        font-size: 1.85em; }
+      .main-text h2 {
+        font-size: 1.65em; } }
     .main-text h2 {
       font-weight: 300; }
   .main-devices {
-    margin: 0 auto;
+    margin: 0 auto 40px;
     width: 80%;
-    max-width: 830px; }
-    @media (max-width: 800px) {
+    max-width: 1000px; }
+    @media (min-width: 1025px) and (max-width: 1440px) {
       .main-devices {
-        width: 90%; } }
+        max-width: 800px; } }
     .main-devices-img {
       width: 100%; }
   .main-scroll {
@@ -763,8 +773,8 @@ ul {
       align-items: center;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
+  -ms-flex-direction: column;
+      flex-direction: column;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   -ms-flex-pack: distribute;
@@ -778,11 +788,11 @@ ul {
           flex-direction: column; } }
   @media (min-width: 1024px) {
     .contact-widget {
-      -ms-flex-align: end;
-          align-items: flex-end; } }
+      -ms-flex-align: center;
+          align-items: center; } }
   .contact-widget .half-size-widget {
     width: 45%; }
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       .contact-widget .half-size-widget {
         width: 100%; } }
   .contact-widget .contact-form {
@@ -873,7 +883,7 @@ html {
   font-family: 'Open Sans', sans-serif; }
 
 body {
-  background: url("../images/gplaypattern.png");
+  background: url("../images/gplaypattern2.png");
   background-repeat: repeat; }
 
 a {
