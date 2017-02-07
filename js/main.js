@@ -83,30 +83,6 @@
 
 
 
-
-    var showHiddenElement = function (buttonId, hiddenElement) {
-      var button = document.getElementById(buttonId);
-      button.addEventListener('click', function () {
-        document.getElementById(hiddenElement).classList.toggle('off');
-      });
-    };
-
-    showHiddenElement('btn-conception', 'hidden-conception');
-    showHiddenElement('btn-chart', 'hidden-chart');
-
-    var conceptionMenuItem = document.querySelector('.conception-menu-item');
-    var chartMenuItem = document.querySelector('.chart-menu-item');
-
-    conceptionMenuItem.addEventListener('click', function () {
-      document.getElementById('hidden-conception').classList.remove('off');
-    });
-    chartMenuItem.addEventListener('click', function () {
-      document.getElementById('hidden-chart').classList.remove('off');
-    });
-
-
-
-
     var removeActiveMenu = function () {
       [].forEach.call(document.querySelectorAll('.list-element'), function (element) {
         element.classList.remove('active-menu');
