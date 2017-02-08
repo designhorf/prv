@@ -18,7 +18,7 @@
   &-text {
     $test: calc((100% - 1100px) / 2 + 0px);
     display: table;
-    max-width: 450px;
+    max-width: 500px;
     padding-left: $test;
     padding-right: 25px;
     text-transform: uppercase;

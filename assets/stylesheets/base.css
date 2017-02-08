@@ -348,7 +348,7 @@ ul {
           justify-content: flex-start; } }
   .main-text {
     display: table;
-    max-width: 450px;
+    max-width: 500px;
     padding-left: calc((100% - 1100px) / 2 + 0px);
     padding-right: 25px;
     text-transform: uppercase; }
@@ -945,3 +945,6 @@ textarea {
   height: 120px;
   position: absolute;
   transform: rotate(-12deg); }
+  @media (max-width: 767px) {
+    .twentyfive {
+      height: 60px; } }

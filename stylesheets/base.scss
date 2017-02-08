@@ -92,4 +92,8 @@ textarea {
   height: 120px;
   position: absolute;
   transform: rotate(-12deg);
+
+  @media (max-width: 767px) {
+    height: 60px;
+  }
 }
