@@ -948,3 +948,6 @@ textarea {
   @media (max-width: 767px) {
     .twentyfive {
       height: 60px; } }
+
+.lightblue-text {
+  color: #547c88; }
