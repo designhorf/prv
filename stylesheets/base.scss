@@ -96,6 +96,10 @@ textarea {
   @media (max-width: 767px) {
     height: 60px;
   }
+
+  @media (min-width: 1200px) {
+    height: 160px;
+  }
 }
 
 .lightblue-text {
