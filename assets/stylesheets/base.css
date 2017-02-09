@@ -348,7 +348,7 @@ ul {
           justify-content: flex-start; } }
   .main-text {
     display: table;
-    max-width: 450px;
+    max-width: 500px;
     padding-left: calc((100% - 1100px) / 2 + 0px);
     padding-right: 25px;
     text-transform: uppercase; }
@@ -940,3 +940,17 @@ textarea {
   color: #fff;
   font-size: .8em;
   height: 60px; }
+
+.twentyfive {
+  height: 120px;
+  position: absolute;
+  transform: rotate(-12deg); }
+  @media (max-width: 767px) {
+    .twentyfive {
+      height: 60px; } }
+  @media (min-width: 1200px) {
+    .twentyfive {
+      height: 160px; } }
+
+.lightblue-text {
+  color: #547c88; }

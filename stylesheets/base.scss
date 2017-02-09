@@ -87,3 +87,21 @@ textarea {
   font-size: .8em;
   height: 60px;
 }
+
+.twentyfive {
+  height: 120px;
+  position: absolute;
+  transform: rotate(-12deg);
+
+  @media (max-width: 767px) {
+    height: 60px;
+  }
+
+  @media (min-width: 1200px) {
+    height: 160px;
+  }
+}
+
+.lightblue-text {
+  color: $lightblue;
+}
