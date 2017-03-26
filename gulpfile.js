@@ -6,6 +6,7 @@ var gulp = require('gulp'),
     autoprefixer = require('autoprefixer'),
     gzip = require('gulp-gzip'),
     htmlmin = require('gulp-htmlmin'),
+    imagemin = require('gulp-imagemin'),
     testDest = './test';
 
 gulp.task('compress', function() {
@@ -36,4 +37,10 @@ gulp.task('minify', function() {
     .pipe(gulp.dest(testDest));
 });
 
-gulp.task('default', ['sass', 'autoprefixer', '']);
+gulp.task('imagemin', function() {
+  return gulp.src('./assets/images/*.png')
+    .pipe(imagemin())
+		.pipe(gulp.dest('./assets/images'));
+});
+
+gulp.task('default', ['sass', 'autoprefixer', 'minify', 'imagemin']);
