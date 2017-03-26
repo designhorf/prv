@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="13px" height="18px" viewBox="0 0 13 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
-    <title>Path 8</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="5---Partnereink" transform="translate(-148.000000, -273.000000)" stroke-width="2" stroke="#F9C21B">
-            <g transform="translate(0.000000, 110.000000)" id="Path-8">
-                <polyline transform="translate(155.009644, 172.014282) rotate(-90.000000) translate(-155.009644, -172.014282) " points="146.995361 177.023926 154.934814 167.004639 163.023926 177.023926"></polyline>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg width="13" height="18" viewBox="0 0 13 18" xmlns="http://www.w3.org/2000/svg"><title>Path 8</title><path d="M12.02 17.029L2 9.089 12.02 1" stroke-width="2" stroke="#F9C21B" fill="none"/></svg>

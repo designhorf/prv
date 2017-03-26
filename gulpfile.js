@@ -38,8 +38,9 @@ gulp.task('minify', function() {
 });
 
 gulp.task('imagemin', function() {
-  return gulp.src('./assets/images/*.png')
+  return gulp.src('./images/**/*')
     .pipe(imagemin())
+		// .pipe(gulp.dest('./assets/images'));
 		.pipe(gulp.dest('./assets/images'));
 });
 
