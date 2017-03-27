@@ -39,7 +39,11 @@ gulp.task('minify', function() {
 
 gulp.task('imagemin', function() {
   return gulp.src('./images/**/*')
-    .pipe(imagemin())
+    .pipe(imagemin([
+      imagemin.jpegtran({optimizationLevel: 5}),
+      imagemin.svgo({plugins: [{removeViewBox: true}]})
+    ], {verbose: true}
+    ))
 		// .pipe(gulp.dest('./assets/images'));
 		.pipe(gulp.dest('./assets/images'));
 });

@@ -1679,3 +1679,178 @@ textarea {
 
 .lightblue-text {
   color: #547c88; }
+x) {
+    .contact-widget {
+      width: 90%; } }
+  @media (max-width: 600px) {
+    .contact-widget {
+      -ms-flex-direction: column;
+      flex-direction: column; } }
+  @media (min-width: 1024px) {
+    .contact-widget {
+      -ms-flex-align: center;
+      align-items: center; } }
+  .contact-widget .half-size-widget {
+    width: 45%; }
+    @media (max-width: 768px) {
+      .contact-widget .half-size-widget {
+        width: 100%; } }
+  .contact-widget .contact-form {
+    -ms-flex-align: initial;
+    align-items: initial;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding-right: 20px; }
+    .contact-widget .contact-form input {
+      height: 35px; }
+    .contact-widget .contact-form .label-container {
+      height: 22px; }
+    .contact-widget .contact-form label {
+      transition: all .3s; }
+    .contact-widget .contact-form .input-style,
+    .contact-widget .contact-form .message {
+      background-color: transparent;
+      color: #c1950f;
+      font-size: 1em;
+      font-weight: 300; }
+    .contact-widget .contact-form .input-style {
+      border: 0;
+      border-bottom: 2px solid #3e4042;
+      margin-bottom: 25px;
+      width: 100%; }
+      .contact-widget .contact-form .input-style::-webkit-input-placeholder {
+        color: lightnet(#3e4042, 10%); }
+      .contact-widget .contact-form .input-style::-moz-placeholder {
+        color: lightnet(#3e4042, 10%); }
+      .contact-widget .contact-form .input-style:-ms-input-placeholder {
+        color: lightnet(#3e4042, 10%); }
+      .contact-widget .contact-form .input-style::placeholder {
+        color: lightnet(#3e4042, 10%); }
+      .contact-widget .contact-form .input-style:invalid {
+        box-shadow: none; }
+    .contact-widget .contact-form .message {
+      border: 2px solid #3e4042;
+      border-radius: 5px;
+      padding: 10px; }
+    .contact-widget .contact-form .btn-submit {
+      background-color: #49c970;
+      border-radius: 5px;
+      border: 0;
+      color: white;
+      cursor: pointer;
+      font-size: 1.35em;
+      margin-left: auto;
+      margin-right: 0;
+      padding: 5px 40px;
+      position: relative; }
+      .contact-widget .contact-form .btn-submit:hover {
+        background-color: #37b85e; }
+  .contact-widget .contact-person {
+    text-align: center; }
+    .contact-widget .contact-person-element {
+      margin-bottom: 50px; }
+    .contact-widget .contact-person .person-title {
+      margin-top: -20px; }
+    .contact-widget .contact-person .hirsztar {
+      font-size: .9em; }
+      @media (min-width: 1024px) {
+        .contact-widget .contact-person .hirsztar {
+          margin-bottom: 83px; } }
+
+.label-text {
+  font-size: .2em;
+  position: relative;
+  top: 10px; }
+
+.xtra-small-text {
+  padding-left: 3%; }
+
+body,
+html,
+.wrap {
+  color: #3e4042;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-family: 'Open Sans', sans-serif; }
+
+body {
+  background: url("../images/gplaypattern2.png");
+  background-repeat: repeat; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+.off {
+  display: none; }
+
+.hidden {
+  visibility: hidden; }
+
+.active {
+  background-color: #f9c21b; }
+
+.bottom-space {
+  margin-bottom: 25px; }
+
+.center {
+  text-align: center; }
+
+.max-content-width {
+  margin: 0 auto;
+  max-width: 1100px; }
+  @media (max-width: 800px) {
+    .max-content-width {
+      max-width: 90%; } }
+
+.section-title {
+  width: 80%; }
+  @media (max-width: 800px) {
+    .section-title {
+      width: 90%; } }
+
+section:not(.no-top) {
+  padding-top: 100px; }
+
+input,
+textarea {
+  outline: none; }
+
+.footer {
+  -ms-flex-align: center;
+  align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #f9c21b;
+  color: #fff;
+  font-size: .8em;
+  height: 60px; }
+
+.twentyfive {
+  height: 120px;
+  position: absolute;
+  transform: rotate(-12deg); }
+  @media (max-width: 767px) {
+    .twentyfive {
+      height: 60px; } }
+  @media (min-width: 1200px) {
+    .twentyfive {
+      height: 160px; } }
+
+.lightblue-text {
+  color: #547c88; }
