@@ -8,8 +8,14 @@ var gulp = require('gulp'),
     htmlmin = require('gulp-htmlmin'),
     imagemin = require('gulp-imagemin'),
     uglify = require('gulp-uglify'),
+    clean = require('gulp-clean'),
     testDest = './test',
     destination = './assets';
+
+gulp.task('clean', function () {
+    return gulp.src(destination + '/*', {read: false})
+        .pipe(clean());
+});
 
 gulp.task('compress', function() {
   gulp.src('./index.html')
@@ -53,4 +59,4 @@ gulp.task('imagemin', function() {
 });
 
 gulp.task('minify', ['uglify', 'codeminify']);
-gulp.task('default', ['sass', 'minify', 'autoprefixer', 'imagemin']);
+gulp.task('default', ['clean', 'sass', 'minify', 'autoprefixer', 'imagemin']);
