@@ -44,8 +44,10 @@
     "gulp-imagemin": "^3.2.0",
     "gulp-postcss": "^6.4.0",
     "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2",
     "gulp-uncss": "^1.0.6",
-    "load-grunt-tasks": "^3.5.2"
+    "load-grunt-tasks": "^3.5.2",
+    "pump": "^1.0.2"
   },
   "dependencies": {
     "grunt-cli": "^1.2.0",
