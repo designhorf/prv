@@ -9,6 +9,7 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     uglify = require('gulp-uglify'),
     clean = require('gulp-clean'),
+    runSequence = require('run-sequence'),
     testDest = './test',
     destination = './assets';
 
@@ -20,7 +21,7 @@ gulp.task('clean', function () {
 gulp.task('compress', function() {
   gulp.src('./assets/stylesheets/*.css')
   .pipe(gzip())
-  .pipe(gulp.dest('./compresstest'));
+  .pipe(gulp.dest(destination));
 });
 
 gulp.task('uglify', function () {
@@ -58,5 +59,12 @@ gulp.task('imagemin', function() {
 		.pipe(gulp.dest(destination + '/images'));
 });
 
-gulp.task('minify', ['uglify', 'codeminify']);
-gulp.task('default', ['clean', 'sass', 'minify', 'autoprefixer', 'imagemin']);
+
+
+gulp.task('default', function() {
+  runSequence('clean',
+              ['sass', 'uglify', 'codeminify', 'imagemin'],
+              'autoprefixer',
+              'compress'
+              );
+});
