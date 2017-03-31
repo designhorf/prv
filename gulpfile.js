@@ -61,6 +61,10 @@ gulp.task('imagemin', function() {
 
 
 
+gulp.task('watch', function() {
+  gulp.watch('stylesheets/**/*.scss', ['sass', 'autoprefixer', 'compress']);
+});
+
 gulp.task('default', function() {
   runSequence('clean',
               ['sass', 'uglify', 'codeminify', 'imagemin'],
