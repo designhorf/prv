@@ -4,6 +4,7 @@ var	http = require('http'),
 	fs = require('fs'),
 	path = require('path'),
 	mime = require('mime'),
+	compression = require('compression'),
 	cache = {};
 
 function send404(response) {

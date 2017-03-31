@@ -18,9 +18,9 @@ gulp.task('clean', function () {
 });
 
 gulp.task('compress', function() {
-  gulp.src('./index.html')
+  gulp.src('./assets/stylesheets/*.css')
   .pipe(gzip())
-  .pipe(gulp.dest(testDest));
+  .pipe(gulp.dest('./compresstest'));
 });
 
 gulp.task('uglify', function () {
