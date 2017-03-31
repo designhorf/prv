@@ -13,7 +13,7 @@ var gulp = require('gulp'),
     destination = './assets';
 
 gulp.task('clean', function () {
-    return gulp.src(destination + '/*', {read: false})
+    return gulp.src(destination + '/*')
         .pipe(clean());
 });
 
