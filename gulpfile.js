@@ -7,11 +7,39 @@ var gulp = require('gulp'),
     gzip = require('gulp-gzip'),
     htmlmin = require('gulp-htmlmin'),
     imagemin = require('gulp-imagemin'),
+    // imagemin = require('imagemin'),
+    imageminOptipng = require('imagemin-optipng'),
+    // optipng = require('gulp-optipng'),
     uglify = require('gulp-uglify'),
     clean = require('gulp-clean'),
     runSequence = require('run-sequence'),
+    tinfier = require('gulp-tinifier'),
     testDest = './test',
-    destination = './assets';
+    destination = './public';
+
+
+var options = {
+    key:'Ka7s1XBXsoRBUseVfRm7lmCDFaOzXTqX',
+    verbose: true
+};
+
+// var config = require('./gulp.config.js');
+var imgToCompress = './images/**/*';
+var distFolder = './testImg';
+
+// module.exports = function(gulp) {
+// gulp.task('tinypng', function() {
+//     gulp.src(imgToCompress)
+//         .pipe(tinfier({
+//             key: options.key,
+//             verbose: true
+//         }))
+//         .pipe(gulp.dest("sprites-optimized", {cwd:distFolder}))
+// });
+// };
+
+
+
 
 gulp.task('clean', function () {
     return gulp.src(destination + '/*')
@@ -53,6 +81,7 @@ gulp.task('imagemin', function() {
   return gulp.src('./images/**/*')
     .pipe(imagemin([
       imagemin.jpegtran({optimizationLevel: 5}),
+      // imagemin.optipng({optimizationLevel: 5}),
       imagemin.svgo({plugins: [{removeViewBox: true}]})
     ], {verbose: true}
     ))
