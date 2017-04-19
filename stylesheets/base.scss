@@ -1,15 +1,15 @@
-@import "modules/colours";
-@import "modules/text";
-@import "modules/mixins";
-@import "modules/mobile-navigation";
-@import "widgets/quote";
-@import "sections/header";
-@import "sections/main-page";
-@import "sections/offers";
-@import "sections/conception";
-@import "sections/chart";
-@import "sections/partners";
-@import "sections/contact";
+@import 'modules/colours';
+@import 'modules/text';
+@import 'modules/mixins';
+@import 'modules/mobile-navigation';
+@import 'widgets/quote';
+@import 'sections/header';
+@import 'sections/main-page';
+@import 'sections/offers';
+@import 'sections/conception';
+@import 'sections/chart';
+@import 'sections/partners';
+@import 'sections/contact';
 
 body,
 html,
@@ -71,8 +71,10 @@ a {
   }
 }
 
-section:not(.no-top) {
-  padding-top: 100px;;
+section {
+  &:not(.no-top) {
+    padding-top: 100px;;
+  }
 }
 
 input,
@@ -104,4 +106,10 @@ textarea {
 
 .lightblue-text {
   color: $lightblue;
+}
+
+
+.text-qotcha {
+  background-color: $green;
+  display: none;
 }

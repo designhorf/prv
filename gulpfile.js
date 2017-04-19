@@ -14,6 +14,7 @@ var gulp = require('gulp'),
     clean = require('gulp-clean'),
     runSequence = require('run-sequence'),
     tinfier = require('gulp-tinifier'),
+    sassLint = require('gulp-sass-lint'),
     testDest = './test',
     destination = './public';
 
@@ -88,15 +89,27 @@ gulp.task('imagemin', function() {
 		.pipe(gulp.dest(destination + '/images'));
 });
 
+gulp.task('sasslint', function () {
+  return gulp.src('stylesheets/**/*.scss')
+    .pipe(sassLint({
+      rules: {
+        'no-transition-all': 0,
+        'no-ids': 1
+      },
+    }))
+    .pipe(sassLint.format())
+    .pipe(sassLint.failOnError())
+});
+
 
 
 gulp.task('watch', function() {
-  gulp.watch('stylesheets/**/*.scss', ['sass', 'autoprefixer', 'compress']);
+  gulp.watch('stylesheets/**/*.scss', ['sasslint', 'sass', 'autoprefixer', 'compress']);
 });
 
 gulp.task('default', function() {
   runSequence('clean',
-              ['sass', 'uglify', 'codeminify', 'imagemin'],
+              ['sasslint', 'sass', 'uglify', 'codeminify', 'imagemin'],
               'autoprefixer',
               'compress'
               );
