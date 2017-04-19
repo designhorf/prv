@@ -65,6 +65,25 @@
                 <p>kapcsolat</p>
               </li>
             </a>
+
+            <li class="list-element">
+              <form action="" id="codeForm" target="_blank">
+                <label for="code">Kód: </label>
+                <input type="text" id="code">
+                <button type="submit" id="codeSubmit" onclick="modifyActionURL();"></button>
+              </form>
+
+              <script>
+                var modifyActionURL = function () {
+                  var url = 'http://designhorf.com/',
+                      code = document.getElementById('code').value,
+                      actionURL = url + code,
+                      action = document.getElementById('codeForm');
+                  
+                  action.setAttribute('action', actionURL);
+                };
+              </script>
+            </li>
           </ul>
         </div>
         
