@@ -84,9 +84,9 @@
 
     .btn-submit {
       background-color: $green;
-      border-radius: 5px;
       border: 0;
-      color: white;
+      border-radius: 5px;
+      color: $white;
       cursor: pointer;
       font-size: 1.35em;
       margin-left: auto;
@@ -130,3 +130,9 @@
 .xtra-small-text {
   padding-left: 3%;
 }
+
+.label-container-message {
+  margin-bottom: 10px;
+}
+
+

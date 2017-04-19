@@ -7,7 +7,7 @@ ul {
 
 .header {
   background-color: $white;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .33);
+  box-shadow: 0 1px 4px 0 $headercolour;
   font-weight: 700;
   height: $header-height;
   margin: 0;
@@ -49,13 +49,13 @@ ul {
 
   li {
     margin: 16px;
+  }
 
-    p {
-      border-bottom: 3px solid transparent;
-      cursor: pointer;
-    }
+  p {
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
 
-    p:hover {
+    &:hover {
       border-bottom: 3px solid $yellow;
     }
   }

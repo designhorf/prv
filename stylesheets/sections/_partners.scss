@@ -29,12 +29,14 @@
     // position: relative;
     width: 80%;
 
-    img:not(.arrow) {
-      filter: grayscale(100%);
+    img {
+      &:not(.arrow) {
+        filter: grayscale(100%);
 
-      @media (max-width: 800px) {
-        max-height: 50px;
-        max-width: 100px;
+        @media (max-width: 800px) {
+          max-height: 50px;
+          max-width: 100px;
+        }
       }
     }
   }
