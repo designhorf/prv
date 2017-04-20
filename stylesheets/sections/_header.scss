@@ -70,3 +70,24 @@ ul {
     list-style-type: none;
   }
 }
+
+.code-button,
+.code-text {
+  border: 0;
+  border-radius: 5px;
+  font-size: .8em;
+  font-weight: 600;
+  min-height: 25px;
+  vertical-align: middle;
+}
+
+.code-text {
+  background-color: $extralightgray;
+  color: $red;
+  padding: 0 0 0 8px;
+  width: 80px;
+}
+
+.code-button {
+  background-color: $darkergreen;
+}
