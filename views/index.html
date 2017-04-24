@@ -14,12 +14,12 @@
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<title>PRV Team</title>
-  <!--link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet"-->
+  <link rel="stylesheet" href="stylesheets/critical.css" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
 </head>
 <body>
 	<div class="wrap">
 
-    <!-- HEADER -->
 		<div class="header" id="header">
       <div class="header-wrap max-content-width">
         <a href="#home">
@@ -72,17 +72,6 @@
                 <input class="code-text" type="text" id="code">
                 <button class="code-button" type="submit" id="codeSubmit" onclick="modifyActionURL();">Go</button>
               </form>
-
-              <script>
-                var modifyActionURL = function () {
-                  var url = 'http://designhorf.com/',
-                      code = document.getElementById('code').value,
-                      actionURL = url + code,
-                      action = document.getElementById('codeForm');
-                  
-                  action.setAttribute('action', actionURL);
-                };
-              </script>
             </li>
           </ul>
         </div>
@@ -703,6 +692,17 @@
         webkitRequestAnimationFrame || msRequestAnimationFrame;
     if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
     else window.addEventListener('load', loadDeferredStyles);
+  </script>
+
+  <script>
+    var modifyActionURL = function () {
+      var url = 'http://prvadmin.dev/prezentacio/',
+          code = document.getElementById('code').value,
+          actionURL = url + code,
+          action = document.getElementById('codeForm');
+      
+      action.setAttribute('action', actionURL);
+    };
   </script>
 
   <script type="text/javascript" src="js/main.js" async></script>

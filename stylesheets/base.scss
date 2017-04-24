@@ -1,10 +1,6 @@
 @import 'modules/colours';
-@import 'modules/text';
 @import 'modules/mixins';
-@import 'modules/mobile-navigation';
 @import 'widgets/quote';
-@import 'sections/header';
-@import 'sections/main-page';
 @import 'sections/offers';
 @import 'sections/conception';
 @import 'sections/chart';
@@ -107,7 +103,6 @@ textarea {
 .lightblue-text {
   color: $lightblue;
 }
-
 
 .text-qotcha {
   background-color: $green;
