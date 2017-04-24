@@ -7,7 +7,6 @@ var gulp = require('gulp'),
     gzip = require('gulp-gzip'),
     htmlmin = require('gulp-htmlmin'),
     imagemin = require('gulp-imagemin'),
-    imageminOptipng = require('imagemin-optipng'),
     uglify = require('gulp-uglify'),
     clean = require('gulp-clean'),
     runSequence = require('run-sequence'),
@@ -25,7 +24,6 @@ var options = {
 // var config = require('./gulp.config.js');
 var imgToCompress = './images/**/*';
 var distFolder = './testImg';
-
 
 gulp.task('clean', function () {
     return gulp.src(destination + '/*')
@@ -68,7 +66,6 @@ gulp.task('imagemin', function() {
   return gulp.src('./images/**/*')
     .pipe(imagemin([
       imagemin.jpegtran({optimizationLevel: 5}),
-      // imagemin.optipng({optimizationLevel: 5}),
       imagemin.svgo({plugins: [{removeViewBox: true}]})
     ], {verbose: true}
     ))
