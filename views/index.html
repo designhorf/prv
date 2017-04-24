@@ -47,10 +47,18 @@
               </li>
             </a>
 
-            <a class="menu-element" href="http://www.kiadvanyom.hu/PRV" target="_blank">
-              <li class="list-element">
+            <a class="menu-element">
+              <li class="list-element" onclick="showCode(this);">
                 <p>online prezentáció</p>
               </li>
+
+              <span class="list-element code-input off" id="codeField">
+                <form action="" id="codeForm" target="_blank">
+                  <label for="code">Kód: </label>
+                  <input class="code-text" type="text" id="code">
+                  <button class="code-button" type="submit" id="codeSubmit" onclick="modifyActionURL();">Go</button>
+                </form>
+              </span>
             </a>
 
             <a class="menu-element green-text" href="https://medium.com/prv-team" target="_blank">
@@ -64,14 +72,6 @@
                 <p>kapcsolat</p>
               </li>
             </a>
-
-            <li class="list-element">
-              <form action="" id="codeForm" target="_blank">
-                <label for="code">Kód: </label>
-                <input class="code-text" type="text" id="code">
-                <button class="code-button" type="submit" id="codeSubmit" onclick="modifyActionURL();">Go</button>
-              </form>
-            </li>
           </ul>
         </div>
         
@@ -701,6 +701,13 @@
           action = document.getElementById('codeForm');
       
       action.setAttribute('action', actionURL);
+    };
+  </script>
+
+  <script>
+    var showCode = function (element) {
+      var onlinePrez = document.getElementById('codeField');
+      onlinePrez.classList.remove('off');
     };
   </script>
 
