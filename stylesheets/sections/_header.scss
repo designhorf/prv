@@ -54,6 +54,7 @@ ul {
   p {
     border-bottom: 3px solid transparent;
     cursor: pointer;
+    transition: border-bottom .3s;
 
     &:hover {
       border-bottom: 3px solid $yellow;
