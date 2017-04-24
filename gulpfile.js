@@ -7,9 +7,7 @@ var gulp = require('gulp'),
     gzip = require('gulp-gzip'),
     htmlmin = require('gulp-htmlmin'),
     imagemin = require('gulp-imagemin'),
-    // imagemin = require('imagemin'),
     imageminOptipng = require('imagemin-optipng'),
-    // optipng = require('gulp-optipng'),
     uglify = require('gulp-uglify'),
     clean = require('gulp-clean'),
     runSequence = require('run-sequence'),
@@ -28,19 +26,6 @@ var options = {
 var imgToCompress = './images/**/*';
 var distFolder = './testImg';
 
-// module.exports = function(gulp) {
-// gulp.task('tinypng', function() {
-//     gulp.src(imgToCompress)
-//         .pipe(tinfier({
-//             key: options.key,
-//             verbose: true
-//         }))
-//         .pipe(gulp.dest("sprites-optimized", {cwd:distFolder}))
-// });
-// };
-
-
-
 
 gulp.task('clean', function () {
     return gulp.src(destination + '/*')
@@ -51,6 +36,7 @@ gulp.task('compress', function() {
   gulp.src('./assets/stylesheets/*.css')
   .pipe(gzip())
   .pipe(gulp.dest(destination));
+  setTimeout(() => console.log('Done!'),  500);
 });
 
 gulp.task('uglify', function () {
