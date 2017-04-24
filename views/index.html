@@ -47,7 +47,7 @@
               </li>
             </a>
 
-            <a class="menu-element">
+            <a class="menu-element" data-name="onlinePrez">
               <li class="list-element" onclick="showCode(this);">
                 <p>online prezentáció</p>
               </li>
@@ -691,24 +691,6 @@
         webkitRequestAnimationFrame || msRequestAnimationFrame;
     if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
     else window.addEventListener('load', loadDeferredStyles);
-  </script>
-
-  <script>
-    var modifyActionURL = function () {
-      var url = 'http://prvadmin.dev/prezentacio/',
-          code = document.getElementById('code').value,
-          actionURL = url + code,
-          action = document.getElementById('codeForm');
-      
-      action.setAttribute('action', actionURL);
-    };
-  </script>
-
-  <script>
-    var showCode = function (element) {
-      var onlinePrez = document.getElementById('codeField');
-      onlinePrez.classList.remove('off');
-    };
   </script>
 
   <script type="text/javascript" src="js/main.js" async></script>

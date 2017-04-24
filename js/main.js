@@ -93,8 +93,26 @@
       menuItem.addEventListener('click', function () {
         removeActiveMenu();
         menuItem.querySelector('.list-element').classList.add('active-menu');
+        if (menuItem.getAttribute('data-name') !== 'onlinePrez') {
+          document.getElementById('codeField').classList.add('off');
+        }
       });
     });
+
+    var modifyActionURL = function () {
+      var url = 'http://prvadmin.dev/prezentacio/',
+          code = document.getElementById('code').value,
+          actionURL = url + code,
+          action = document.getElementById('codeForm');
+      
+      action.setAttribute('action', actionURL);
+    };
+
+    var showCode = function (element) {
+      var onlinePrez = document.getElementById('codeField');
+      onlinePrez.classList.remove('off');
+    };
+
 
 
 
