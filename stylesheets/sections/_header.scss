@@ -91,6 +91,11 @@ ul {
 
 .code-button {
   background-color: $darkergreen;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($darkergreen, 10%);
+  }
 }
 
 .code-input {
