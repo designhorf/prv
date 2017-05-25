@@ -12,6 +12,7 @@ var gulp = require('gulp'),
     runSequence = require('run-sequence'),
     tinfier = require('gulp-tinifier'),
     sassLint = require('gulp-sass-lint'),
+    gulpCopy = require('gulp-copy'),
     testDest = './test',
     destination = './public';
 
@@ -28,6 +29,13 @@ var distFolder = './testImg';
 gulp.task('clean', function () {
     return gulp.src(destination + '/*')
         .pipe(clean());
+});
+
+gulp.task('gulpCopy', function() {
+  var fontsSource = './fonts/**/*.*';
+
+  gulp.src(fontsSource)
+  .pipe(gulp.dest(destination + '/fonts'));
 });
 
 gulp.task('compress', function() {
@@ -93,6 +101,7 @@ gulp.task('watch', function() {
 gulp.task('default', function() {
   runSequence('clean',
               ['sasslint', 'sass', 'uglify', 'codeminify', 'imagemin'],
+              'gulpCopy',
               'autoprefixer',
               'compress'
               );
