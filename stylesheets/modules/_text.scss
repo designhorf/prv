@@ -4,8 +4,13 @@
 }
 
 @font-face {
-  font-family: Body-Playfair;
-  src: url('../fonts/PlayfairDisplay-Regular.otf');
+  font-family: Body;
+  src: url('../fonts/Lato-Light.ttf');
+}
+
+@font-face {
+  font-family: Body-Bold;
+  src: url('../fonts/Lato-Bold.ttf');
 }
 
 @font-face {
@@ -14,7 +19,8 @@
 }
 
 html {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Body', sans-serif;
+  font-weight: 100;
 }
 
 h1 {
@@ -45,6 +51,10 @@ h3 {
   font-family: 'Title-Bebas', sans-serif;
   font-weight: 300;
   letter-spacing: 5px;
+}
+
+.body-bold {
+  font-family: 'Body-Bold', sans-serif;
 }
 
 .bold {
