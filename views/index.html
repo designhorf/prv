@@ -20,7 +20,7 @@
 
 		<div class="header" id="header">
       <div class="header-wrap max-content-width">
-        <a href="#home">
+        <a data-scroll href="#home">
           <div class="logo">
             <img src="images/prv-logo.svg" alt="prv logo">
             <p class="xtra-small-text">communication</p>
@@ -28,19 +28,19 @@
         </a>
         <div class="menu">
           <ul class="menu-items">
-            <a class="menu-element" href="#offer">
+            <a class="menu-element" data-scroll href="#offer">
               <li class="list-element first-menu-element">
                 <p>ajánlatunk</p>
               </li>
             </a>
 
-            <a class="menu-element conception-menu-item" href="#conception">
+            <a class="menu-element conception-menu-item" data-scroll href="#conception">
               <li class="list-element">
                 <p>koncepciónk</p>
               </li>
             </a>
 
-            <a class="menu-element chart-menu-item" href="#flow-chart">
+            <a class="menu-element chart-menu-item" data-scroll href="#flow-chart">
               <li class="list-element">
                 <p>folyamatábra</p>
               </li>
@@ -66,7 +66,7 @@
               </li>
             </a>
 
-            <a class="menu-element" href="#contact">
+            <a class="menu-element" data-scroll href="#contact">
               <li class="list-element">
                 <p>kapcsolat</p>
               </li>
@@ -84,19 +84,19 @@
 
     <div class="mobile-menu">
       <ul class="menu-items">
-        <a class="menu-element mobile-element" href="#offer">
+        <a class="menu-element mobile-element" data-scroll href="#offer">
           <li class="list-element">
             <p>ajánlatunk</p>
           </li>
         </a>
 
-        <a class="menu-element mobile-element conception-menu-item" href="#conception">
+        <a class="menu-element mobile-element conception-menu-item" data-scroll href="#conception">
           <li class="list-element">
             <p>koncepciónk</p>
           </li>
         </a>
 
-        <a class="menu-element mobile-element chart-menu-item" href="#flow-chart">
+        <a class="menu-element mobile-element chart-menu-item" data-scroll href="#flow-chart">
           <li class="list-element">
             <p>folyamatábra</p>
           </li>
@@ -114,7 +114,7 @@
           </li>
         </a>
 
-        <a class="menu-element mobile-element" href="#contact">
+        <a class="menu-element mobile-element" data-scroll href="#contact">
           <li class="list-element">
             <p>kapcsolat</p>
           </li>
@@ -135,7 +135,7 @@
       </div>
 
       <div class="main-scroll">
-        <a href="#offer">
+        <a data-scroll href="#offer">
           <img class="main-scroll-icon" src="images/scroll-down.svg" alt="scroll down icon">
         </a>
       </div>
@@ -229,7 +229,7 @@
 
 <div class="mobile-package-view">
         <div class="package-items">
-          <a href="#mobileIssue">
+          <a data-scroll href="#mobileIssue">
             <div class="package-item mobile-package-item issue active" data-name="mobile-package-issue-details" title="Kattintson a részletekért" id="mobileIssue">
               <img class="package-item-icon" src="images/icons/issue.svg" alt="issue icon">
               <h3 class="title-text-style">kiadvány</h3>
@@ -258,7 +258,7 @@
 
 
 
-          <a href="#mobileFolder">
+          <a data-scroll href="#mobileFolder">
             <div class="package-item mobile-package-item folder" data-name="mobile-package-folder-details" title="Kattintson a részletekért" id="mobileFolder">
               <img class="package-item-icon" src="images/icons/folder.svg" alt="folder icon">
               <h3 class="title-text-style">mappa</h3>
@@ -273,7 +273,7 @@
 
 
 
-          <a href="#mobileVideo">
+          <a data-scroll href="#mobileVideo">
             <div class="package-item mobile-package-item video" data-name="mobile-package-video-details" title="Kattintson a részletekért" id="mobileVideo">
               <img class="package-item-icon" src="images/icons/video.svg" alt="video icon">
               <h3 class="title-text-style">videó</h3>
@@ -693,5 +693,10 @@
   </script>
 
   <script type="text/javascript" src="js/main.js" async></script>
+  <script src="js/smooth-scroll.js"></script>
+
+  <script>
+    smoothScroll.init();
+  </script>
 </body>
 </html>
