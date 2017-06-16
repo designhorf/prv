@@ -6,17 +6,8 @@
   padding-top: 90px;
   width: 100%;
 
-  @media (max-width: 480px) {
-    // justify-content: space-around;;
-    // min-height: initial;
-  }
-
   @media (max-width: 1024px) and (orientation: landscape) {
     height: initial;
-  }
-
-  @media (min-width: 1025px) and (max-width: 1440px) {
-    // justify-content: flex-start;
   }
 
   &-text {
