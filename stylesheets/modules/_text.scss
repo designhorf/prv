@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: Cheddar;
+  src: url('../fonts/CheddarJack.ttf');
+}
+
+@font-face {
   font-family: Body;
   // src: url('../fonts/Lato-Light.ttf');
   src: url('../fonts/OpenSans-Light.ttf');
@@ -53,6 +58,17 @@ h3 {
   font-family: 'Title-Bebas', sans-serif;
   font-weight: 300;
   letter-spacing: 5px;
+}
+
+.main-title {
+  font-family: 'Cheddar', sans-serif;
+  font-size: 3.5em;
+  font-weight: 300;
+  text-transform: initial;
+
+  @media (max-width: 480px) {
+    font-size: 2.5em;
+  }
 }
 
 .body-bold {
