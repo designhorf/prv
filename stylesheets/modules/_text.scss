@@ -46,6 +46,14 @@ h2 {
   }
 }
 
+.quote-widget-special-text {
+  font-size: 1.6em;
+
+  @media (max-width: 480px) {
+    font-size: 1.35em;
+  }
+}
+
 h3 {
   font-size: 1.6em;
 
