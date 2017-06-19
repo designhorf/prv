@@ -17,7 +17,7 @@ require('./router/main')(app);
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname,'public')));
 
-app.set('views', __dirname + '/views');
+app.set('views', __dirname);
 app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
 
