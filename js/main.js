@@ -96,19 +96,22 @@
         if (menuItem.getAttribute('data-name') !== 'onlinePrez') {
           document.getElementById('codeField').classList.add('off');
         }
+        else {
+          showCode();
+        }
       });
     });
 
     var modifyActionURL = function () {
-      var url = 'http://prvadmin.dev/prezentacio/',
+      var url = 'http://prv-admin.tailored-tunes.com/prezentacio/',
           code = document.getElementById('code').value,
-          actionURL = url + code,
-          action = document.getElementById('codeForm');
+          link = url + code,
+          button = document.getElementById('aurl');
       
-      action.setAttribute('action', actionURL);
+      button.setAttribute('href', link);
     };
 
-    var showCode = function (element) {
+    var showCode = function () {
       var onlinePrez = document.getElementById('codeField');
       onlinePrez.classList.remove('off');
     };
