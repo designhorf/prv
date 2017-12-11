@@ -77,7 +77,7 @@ gulp.task('imagemin', function() {
       imagemin.svgo({plugins: [{removeViewBox: true}]})
     ], {verbose: true}
     ))
-		.pipe(gulp.dest(destination + '/images'));
+    .pipe(gulp.dest(destination + '/images'));
 });
 
 gulp.task('sasslint', function () {
@@ -89,7 +89,7 @@ gulp.task('sasslint', function () {
       },
     }))
     .pipe(sassLint.format())
-    .pipe(sassLint.failOnError())
+    .pipe(sassLint.failOnError());
 });
 
 
