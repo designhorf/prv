@@ -1,8 +1,8 @@
 .main {
   @include flexbox(column, initial, center, nowrap);
   background: linear-gradient(to bottom, $white 29%, $yellow 100%);
-  height: calc(100% - 70px);
-  min-height: calc(100% - 70px);
+  height: calc(100vh - 70px);
+  min-height: calc(100vh - 70px);
   padding-top: 90px;
   width: 100%;
 
